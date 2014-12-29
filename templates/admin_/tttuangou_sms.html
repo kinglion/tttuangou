@@ -1,0 +1,81 @@
+<!--{template @admin/header}--> <script type="text/javascript" src="./statuc/js/jquery.js"></script> <form method="post" action="admin.php?mod=tttuangou&code=sms&op=search"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="6">短信管理&nbsp;&nbsp;&nbsp;<a href="?mod=tttuangou&code=smsconfig">[ 设置短信平台 ]</a>�?A HREF="{~ihelper('tg.sms.shop')}" target=_blank><font color=red>1000条短信仅需80元：在线购买</font></A>�?/td> </tr> <!--{if 1}--> <tr> <td colspan="6">
+请输入用户名或者手机号�?nbsp;
+<input name="bywhat" type="text" size="18" value="{$bywhat}" /> <select name="byway"> <option value="name"{if $byway=='name'||$byway=''} selected="selected"{/if}>用户�?/option> <option value="phone"{if $byway=='phone'} selected="selected"{/if}>手机�?/option> </select>&nbsp;
+<input name="bottom" type="submit" id="bottom" value=" �?�?" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><a href="admin.php?mod=tttuangou&code=sms&filter={$filter_type}">[{$filter_text}]</a></b> </td> </tr> <!--{/if}--> <tr> <td width="10%">用户</td> <td width="12%">手机</td> <td>短信内容预览</td> <td width="20%">发送时�?/td> <td width="15%">发送状�?/td> <td width="6%" align="center">管理</td> </tr> <!--{if empty($sms)}--> <tr><td colspan="6">没有找到任何短信�?/td></tr> <!--{else}--> <!--{loop $sms $i $value}--> <tr onmouseover="this.className='tr_hover'" onmouseout="this.className='tr_normal'"> <td>{$value['name']}</td> <td><font id="msi_{$value['id']}">{$value['phone']}</font><br/><a id="msi_a_{$value['id']}" href="javascript:phone_edit({$value['id']});" style="color:#cccccc;">[编辑]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="msi_al_{$value['id']}" href="javascript:phone_edit_hide({$value['id']});" style="display:none;color:#cccccc;">[取消]</a></td> <td id="mst_{$value['id']}" title="{$value['content']}"><font id="msc_{$value['id']}">{eval echo substr($value['content'],0,77);}...</font>{if $value['state']!='短信发送成功！'}<br/><a id="msc_a_{$value['id']}" href="javascript:content_edit({$value['id']});" style="color:#cccccc;">[编辑]</a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="msc_al_{$value['id']}" href="javascript:content_edit_hide({$value['id']});" style="display:none;color:#cccccc;">[取消]</a>{else}{/if}</td> <td>
+{eval echo my_date_format(substr($value['mid'], 3));}
+{if $value['mid_resend'] != ''}
+<br/><font color="#cccccc">重发时间�?br/>{eval echo my_date_format(substr($value['mid_resend'], 3));}</font>
+{/if}
+</td> <td>{$value['state']}</td> <td align="center"> <a href="#" onclick="if(confirm('您确认要重新发送该短信吗？')){window.location.href='?mod=tttuangou&code=smsops&op=resend&id={$value['id']}'}">重发</a> </td> </tr> <!--{/loop}--> <!--{/if}--> </table>
+{$page_arr}
+</form> <script type="text/javascript">
+var ms_url = 'admin.php?mod=tttuangou&code=smsops&op=update&id=';
+function phone_edit(id)
+{
+if (undefined == $('#msi_in_'+id).val())
+{
+// make input box
+$('#msi_'+id).html('<input type="text" id="msi_in_'+id+'" value="'+$('#msi_'+id).text()+'" style="width:100px;" />');
+$('#msi_a_'+id).text('[保存]');
+$('#msi_al_'+id).css('display', '');
+}
+else
+{
+$('#msi_a_'+id).text('[保存�?..]');
+$('#msi_a_'+id).attr('disabled', true);
+$.get(ms_url+id+'&phone='+$('#msi_in_'+id).val(), function(data){
+if ('ok' == data)
+{
+phone_edit_hide(id);
+}
+else
+{
+$('#msi_a_'+id).text('[保存]');
+alert(data);
+}
+});
+}
+}
+function phone_edit_hide(id)
+{
+$('#msi_'+id).text($('#msi_in_'+id).val());
+$('#msi_a_'+id).text('[编辑]');
+$('#msi_al_'+id).css('display', 'none');
+}
+// 暂时分离两部分内容的编辑
+function content_edit(id)
+{
+if (undefined == $('#msc_in_'+id).val())
+{
+// make input box
+$('#msc_'+id).html('<textarea id="msc_in_'+id+'" style="height:60px;width:98%;">'+$('#mst_'+id).attr('title')+'</textarea>');
+$('#msc_a_'+id).text('[保存]');
+$('#msc_al_'+id).css('display', '');
+}
+else
+{
+$('#msc_a_'+id).text('[保存�?..]');
+$('#msc_a_'+id).attr('disabled', true);
+$('#mst_'+id).attr('title', $('#msc_in_'+id).val());
+$.get(ms_url+id+'&content='+encodeURIComponent($('#msc_in_'+id).val()), function(data){
+if ('ok' == data)
+{
+content_edit_hide(id);
+}
+else
+{
+$('#msc_a_'+id).text('[保存]');
+alert(data);
+}
+});
+}
+}
+function content_edit_hide(id)
+{
+$('#msc_'+id).text($('#msc_in_'+id).val());
+$('#msc_a_'+id).text('[编辑]');
+$('#msc_al_'+id).css('display', 'none');
+}
+</script>
+{template @admin/footer}

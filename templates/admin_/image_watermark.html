@@ -1,0 +1,37 @@
+<!--{template @admin/header}--> <form id="form" action="?mod=image&code=watermark&op=save" method="post" enctype="multipart/form-data"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="2">
+图片水印设置
+</td> </tr> <tr> <td width="10%" class="td_title">水印类型</td> <td> <select id="wm-type-select" name="data[type]" onchange="wm_type_dsp_render()"> <option value="image" {if $cfg['type']=='image'}selected="selected"{/if}>图片</option> <option value="text" {if $cfg['type']=='text'}selected="selected"{/if}>文字</option> </select> </td> </tr> <tr class="tr-for-image" style="display:none;"> <td class="td_title">当前水印�?/td> <td> <img src="{$cfg['image']}?{echo time()}" /> <input name="data[image]" type="hidden" value="{$cfg['image']}" /> </td> </tr> <tr class="tr-for-image" style="display:none;"> <td width="10%" class="td_title">替换水印�?/td> <td> <input name="file" type="file" />
+* 不替换请留空
+</td> </tr> <tr class="tr-for-text" style="display:none;"> <td class="td_title">水印文字�?/td> <td> <input name="data[text]" type="text" value="{$cfg['text']}" size="60" /> </td> </tr> <tr class="tr-for-text" style="display:none;"> <td class="td_title">字体文件�?/td> <td> <input name="data[font]" type="text" value="{$cfg['font']}" /> </td> </tr> <tr class="tr-for-text" style="display:none;"> <td class="td_title">字体大小�?/td> <td> <input name="data[fontsize]" type="text" value="{$cfg['fontsize']}" /> </td> </tr> <tr class="tr-for-text" style="display:none;"> <td class="td_title">说明�?/td> <td>
+1. 启用文字水印功能您的服务器必须支持imagettftext函数和mb_convert_encoding函数并且上传了TrueType字体<br/>
+2. 字体文件需要上传到<b>/static/images/watermark/</b>目录�?br/>
+3. 如果您上传的字体文件名为font.ttf，就在上面填写font.ttf，填写错误或者字体文件不存在时是没法生成文字水印�?br/>
+4. {if function_exists('imagettftext') && function_exists('mb_convert_encoding')}您的环境支持文字水印{else}系统检测您的环境缺失函数，无法设置文字水印{/if}
+</td> </tr> <tr> <td class="td_title">注意�?/td> <td>
+当您的水印图片宽度或者水印文字宽度大于原图宽度时是不会成功添加水印的，您可以适当的缩小水印图片的宽度，减少水印文字个数或者调低字体大�?</td> </tr> <tr> <td class="td_title">水印位置�?/td> <td> <select name="data[position]"> <option value="1" {if $cfg['position']==1}selected="selected"{/if}>左上</option> <option value="2" {if $cfg['position']==2}selected="selected"{/if}>左下</option> <option value="3" {if $cfg['position']==3}selected="selected"{/if}>右上</option> <option value="4" {if $cfg['position']==4}selected="selected"{/if}>右下</option> </select> </td> </tr> <tr> <td class="td_title">是否启用�?/td> <td> <label>
+�?nbsp;
+<input name="data[enabled]" type="radio" value="true" {if $cfg['enabled']=='true'}checked="checked"{/if} /> </label>
+&nbsp;&nbsp;&nbsp;
+<label>
+�?nbsp;
+<input name="data[enabled]" type="radio" value="false" {if $cfg['enabled']=='false'}checked="checked"{/if} /> </label> </td> </tr> <tr> <td></td> <td> <input type="submit" value="保存" class="button" /> <input type="button" value="测试" class="button" onclick="submit_test()" /> </td> </tr> </table> </form> <script type="text/javascript">
+function submit_test()
+{
+$('#form').attr('action', '?mod=image&code=watermark&op=save_test').submit();
+}
+function wm_type_dsp_render()
+{
+var type = $('#wm-type-select').val();
+if (type == 'image')
+{
+$('.tr-for-text').hide();
+$('.tr-for-image').show();
+}
+else
+{
+$('.tr-for-image').hide();
+$('.tr-for-text').show();
+}
+}
+$(document).ready(function(){wm_type_dsp_render()});
+</script> <!--{template @admin/footer}-->

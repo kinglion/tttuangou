@@ -1,0 +1,26 @@
+<?php 
+$cache=array (
+  0 => 'orderid',
+  1 => 'productid',
+  2 => 'productnum',
+  3 => 'productprice',
+  4 => 'totalprice',
+  5 => 'userid',
+  6 => 'addressid',
+  7 => 'buytime',
+  8 => 'is_countdown',
+  9 => 'paytype',
+  10 => 'paymoney',
+  11 => 'pay',
+  12 => 'paytime',
+  13 => 'expresstype',
+  14 => 'expressprice',
+  15 => 'invoice',
+  16 => 'expresstime',
+  17 => 'extmsg',
+  18 => 'extmsg_reply',
+  19 => 'process',
+  20 => 'status',
+  21 => 'remark',
+);
+?>

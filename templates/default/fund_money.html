@@ -1,0 +1,49 @@
+<!--{template header}-->
+{~ui('loader')->js('@jquery.hook')}
+<div class="site-ms">
+<div class="site-ms__left">
+<div class="ts_menu_2">
+<ul>
+<li class="ts3_mbtn2"><a href="?mod=seller&code=product&op=list">产品列表</a></li>
+<li class="ts3_mbtn2"><a href="?mod=fund">我要结算</a></li>
+<li class="ts3_mbtn2"><a href="?mod=fund&code=order">结算记录</a></li>
+<li class="ts3_mbtn1"><a href="?mod=fund&code=money">结算金额明细</a></li>
+<li class="ts3_mbtn2"><a href="?mod=list&code=ckticket">{TUANGOU_STR}券验证</a></li>
+</ul>
+</div>
+<div class="t_area_out">
+<div class="t_area_in">
+<ul class="nleftL">
+<font style="font-size:20px;">结算金额明细</font>
+</ul>
+<div class="nleftL">
+<style>td.line{text-align:center;border-bottom:1px dashed #aaa;height:69px;}</style>
+<table style="width:100%">
+<tr style="text-align:center;height:33px;background: #f2f2f2;">
+<td>资金到帐日期</td>
+<td>订单号</td>
+<td>{TUANGOU_STR}券号</td>
+<td>消费金额</td>
+<td>分成比例</td>
+<td>结算金额</td>
+</tr>
+<!--{loop $list $one}-->
+<tr>
+<td class="line">{echo date('Y-m-d H:i:s', $one['addtime'])}</td>
+<td class="line">{$one['orderid']}</td>
+<td class="line">{$one['number']}</td>
+<td class="line">{$one['deal_money']}元</td>
+<td class="line">{$one['salary_pre']}</td>
+<td class="line">{$one['salary_money']}元</td>
+</tr>
+<!--{/loop}-->
+</table>
+<div class="pagem product_list_pager">{~page_moyo()}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="site-ms__right">
+<!--{template seller_widget}-->
+</div>
+<!--{template footer}-->

@@ -1,0 +1,43 @@
+<!--{template header}-->
+<div class="site-ms">
+<div class="site-ms__left">
+<!--{template my_menu}-->
+<div class="t_area_out" style="border:none;">
+<div class="t_area_in">
+<ul class="nleftL">
+<div style="float:right;">
+<li>分类：</li>
+<li class="liL_{$_s1}"><a href="?mod=me&code=favorite">全部</a></li>
+<li class="liLine">|</li>
+<li class="liL_{$_s2}"><a href="?mod=me&code=favorite&status=0">进行中收藏</a></li>
+<li class="liLine">|</li>
+<li class="liL_{$_s3}"><a href="?mod=me&code=favorite&status=1">已结束收藏</a></li>
+</div>
+</ul>
+<div class="nleftL">
+<table id="report" style="text-align:center;">
+<tr>
+<th>{TUANGOU_STR}项目</th>
+<th>金额</th>
+<th>状态</th>
+<th style="border-right:none;">操作</th>
+</tr>
+<!--{loop $list $i $value}-->
+<tr>
+<td width="50%"><a href="{eval echo ini('settings.site_url').'/view-'.$value['id'];}" target="_blank">{$value['flag']}</a></td>
+<td width="15%">{$value['nowprice']}</td>
+<td width="15%">{if $value['overtime'] < $timestamp}已过期{else}进行中{/if}</td>
+<td width="20%"><a href="{eval echo ini('settings.site_url').'/view-'.$value['id'];}" target="_blank">购买</a>&nbsp;&nbsp;<a href="?mod=me&code=favorite&op=cancle&id={$value['id']}">删除</a></td>
+</tr>
+<!--{/loop}-->
+</table>
+<div class="pagem product_list_pager">{~page_moyo()}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="site-ms__right">
+{~ui('widget')->load()}
+</div>
+</div>
+<!--{template footer}-->

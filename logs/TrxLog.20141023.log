@@ -1,0 +1,253 @@
+正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 07:36:41 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=rxyzc345jiilq255pjruoruq; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102375387</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140498018397429654</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>QHdBju5ttuArOq1R6UD7YzJEAZW2gh2TpUJFclh3pbTo1EYTIHDkbOr5AGWJi+WfHDWmr30iuTFVoFyxXr3Qkd2PB2h35TSCuoJxbCWUNc5vatJ/l7LeWawQGzKY3fmzPJZzLlFcYw7hk7Vom1R8PldfPivfIjiD2DksoAOZ9kI=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 07:40:29 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=gohe1555ygefrlmjjjegltjs; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102312613</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140500294770797594</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>FfsuR1xOuwtJ16oPzsEE+puN1FbGDKK9EPP3hN57ZM6A2Eu/LPImZ8mTsKRunXHHeFe9Vdo39BUCpMBVqT8TAd2WD1PeXtHUSDOIcCpeepPmlpdTOgB/l2Fv7oSG1daZ2jjdSJTaRDvGhjy3FFV2tW5xhXSsr0wSudEgG3y+OhQ=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 07:42:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=vmzcvm55t4hgiem4wxg5mdey; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102346771</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140501591007642035</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Su0OPq2cTcKGj6fKuPAhA/tyiYbN23aRoIf8HdXzZhxsZv0WyreCV79e4Svb7Mu3ZFXnnnWSLU/OdcbN6MCdZXwBnQRF7dNKQVVV3RKbd+JsahT5+qu6KvXsf7wKM1fGvEza6xwtm81JvRbRmPKXoUtG1k0EnjL4usmIFqtLyOw=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 07:49:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=5nxmkl55cwcjcc55hmpybi45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102318958</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140505798840464467</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>cQAOI6Dw5cJBUmZeiSCQQqhvae99uU6UUQ1chVX7UAxzsGOOpqVyZr/uc2IwfORGfg85l23+uN78a3n09RA52nQO0f09yarK6kk0nNorkclIstOxdhTicp3r1RH9a9QJprYBYulrrRotiyHqpdEiUGYiGsF5WHuwKFc8n1phM5o=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 07:51:31 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=5fwcxcejg3ll5t45e3gscfqz; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102333765</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140506917578226976</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Dtfx8Ffv5XAagfJMd3wVj9JD5LrxNeXTvqiS4mlmCR6oQnkpurnK5C5pL5Bg+h+GssHy/n1drAPRhkyt73ws1eDE1wcuJQXyIQzWOI3Vid1NfXAyXmSALvGFfUU08R9T7kdWCqM+Vf8nvaRiAmsyOWugsiUg+/Efl/1DAcfunLY=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 07:53:16 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=epujlbjkiuff1k2erui3s0u4; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102350745</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140507967090727893</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2rinjLpxCOdEWhQFLLUM62YvrVldFaYR5WuPyKWsd2HUa6zH46vbd3/60PSPxHGnF3c96oKsGdfwaRJKNO9N9yEisnaDjwPZUxA2Fuh3QlerMOWSlFET/q8NGCAYGfj7DxvKiixwafHeQpaIWKQtxo5mHD7c6+KjPWZrWOjxVSE=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 07:54:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=oopxul45as35b3urk4nztcmi; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102344214</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140508797083209758</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>W5pekn8m3jt8m5ge82IPrKg7/cDYWsq5dhF6HOQ+hL3pj3so+q+FQiUeTEo3r21z3Ixzbj1H4dnAjKf46U0SxuC+83V+hh2PtwN6lqFmd285EgE10VCH8eZoY+gNwtaX1N7gfXycV4Y8OSZUaq2MfvjJZMyAUgJ9whEbfL98r/g=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:01:55 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=zm42qmbypyfknczz3nnnqo55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102349591</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140513151649005881</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>dMotuaUj2OhQiSB6JLgyGPKlNewURqgYDZfmgGzT48Y44W2hnTuKfW38Vju2EwRjdL2sqIX0DZrO0in4W+mNQ/cL0Q8QrI0xF/rTQ4ajgAc9DTtxrZOhp84ES1/5aUT1/lmWzjH4bWMVREHz5/6Zo7eimOo0NDZ9PTnxs8H2IP4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:04:05 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=rtz4gkfq2lyquxr14ldwjq45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102342978</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140514454905889570</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>0KeWcol+UXw3DuMs/JXknInaN6Nn84cxCW76+UPNzrLRx8eJdTaZGA9ksxmINhEgIh+xgK10mi4wXC588f5lNqW13aIrnpre76gPMK401g1+ZeiGPGbH+5WQAWEBWq+T/vmiUA2x0IOhyU70TcbxMlQztTiAtli44rC8CQeJjFo=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:10:09 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=s12xby452wxa2e21chvbxq55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=3915180810.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102354303</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140518091358015536</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>fN+Ky9o0wCPpE90ihGITHj9076qpH0PRRS+PT90LGzjRtKFQ7xBn/t11F6xaeVchf+IhOxMwF2c6jOexPiltzhBRCpXYaYpCY6CcLKk95ehacaLEm6bOHvdMkMXrPT/CEJuKzs/mw90zkMVZcDTuRZTr0nmI+h51IRW6COXJEZc=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:11:43 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=gfqr4defpvptc5nojvshov45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=3915180810.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102380679</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140519038151984214</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>lUKF2j6H5EJV58F+62g8HgmLdJVeyO82z4QwDiwlvIKzM/bebouLHB5VphPALFonHNrC5WlVWKdIH28OsbdV9dchS2WO98vH9rarWuAaqRvMp0TG/cl82NZPBeYyQqfl/PprXg265Ilh1WymE3RCI8iZvpkvZLM9GOAj1DENPlk=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:13:49 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=vwg33g2ixlge2tnuxovra255; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=3915180810.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102345303</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140520294672141364</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>o8UbOADK7vkFmyUr9EZPl82wZwt/AEjUYsRsX2ZrXfpcgil1lxjH3zHFbQ87fIKyl0U5IQMK4s3pCbycZGKVPLX56ph57uaNcxUNROnJifPiuQdMzF1/13dDYes6km/lJwj6TtdgsZ8wqOqS5/Nk+PBhYO3ZoCo+o8wLVUjtW54=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:17:36 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=mvxv0prn45xwwpr5jbl3a4an; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=3965512458.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102364691</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140522565486759251</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2B575T0C0b+Nuh1lU7Y3KfstvHRf2XxoHdr9aCvz/hTrWqdUzVuizVBirxADJ+xa/XuVV3xszT0gBmwyXxRMLwzE9CewiqfiK7R7Z74eq6ca7btLU8WqHl6VMKCQniOG0xsp4GAW3akkaP2KrYPolnmqdtCZT9HcEhmm2QwfzGU=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:19:09 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=noe32x555ip35o55einlbx45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=3965512458.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102376379</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140523490190164851</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>OwV2Hgsdbc5S3VG4oxxlatMYIvveMpMY+yHzfCs94unPqnefGPM6unc3o7vfl4go+PhlaoChkc0z1/aFIvBLM3vrUVeOewWAl5ry0kWhLYiMowEF0HPgS5q/h+kj/IZmtpkr68gMQ0K4io9VG6uj0Pr4U68qDzWyG0WaSv27VrE=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:24:11 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=dp2ckr45b3glbu45n4t0e145; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=962915082.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102353088</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140526512736773222</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>njR7fAtUhlK+eVQuzRYBqnCde7/FWjRS0Y+UeLLCIjaQ5AM5pnspn6K8aaqU0ke/DlkYNdIFUY0dkcPPdA+8HuZE73WWHoo9ixvPHkWMA/vZKhgYrrBhusqKObZD2zwWttKFazhGBO5BLHkDxFhgpFipCFlY8tu4fqCCDz09v8A=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:26:20 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=zmjcjurhje4q1445ps231d2m; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=962915082.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102314215</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140527807828520246</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>5X26Q5hz3N26Td2ah+gcOxY5rLC2aQGJaYj5F/JkL1nivcye/ZG6AO80ybKStsroG3gj5VFa7ij6umN0XYxDxP884k6jJebWSmA8ZFGiVVfr27dBj2+PF0fYc/EgsB43VLr9jnqZb8oEtqrDLfyHsWljV3VqT4/x/CcLjJJ46O8=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:28:07 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=zlcp4ke3clf54kaceoeuagiy; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=962915082.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102375009</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140528876691718979</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SRkOONu+laUAP3s2yEYk42T9j0/MlKJX5siWE18Xi/InDZYp75pnmXVr46zEaiGtuXGkbDfTzgocaXKHGOpL0a6aMdSgMCuuq+mj/nU6YSblp9D9Uctr4vsntMkXE6SEXUP2Vi0hFbWpGRtUoMhaqTDcrdS5NtnNHjB2uZvBHbU=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:32:05 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=pdtjwy55bizlni3o3geigb2d; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102366363</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140531255625923094</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Bkpm0wJo8KJycGcGTaLio139M3xry+PVi27N/kh4wUGtTeALMDq6b/tYLw1PROmraU8d5dX4kBBAqipgiWOF+VKBnqHmSoFKG5qgJCltOWVvab3l1kgkS9lM9b7wv4pi4FFWMOMnorBSzySkubUAutcL997CWc7LG7Vmc4zTQEQ=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:33:58 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=po5s5345idvp0q55u0navh55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102368478</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140532381392860025</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>FJTLAbrGl1kZ0Vcxbvp568ASep2uHHxIX8HFlxEn9S9HDUIbgZnSZPAuPPPsf+SngscMaE3i3AMpnP5q/mTuXlW2VLJzQG9afCoXxclvtb5JXO+ZDM14vuera05Mg+WijVAY+6UTVZUi44QL0fpi3J7isRcdkUHM34f7zGYC4RM=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:35:31 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=4ue21tmxg4utclzc2li3nfjx; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102310312</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140533316856252545</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>02h/7xuexSlEE5okclradQm1Op0wuAznhjRoeYzuh1aG0DjEiNOaNP9nN6UabzIxYr6kORkD0LW3vpY/T64xSjg0znSTl+KSL62AynPukh0O/z+vSWEWLPVMGqdLeUfmRDHuZnb7sRkv4s1BTzkhizboSzrOhUsB7kvrPJwBNp8=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Thu, 23 Oct 2014 08:37:59 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=hycavh45pfu4hh55s4ojniab; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014102317551</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14140534795894501192</PaymentURL><OrderAmount>78.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ZchNK8cp9XRhLKbo+XaltwqKqW9UXwLouY/YgYMc9EZ6FF/LF9GOIePZm+xJUIN4UvDA8gqJdmXN9eBL+Dd+urvY3DjOMOjTGUzYv05tKQm6EFGffn8cPog+wnYyEG9bmv+JFSbKNy0TmdVroCDEJrzw/7mTvdiePox2j+beW+M=</Signature></MSG>正确

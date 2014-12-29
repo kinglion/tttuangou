@@ -1,0 +1,7 @@
+<!--{template @admin/header}--> <form method="post" action="admin.php?mod=tttuangou&code=mailcron&op=dels"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="8">邮件队列&nbsp;&nbsp;&nbsp;<a href="?mod=tttuangou&code=mailcrondo">[ 点击此处立即发送这些邮�?]</a> </td> </tr> <!--{if !empty($cron)}--> <tr> <td colspan="8">
+删除最�?nbsp;
+<input name="timec" type="text" size="3" /> <select name="timeu"> <option value="s">秒钟</option> <option value="m">分钟</option> <option value="h">小时</option> </select>&nbsp;
+添加的队�?<input name="bottom" type="submit" id="bottom" value=" 执行 " /> </td> </tr> <!--{/if}--> <tr> <td width="10%">队列编号</td> <td width="15%">收信人地址</td> <td width="10%">收信人名�?/td> <td>邮件标题</td> <td width="18%">添加时间</td> <td width="10%" align="center">管理</td> </tr> <!--{if empty($cron)}--> <tr><td colspan="8">暂时没有邮件需要发送�?BR></td></tr> <!--{/if}--> <!--{loop $cron $i $value}--> <tr onmouseover="this.className='tr_hover'" onmouseout="this.className='tr_normal'"> <td>{$value['id']}</td> <td>{$value['address']}</td> <td>{$value['username']}</td> <td title="{$value['title']}">{eval echo substr($value['title'],0,30);}...</td> <td>{eval echo date('Y-m-d H:i:s', $value['addtime']);}</td> <td align="center"> <a href="admin.php?mod=tttuangou&code=mailcron&op=del&id={$value['id']}">删除</a> </td> </tr> <!--{/loop}--> </table>
+{$page_arr}
+</form>
+{template @admin/footer}

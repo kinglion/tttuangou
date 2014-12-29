@@ -1,0 +1,146 @@
+<!--{template @admin/header}--> <style type="text/css">
+.status-box a {
+color: #000;
+text-decoration: none;
+padding: 2px 3px;
+border: 1px solid #ccc;
+}
+.status-box a.selected {
+color: #688;
+background: #ccc;
+border: 1px solid #999;
+}
+.replys {
+border: 1px dashed #ccc;
+padding: 2px 3px;
+color: #999;
+}
+</style> <div class="header"> <a href="?mod=comment&code=vlist">评论列表</a> / [ <a href="?mod=comment&code=config">功能设置</a> ]
+</div> <table id="orderTable" cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <thead> <tr class="tr_nav"> <td width="120">产品</td> <td width="50">用户</td> <td width="30">评分</td> <td>内容</td> <td width="108">状�?/td> <td width="33">排序</td> <td width="110">管理</td> </tr> </thead> <tbody> <!--{loop $comments $one}--> <tr id="comment-tr-{$one['id']}"> <td> <a href="index.php?view={$one['product_id']}" target="_blank">{$one['product']['flag']}</a> </td> <td>
+{if $one['user_id']}
+{echo app('ucard')->load($one['user_id'])}
+{else}
+{$one['user_name']}
+{/if}
+</td> <td>
+{$one['score']}
+</td> <td>
+{if strlen($one['content']) > 64}
+{echo cut_str($one['content'], 64, '<a href="#comment-view" onclick="comment_detail_view('.$one['id'].');return false;">...查看更多</a>')}
+{else}
+{$one['content']}
+{/if}
+{if $one['reply']}
+<div class="replys">
+{$one['reply']}
+</div>
+{/if}
+</td> <td class="status-box status-ctrl"> <a cid="{$one['id']}" cst="auditing" class="{if $one['status']=='auditing'}selected{/if}">待审</a> <a cid="{$one['id']}" cst="approved" class="{if $one['status']=='approved'}selected{/if}">通过</a> <a cid="{$one['id']}" cst="denied" class="{if $one['status']=='denied'}selected{/if}">拒绝</a> </td> <td class="status-box toped-ctrl"> <a cid="{$one['id']}" class="{if $one['toped']==1}selected{/if}">置顶</a> </td> <td class="manager-ctrl"> <a href="#comment-modify" cid="{$one['id']}" action="modify">[ 编辑/回复 ]</a> <a href="#comment-delete" cid="{$one['id']}" action="delete">[ 删除 ]</a> </td> </tr> <!--{/loop}--> </tbody> <tfoot> <tr> <td colspan="7">{~page_moyo()}</td> </tr> </tfoot> </table> <script type="text/javascript">
+$(document).ready(function(){
+$.each($('.status-ctrl a'), function(i, dom){
+$(dom).attr('href', '#comment-status-change');
+$(dom).bind('click', status_box_click);
+});
+$.each($('.toped-ctrl a'), function(i, dom){
+$(dom).attr('href', '#comment-toped-change');
+$(dom).bind('click', toped_box_click);
+});
+$.each($('.manager-ctrl a'), function(i, dom){
+$(dom).bind('click', manager_link_click);
+});
+});
+function status_box_click(event)
+{
+var dom = event.target;
+var cg_id = $(dom).attr('cid');
+var cg_status = $(dom).attr('cst');
+var ls_status = $('.status-ctrl a[cid='+cg_id+'].selected').attr('cst');
+if (ls_status != cg_status)
+{
+$.notify.loading('正在同步状�?..');
+$.get('admin.php?mod=comment&code=status&op=sync&id='+cg_id+'&status='+cg_status, function(result){
+$.notify.loading(false);
+$('.status-ctrl a[cid='+cg_id+'][cst='+ls_status+']').removeClass('selected');
+$('.status-ctrl a[cid='+cg_id+'][cst='+cg_status+']').addClass('selected');
+});
+}
+return false;
+}
+function toped_box_click(event)
+{
+var dom = event.target;
+var cid = $(dom).attr('cid');
+var dst = $(dom).hasClass('selected') ? 'false' : 'true';
+$.notify.loading('正在同步排序...');
+$.get('admin.php?mod=comment&code=toped&op=sync&id='+cid+'&switch='+dst, function(result){
+$.notify.loading(false);
+if (dst == 'true')
+{
+$(dom).addClass('selected');
+}
+else
+{
+$(dom).removeClass('selected');
+}
+});
+}
+var comment_mgr_box = null;
+function manager_link_click(event)
+{
+var dom = event.target;
+var action = $(dom).attr('action');
+var cid = $(dom).attr('cid');
+if (action == 'delete')
+{
+artDialog.confirm('确认删除吗？', function(){
+comment_mgr_box = artDialog.load('admin.php?mod=comment&code=ajax&op='+action+'&id='+cid, {title:action});
+});
+}
+else
+{
+comment_mgr_box = artDialog.load('admin.php?mod=comment&code=ajax&op='+action+'&id='+cid, {title:action});
+}
+return false;
+}
+function comment_mgr_form_submit()
+{
+var url = $('#comment-mgr-form').attr('action');
+var formhash = $('#comment-mgr-form input[name=FORMHASH]').val();
+var fields = {'FORMHASH':formhash};
+$.each($('#comment-mgr-form .ca-items'), function(i, input){
+fields[$(input).attr('name')] = $(input).val();
+});
+$.notify.loading('正在保存数据...');
+$.post(url, fields, function(result) {
+$.notify.loading(false);
+if (result == 'ok')
+{
+comment_mgr_box && comment_mgr_box.close();
+$.notify.success('保存成功�?);
+}
+else
+{
+$.notify.failed(result);
+}
+});
+}
+function comment_delete_result(result, id)
+{
+if (result == 'ok')
+{
+comment_mgr_box && comment_mgr_box.close();
+$.notify.success('删除成功�?);
+var dom = $('#comment-tr-'+id);
+dom.css({'position':'absolute','left':dom.offset().left,'top':dom.offset().top}).animate({'top':-123}, function(){ dom.remove() });
+}
+else
+{
+$.notify.failed(result);
+}
+}
+function comment_detail_view(id)
+{
+artDialog.load('admin.php?mod=comment&code=ajax&op=view&id='+id, {title:'查看评价内容'});
+}
+</script>
+{template @admin/footer}

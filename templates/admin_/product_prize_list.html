@@ -1,0 +1,35 @@
+<!--{template @admin/header}-->
+{~ui('loader')->css('@jquery.thickbox')}
+{~ui('loader')->js('@jquery.thickbox')}
+<div class="header"> <a href="?mod=prize&code=vlist" style="float:left; display: block;">抽奖活动列表 </a><a href="?mod=product&code=add&~iiframe=yes" class="b_add" style="text-decoration:none;">添加抽奖 </a> </div> <table id="productTable" cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <thead> <tr class="tr_nav"> <td width="22%">产品名称（悬浮查看长标题�?/td> <td width="22%">统计概览</td> <td width="13%">运行状�?/td> <td width="12%">显示设定</td> <td width="12%">订阅通知</td> <td width="12%">管理操作</td> </tr> </thead> <tbody> <!--{loop $list $one}--> <tr> <td title="{$one['name']}"> <a href="{conf site_url}/?view={$one['id']}" target="_blank">{$one['flag']}</a> </td> <td>
+当前抽奖人数：{echo logic('prize')->allCount($one['id'])}&nbsp;&nbsp;<font color="#808080">(含虚拟人�?</font><br/>
+实际抽奖人数：{echo logic('prize')->allCount($one['id'], false)}<br/>
+受邀请新用户：{echo logic('prize')->sigCount('pid = '.$one['id'].' AND remark LIKE "邀请用�?"')}
+</td> <td>
+{echo logic('product')->STA_Name($one['status'])}
+{if $one['status'] == PRO_STA_Normal}
+<br/>{$one['succ_total']} 人成团，差{$one['succ_remain']}�?{elseif $one['status'] == PRO_STA_Failed}
+{elseif $one['status'] != PRO_STA_Refund}
+<br/>
+{if $one['type']=='ticket'}
+<a href="?mod=coupon&code=vlist&search=pid:{$one['id']}&ssrc=product_name&sstr={$one['flag']}">[ 查看{TUANGOU_STR}�?]</a>
+{elseif $one['type']=='stuff'}
+<a href="?mod=delivery&code=vlist&alsend=no&search=pid:{$one['id']}&ssrc=product_name&sstr={$one['flag']}">[ 发货管理 ]</a>
+{elseif $one['type']=='prize'}
+<a href="?mod=prize&code=mgr&pid={$one['id']}">[ 抽奖管理 ]</a>
+{/if}
+{/if}
+</td> <td>
+{if $one['display']==PRO_DSP_None}
+不在前台显示
+{elseif $one['display']==PRO_DSP_City}
+限定城市显示<br/>({echo logic('misc')->City('name', $one['city'])})
+{elseif $one['display']==PRO_DSP_Global}
+全部城市显示
+{/if}
+<div style="color:#808080;" title="显示优先�?>TOP +{$one['order']}</div> </td> <td> <a href="?mod=subscribe&code=generate&from=product&idx={$one['id']}&type=sms&keepThis=true&TB_iframe=true&height=300&width=600" class="thickbox" title="短信订阅通知"><img src="templates/default/images/sms_edit.png" /></a>&nbsp;
+<a href="?mod=subscribe&code=generate&from=product&idx={$one['id']}&type=mail&keepThis=true&TB_iframe=true&height=300&width=600" class="thickbox" title="邮件订阅通知"><img src="templates/default/images/email.png" /></a> </td> <td> <a href="?mod=prize&code=nums&op=list&pid={$one['id']}">[ 号码列表 ]</a><br/> <a href="?mod=product&code=edit&id={$one['id']}&~iiframe=yes">编辑</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="?mod=product&code=del&id={$one['id']}" onclick="return confirm('删除产品会清空所有相关的订单，{TUANGOU_STR}券，支付，发货等数据！\n此操作不可恢复！\n\n您确定要删除吗？');">删除</a> </td> </tr> <!--{/loop}--> <!--{if !$list}--> <tr> <td colspan="6"> <font style="color:#CA3434;font-weight:bold;">类似于拉手网的抽奖功能，可以激励老用户推广，吸引新用户，提升网站购买量，赶快来添加一个试试吧�?/font> <br/>
+（添加抽奖时产品类型选择“抽奖”即可）
+</td> </tr> <!--{/if}--> </tbody> <tfoot> <tr> <td colspan="6">{~page_moyo()}</td> </tr> </tfoot> </table>
+{template @admin/footer}

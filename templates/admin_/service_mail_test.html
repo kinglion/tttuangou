@@ -1,0 +1,15 @@
+<!--{template @admin/header}--> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="2">邮件测试结果</td> </tr> <tr> <td bgcolor="#F4F8FC">邮箱标记�?/td> <td>{$info['server']['flag']}</td> </tr> <tr> <td bgcolor="#F4F8FC">邮箱名称�?/td> <td>{$info['server']['name']}</td> </tr> <tr> <td bgcolor="#F4F8FC">权重值：</td> <td>{$info['server']['weight']}</td> </tr> <tr> <td bgcolor="#F4F8FC">信箱配置�?/td> <td> <pre>
+{eval print_r($info['config'])}
+</pre> </td> </tr> <tr> <td bgcolor="#F4F8FC">发送结果：</td> <td>
+{if $info['result'] == 1}
+<font color="#008000">发送成功！</font>
+{else}
+<font color="#ff0000">{$info['result']}</font>
+{/if}
+</td> </tr> <tr> <td bgcolor="#F4F8FC">调试信息�?/td> <td> <pre>
+{loop $info['debug'] $debug}
+--- {$debug['timer']} ---
+{$debug['msg']}
+{/loop}
+</pre> </td> </tr> </table>
+{template @admin/footer}

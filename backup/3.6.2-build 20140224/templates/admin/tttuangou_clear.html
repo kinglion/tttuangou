@@ -1,0 +1,33 @@
+<!--{template @admin/header}--> <script type="text/javascript" src="./static/js/jquery.js"></script> <script type="text/javascript">
+function submitconfirm()
+{
+if (confirm('您确定要执行初始化操作码�?))
+{
+return true;
+}
+else
+{
+return false;
+}
+}
+$(document).ready(function(){
+$('input[type="checkbox"]').click(function(event){
+if (event.target.checked)
+{
+$('#'+event.target.name).css('color', 'red');
+}
+else
+{
+$('#'+event.target.name).css('color', 'black');
+}
+});
+var iw = $('form').width();
+iw -= 60;
+var ih = $('form').height();
+{if $clear_locked}
+$('#mask').css({width:iw+'px',height:ih+'px'});
+$('#mask').css('display', '');
+{/if}
+});
+</script> <div id="mask" style="display:none;position:absolute;padding:30px;padding-top:120px;color:#fff;background:#000;font-size:20pt;text-align:center;filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8;"><b>请按照如下操作以解开初始化锁定：<br/><br/>1，登录FTP，打开站点主目�?br/>2，删除data目录下的data.clear.lock文件<br/>3�?input  style="font-size:16pt;padding:5px;" type="button" onclick="javascript:$('#mask').slideUp();" value=" 点击关闭本提�?" /></b><br/><br/>（每次初始化后都需要重新执行以上操作）</div> <form action="{$action}" method="post" enctype="multipart/form-data" onsubmit="return submitconfirm()"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="2">数据初始化：</td> </tr> <tr> <td width="20%">团购相关数据�?/td> <td> <input type="checkbox" name="data_tuan" /> <font id="data_tuan">包含产品（产品图片），订单，团购券，物流，返利信息，商家数据</font> </td> </tr> <tr> <td width="20%">营销相关数据�?/td> <td> <input type="checkbox" name="data_market" /> <font id="data_market">包含邮件订阅，短信订�?/font> </td> </tr> <tr> <td width="20%">日志相关数据�?/td> <td> <input type="checkbox" name="data_log" /> <font id="data_log">包含各种系统运行日志</font> </td> </tr> <tr> <td width="20%">推送相关数据：</td> <td> <input type="checkbox" name="data_mail" /> <font id="data_mail">包含推送队列，日志，模�?/font> </td> </tr> <tr> <td width="20%">留言相关数据�?/td> <td> <input type="checkbox" name="data_talk" /> <font id="data_talk">包含在线问答，建议与反馈</font> </td> </tr> <tr> <td bgcolor="#F4F8FC" colspan="2"> <h1>警告�?/h1> <h2><font color="red">数据初始化后不可还原，请谨慎操作�?/font></h2> </td> </tr> </table> <br> <center> <input type="submit" class="button back2" name="submit" value="开始初始化"> </center> </form>
+{template @admin/footer}

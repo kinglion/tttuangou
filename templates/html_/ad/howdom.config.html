@@ -1,0 +1,119 @@
+<!--{template @admin/header}-->
+<form action="?mod=ad&code=config&op=save&flag={$flag}" method="post" enctype="multipart/form-data">
+<table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder">
+<tr class="header">
+<td colspan="2">
+<a href="?mod=ad&code=vlist">返回广告列表</a>
+</td>
+</tr>
+<tr>
+<td width="12%"></td>
+<td></td>
+</tr>
+<tr class="tips">
+<td colspan="2">多图列表�?/td>
+</tr>
+{loop $cfg['list'] $id $one}
+<tr id="ad_tr_{$id}">
+<td class="td_title" style="border-right: 2px solid #ccc;">
+{$id}<br/>
+<a href="#ad_del" onclick="ad_del('{$id}');return false;">&lt; 删除 &gt;</a>
+</td>
+<td>
+<div id="div_pic_{$id}">广告图片�?input type="hidden" name="data[list][{$id}][image]" value="{$one['image']}" /><a href="#ad_load_img" onclick="ad_load_image('{$one["image"]}');return false;">{$one['image']}</a> &gt;&gt; <a href="#ad_upload_img" onclick="ad_upload_show('{$id}');return false;">替换图片</a></div>
+<div id="div_up_{$id}" style="display: none;">广告图片�?input type="file" name="file_{$id}" /> * 图片分辨率为 980 x 100</div>
+文字说明�?input type="text" name="data[list][{$id}][text]" value="{$one['text']}" size="30" /><br/>
+链接地址�?input type="text" name="data[list][{$id}][link]" value="{$one['link']}" size="50" />
+<select name="data[list][{$id}][target]"><option value="_self"{if $one['target']=='_self'} selected="selected"{/if}>当前页面打开</option><option value="_blank"{if $one['target']=='_blank'} selected="selected"{/if}>新建窗口打开</option></select><br/>
+显示排序�?input type="text" name="data[list][{$id}][order]" value="{$one['order']}" size="10" /> * 数字越大，显示越靠前
+</td>
+</tr>
+{/loop}
+<tr id="ad_pox_add_link">
+<td></td>
+<td><a href="#ad_add" onclick="ad_add_new();return false;">&lt; 添加图片广告 &gt;</a></td>
+</tr>
+<tr>
+<td><a href="#ad_config" onclick="ad_dsp_config();return false;">显示设置</a> &gt;&gt;</td>
+<td></td>
+</tr>
+<tr id="ad_tr_dsp_config" style="display:none;">
+<td></td>
+<td>
+切换间隔时间�?input type="text" name="data[dsp][time]" value="{$cfg['dsp']['time']}" size="2" /> �?br/>
+图片切换方向�?label><input type="radio" name="data[dsp][switchPath]" value="top" {if $cfg['dsp']['switchPath']=='top'}checked="checked"{/if} />向上</label>&nbsp;&nbsp;<label><input type="radio" name="data[dsp][switchPath]" value="left" {if $cfg['dsp']['switchPath']=='left'}checked="checked"{/if} />向左</label><br/>
+是否显示文字�?label><input type="radio" name="data[dsp][showText]" value="true" {if $cfg['dsp']['showText']=='true'}checked="checked"{/if} />�?/label>&nbsp;&nbsp;<label><input type="radio" name="data[dsp][showText]" value="false" {if $cfg['dsp']['showText']=='false'}checked="checked"{/if} />�?/label><br/>
+是否显示按钮�?label><input type="radio" name="data[dsp][showButtons]" value="true" {if $cfg['dsp']['showButtons']=='true'}checked="checked"{/if} />�?/label>&nbsp;&nbsp;<label><input type="radio" name="data[dsp][showButtons]" value="false" {if $cfg['dsp']['showButtons']=='false'}checked="checked"{/if} />�?/label>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="submit" value="�?�? class="button" />
+</td>
+</tr>
+</table>
+</form>
+<script type="text/javascript">
+var __url_base = '{~ini("settings.site_url")}';
+var __ad_tpl = '\
+<tr id="ad_tr_<#ID#>">\
+<td class="td_title" style="border-right: 2px solid #ccc;">\
+<#ID#><br/>\
+<a href="#ad_del" onclick="ad_del(\'<#ID#>\');return false;">&lt; 删除 &gt;</a>\
+</td>\
+<td>\
+<input type="hidden" name="data[list][<#ID#>][image]" value="templates/html/ad/images/hm.<#ID#>.gif" />\
+广告图片�?input type="file" name="file_<#ID#>" /> * 图片分辨率为 980 x 100<br/>\
+文字说明�?input type="text" name="data[list][<#ID#>][text]" value="" size="30" /><br/>\
+链接地址�?input type="text" name="data[list][<#ID#>][link]" value="" size="50" />\
+<select name="data[list][<#ID#>][target]"><option value="_self">当前页面打开</option><option value="_blank">新建窗口打开</option></select><br/>\
+显示排序�?input type="text" name="data[list][<#ID#>][order]" value="" size="10" /> * 数字越大，显示越靠前\
+</td>\
+</tr>';
+function ad_add_new()
+{
+var rndID = ad_random_id();
+var ad_tpl = __ad_tpl.replace(/<#ID#>/ig, rndID);
+$('#ad_pox_add_link').before(ad_tpl);
+}
+function ad_del(aid)
+{
+if (!confirm('确认删除吗？'))
+{
+return;
+}
+$('#ad_tr_'+aid.toString()).remove();
+}
+function ad_random_id()
+{
+var salt = '0123456789qwertyuioplkjhgfdsazxcvbnm';
+var str = '';
+for(var i=0; i<6; i++)
+{
+str += salt.charAt(Math.ceil(Math.random()*100000000)%salt.length);
+}
+return str;
+}
+function ad_load_image(path)
+{
+$.notify.loading('loading...');
+var url = __url_base+'/'+path;
+var img = document.createElement('img');
+img.src = url;
+img.onload = function() {
+$.notify.loading(false);
+art.dialog({title: url, content: '<img src="'+url+'" />', width: this.width, height: this.height, fixed: true, padding: '0 0'});
+};
+}
+function ad_upload_show(aid)
+{
+$('#div_pic_'+aid.toString()).hide();
+$('#div_up_'+aid.toString()).show();
+}
+function ad_dsp_config()
+{
+$('#ad_tr_dsp_config').toggle();
+}
+</script>
+<!--{template @admin/footer}-->

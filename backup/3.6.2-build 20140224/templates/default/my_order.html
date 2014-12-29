@@ -1,0 +1,117 @@
+<!--{template header}-->
+<div class="site-ms">
+<div class="site-ms__left">
+<!--{template my_menu}-->
+<div class="t_area_out">
+<div class="t_area_in">
+<script type="text/javascript">
+$(document).ready(function(){
+$("#report tr:odd").addClass("odd");
+$("#report tr:not(.odd)").hide();
+$("#report tr:first-child").show();
+$("#report tr.odd").click(function(){
+$(this).next("tr").toggle();
+$(this).find(".arrow").toggleClass("up");
+});
+});
+//jquery 模拟点击打开新窗�?$("a[rel=external]").attr('target', '_blank');
+function expressconfirm(url)
+{
+if (confirm('卖家已经发货完毕，请您尽早确认收货！'))
+{
+window.location = url;
+}
+}
+</script>
+<ul class="nleftL">
+<div style="float: right;">
+<li>分类:</li>
+<li class="liL_{$_s1}"><a href="?mod=me&code=order">全部</a></li>
+<li class="liLine">|</li>
+<li class="liL_{$_s2}"><a href="?mod=me&code=order&pay=1">已付�?/a></li>
+<li class="liLine">|</li>
+<li class="liL_{$_s3}"><a href="?mod=me&code=order&pay=0">未付�?/a></li>
+</div>
+</ul>
+<div class="nleftL">
+<table id="report">
+<tr>
+<th>团购项目</th>
+<th>数量</th>
+<th>总价</th>
+<th>订单状�?/th>
+<th style="border-right:none;">操作</th>
+</tr>
+<!--{loop $order_all $i $value}-->
+<tr>
+<td width="40%">
+<img id="img2" src="{echo imager($value['product']['imgs'][0], IMG_Small)}" style="width:120px;height:70px;" title="{$value['product']['flag']}" />
+</td>
+<td width="10%">{$value['productnum']}</td>
+<td width="15%">&yen; {echo $value['totalprice']}元{if $value['product']['type']=='stuff'}<br/>(含运�?{$value['expressprice']}�?{/if}</td>
+<td width="25%">
+{if $value['status'] != ORD_STA_Normal}
+<img src="images/no2.gif" />
+{if $value['status'] == ORD_STA_Cancel}
+已取�?{elseif $value['status'] == ORD_STA_Overdue}
+已过�?{elseif $value['status'] == ORD_STA_Faild}
+失败
+{elseif $value['status'] == ORD_STA_Refund}
+已经退�?{/if}
+{else}
+{if $value['product']['type'] == 'prize'}
+<a href="?mod=prize&code=view&pid={$value['productid']}">查看抽奖�?/a>
+{elseif $value['process'] == 'WAIT_BUYER_PAY'}
+<a href="?mod=buy&code=pay&id={$value['orderid']}">等待付款</a>
+{elseif $value['process'] == 'WAIT_SELLER_SEND_GOODS'}
+等待卖家发货
+{elseif $value['process'] == 'WAIT_BUYER_CONFIRM_GOODS'}
+<a href="{eval echo logic('pay')->ConfirmLinker($value)}">确认收货</a>
+{elseif $value['process'] == 'TRADE_FINISHED'}
+交易完成
+{elseif $value['process'] == '__CREATE__'}
+<a href="?mod=buy&code=order&id={$value['orderid']}">确认订单</a>
+{elseif $value['process'] == '__PAY_YET__'}
+已经付款
+{/if}
+{/if}
+<td width="10%"><div class="arrow"></div></td>
+</tr>
+<tr>
+<td colspan="6">
+<div class="order_info" >
+<h4>订单详情</h4>
+<p>
+<b>{$value['product']['name']}</b>
+<br/>{$value['product']['intro']}<br/><br/>
+订单编号：{$value['orderid']}
+<span style=" padding-left:30px; padding-right:30px;">	下单时间：{echo date('Y-m-d H:i:s', $value['buytime']);}</span>
+{if $value['expresstime']>0}
+快递单号：{$value['invoice']}
+{/if}
+<br/><b>购买附言�?/b>{$value['extmsg']}
+{if ($value['extmsg_reply'] != '')}
+<br/><b>卖家回复�?/b>{$value['extmsg_reply']}
+{/if}
+{if $value['attrs']}
+<br/><b>属性参数：</b><br/>
+{loop $value['attrs']['dsp'] $dsp}
+{$dsp['name']} - &yen; {$dsp['price']}�?br/>
+{/loop}
+{/if}
+</p>
+</div> 
+</td>
+</tr>
+<!--{/loop}-->
+</table>
+<div class="pagem product_list_pager">{~page_moyo()}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="site-ms__right">
+{~ui('widget')->load()}
+</div>
+</div>
+<!--{template footer}-->

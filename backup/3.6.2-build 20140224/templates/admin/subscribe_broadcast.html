@@ -1,0 +1,40 @@
+<!--{template @admin/header}-->
+{~ui('loader')->js('@jquery.thickbox')}
+{~ui('loader')->css('@jquery.thickbox')}
+<table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr> <td colspan="3" style="padding-left:0"> <div class="is_current">{$type}订阅群发</div>
+{loop $typeDfs $flag $name}
+<div class="{echo ($type != $name) ? 'is_button' : 'is_current'}"><a href="?mod=subscribe&&code=broadcast&class={$flag}">$name</a></div>
+{/loop}
+</td> </tr> <tr class="tips"> <td colspan="3">群发任务列表</td> </tr> <tr class="tr_nav"> <td>简�?/td> <td>更新时间</td> <td>管理</td> </tr>
+{loop $list $one}
+<tr> <td>{$one['intro']}</td> <td>{echo date('Y-m-d H:i:s', $one['update'])}</td> <td>
+{if $class != 'sms'}
+<font class="f_enable">[ <a href="javascript:pushd('{$class}', '{$one['id']}');">发�?/a> ]</font>
+{else}
+群发暂不可用
+{/if}
+{if $class == 'sms.closed'}
+<font class="f_enable">[ <a href="javascript:pushd_direct('{$class}', '{$one['id']}');">定投</a> ]</font>
+{/if}
+[ <a href="?mod=subscribe&code=broadcast&op=edit&id={$one['id']}">编辑</a> ]
+[ <a href="?mod=subscribe&code=broadcast&op=del&id={$one['id']}" onclick="return confirm('确认删除吗？');">删除</a> ]
+</td> </tr>
+{/loop}
+<tr class="banner"> <td colspan="3">
+{if $class != 'sms'}
+<a href="?mod=subscribe&code=broadcast&op=add&class={$class}">新建群发任务</a>（注意：正常的团购订阅通知，请�?A HREF="admin.php?mod=product">产品管理</A>页面的订阅通知中进行操作）
+{else}
+<font color="red">因通道调整，短信群发功能暂不可�?/font>
+{/if}
+</td> </tr> <tr class="footer"> <td colspan="3">
+{~page_moyo()}
+</td> </tr> </table> <script type="text/template" id="pushdSpace"> <div>
+请选择要推送的城市�?<select id="citySel">
+{loop logic('misc')->CityList() $city}
+<option value="{$city['cityid']}">{$city['cityname']}</option>
+{/loop}
+<option value="-1">- 全部 -</option> </select> <input type="button" onclick="pushdRequest()" value=" 提交 " class="is_submit_button" /> </div> </script> <script type="text/template" id="pushdSpace-Direct"> <div> <form id="pushd_form" method="post"></form>
+请输入推送的目标�?<br/>
+（一行一个号码）
+<br/> <textarea id="pushd_targets" style="width:100px;height:160px;"></textarea> <br/> <input type="button" onclick="pushdRequest_direct()" value=" 提交 " class="is_submit_button" /> </div> </script>
+{template @admin/footer}

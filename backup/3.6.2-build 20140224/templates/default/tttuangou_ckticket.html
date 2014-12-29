@@ -1,0 +1,111 @@
+<!--{template header}-->
+<div class="site-ms">
+<div class="site-ms__left">
+<div class="t_area_out">
+<div class="t_area_in">
+<p class="cur_title">团购券查�?/p>
+<div class="sect">
+<form action="{$action}" method="post" enctype="multipart/form-data">
+<div id="ck_product_name"></div>
+<div class="nleftL">
+<div class="field">
+<label>团购券编号：</label>
+<input type="text" id="number" name="number" value="" class="f_input input_h"  size="30">
+<span id="status" class="hint">请输入团购券编号</span>
+</div>
+<div class="field">
+<label>团购券密码：</label>
+<input type="text" id="password" name="password" class="f_input input_h"  size="30">
+</div>
+<div class="actbtn">
+<input type="button" id="btn_tickCheck" class="btn" name='submit'  value="查询">
+{if $sellerid > 0}
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" id="btn_tickUse" class="btn btn-primary" name='submit'  value="消费">
+{/if}
+</div>
+</div>
+<div class="nleftL">
+<div class="field">
+{eval $wap_url = ini('settings.site_url').rewrite('/index.php?mod=wap')}
+<br/>
+您也可以通过手机访问 <a href="{$wap_url}" style="font-weight:bold;">{$wap_url}</a> 进行团购券验�?</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div> 
+<script type="text/javascript">
+var ms_url = '{$action}';
+function tickCheck()
+{
+var num = $('#number').val();
+if (num.length != 12 && num.length != 16)
+{
+status('<font class="R">请输入正确的团购券编号！</font>');
+return;
+}
+status('正在查询�?..');
+$.get(ms_url+'&do=check&number='+$('#number').val()+'&timer='+(new Date()).getTime(), function(data){
+status(data);
+});
+}
+function tickMakeUse()
+{
+var num = $('#number').val();
+if (num.length != 12 && num.length != 16)
+{
+status('<font class="R">请输入正确的团购券编号！</font>');
+return;
+}
+var password = $('#password').val();
+if (password.length != 6)
+{
+status('<font class="R">请输入正确的团购券密码！</font>');
+return;
+}
+if (!confirm('您确认要消费此团购券吗？')) return;
+status('正在登记�?..');
+$.get(ms_url+'&do=makeuse&number='+$('#number').val()+'&password='+$('#password').val()+'&timer='+(new Date()).getTime(), function(data){
+status(data);
+});
+}
+function tickGetProductName()
+{
+var num = $('#number').val();
+if (num.length != 12 && num.length != 16)
+{
+return;
+}
+$('#ck_product_name').html('正在查询产品名称...');
+$.get(ms_url+'&do=getname&number='+num+'&timer='+(new Date()).getTime(), function(data){
+$('#ck_product_name').hide();
+$('#ck_product_name').html(data);
+PNDiv_Position_Show();
+});
+}
+function status(html, color)
+{
+$('#status').html(html);
+}
+$(document).ready(function(){
+//$('#btn_tickCheck').bind('click', function(){tickCheck()});
+$('#btn_tickUse').bind('click', function(){tickMakeUse()});
+$('#number').bind('blur', function(){tickGetProductName();tickCheck();});
+});
+function PNDiv_Position_Show()
+{
+var iH = $('#ck_product_name').outerHeight();
+var iT = $('#number').position().top-iH-10+'px';
+var iL = $('#number').position().left+'px';
+$('#ck_product_name').css('top', iT);
+$('#ck_product_name').css('left', iL);
+$('#ck_product_name').slideDown();
+}
+</script>
+<div class="site-ms__right">
+{~ui('widget')->load()}
+</div>
+</div>
+<!--{template footer}-->

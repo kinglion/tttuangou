@@ -1,0 +1,28 @@
+<!--{template @admin/header}--> <script type="text/javascript">
+var __Global_ProductID = "{$pid}";
+</script> <div class="header"> <a href="?mod=product&code=vlist" style="float:left; display: block;">返回到产品列�?/a> </div> <table id="productTable" cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr> <td class="tr_nav tr_center" colspan="2">抽奖数据统计</td> </tr> <tr> <td class="td_title" width="20%">项目名称�?/td> <td>{$product['flag']}</td> </tr> <tr> <td class="td_title">前端抽奖总数�?/td> <td>{echo logic('prize')->allCount($pid)}&nbsp;&nbsp;&nbsp;&nbsp;(含虚拟人�?</td> </tr> <tr> <td class="td_title">实际抽奖总数�?/td> <td>{echo logic('prize')->allCount($pid, false)}</td> </tr> <tr> <td class="td_title">受邀请人数：</td> <td>{echo logic('prize')->sigCount('pid = '.$pid.' AND remark LIKE "邀请用�?"')}</td> </tr> <tr> <td class="tr_nav tr_center" colspan="2">抽奖结果</td> </tr> <tr> <td class="td_title">中奖号码�?/td> <td>
+{if $pzwin}
+{$pzwin['number']}
+{else}
+{if $product['status'] == PRO_STA_Finish}
+<input id="prize_ticket_win" type="text" value="" />
+（输入范围：1 �?{echo logic('prize')->allCount($pid)}�?{else}
+<b>需要等待抽奖活动结束后方可开�?/b><br/>
+1、抽奖活动的结束时间为团购的结束时间<br/>
+2、抽奖活动结束后可在本页面手动指定中奖号码（系统不会自动抽奖�?br/>
+3、中奖号码的计算方法可以参照拉手网之类的团购网站
+{/if}
+{/if}
+</td> </tr>
+{if $product['status'] == PRO_STA_Finish}
+{if !$pzwin}
+<tr> <td></td> <td> <input id="button_query_user" type="button" value="查询中奖用户" /> </td> </tr> <tr id="tr_query_user" style="display: none;"> <td class="td_title">用户信息�?/td> <td id="td_query_user"></td> </tr>
+{else}
+<tr> <td class="td_title">中奖用户�?/td> <td>
+{echo app('ucard')->load($pzwin['uid'])}
+</td> </tr> <tr> <td class="td_title">短信通知�?/td> <td> <form id="sms_notify_form" action="" method="post"> <textarea id="sms_notify_content" style="width:300px;height:100px;">{$smsContent}</textarea> </form> </td> </tr> <tr> <td></td> <td> <input type="button" value="发送中奖通知" onclick="send_sms_notify('{$pzwin['phone']}')" /> </td> </tr> <tr> <td class="td_title">其他�?/td> <td>
+未中奖用�?</td> </tr> <tr> <td class="td_title">短信通知�?/td> <td> <form id="sms_broadcast_form" action="" method="post"> <textarea id="sms_broadcast_content" style="width:300px;height:100px;">{$broadcastContent}</textarea> </form> </td> </tr> <tr> <td></td> <td> <input type="button" value="发送通知" onclick="send_sms_broadcast('{$pzwin['uid']}')" /> </td> </tr>
+{/if}
+{/if}
+</table>
+{template @admin/footer}

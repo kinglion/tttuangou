@@ -1,0 +1,26 @@
+<!--{template @admin/header}--> <style>
+.dss_block {
+font-weight: normal;
+margin-left: 10px;
+}
+.header .dss_view {
+background: none repeat scroll 0 0 #336699;
+color: #FFFFFF;
+padding: 4px 6px;
+}
+</style> <div class="header"> <a href="?mod=refund"> 退款申请列�?</a> <font class="dss_block">
+查看�?<a href="?mod=refund&status=1"{if $status==1} class="dss_view"{/if}>等待审核</a> |
+<a href="?mod=refund&status=2"{if $status==2} class="dss_view"{/if}>通过审核</a> |
+<a href="?mod=refund&status=3"{if $status==3} class="dss_view"{/if}>拒绝审核</a> </font> </div> <table id="orderTable" cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <thead> <tr class="tr_nav"> <td width="10%">订单�?/td> <td width="10%">申请�?/td> <td width="10%">申请时间</td> <td width="10%">申请金额</td> <td width="10%">实际退款金�?/td> <td width="10%">审核状�?/td> <td width="10%">操作</td> </tr> </thead> <tbody> <!--{loop $list $one}--> <tr> <td>
+{$one['orderid']}
+</td> <td>
+{echo app('ucard')->load($one['uid'])}
+</td> <td>
+{echo my_date_format($one['dateline'])}
+</td> <td>
+&yen;{echo $one['demand_money']}�?</td> <td>
+&yen;{echo $one['op_money']}�?</td> <td>
+{if $one['process'] == 1}等待审核
+{elseif $one['process'] == 2}审核通过
+{else}审核拒绝{/if}
+</td> <td> <!--{if $one['process'] == 1}--> <a href="admin.php?mod=refund&code=process&id={$one['orderid']}">[ 审核 ]</a> <!--{else}--> <a href="admin.php?mod=refund&code=process&id={$one['orderid']}">查看</a> <!--{/if}--> </td> </tr> <!--{/loop}--> </tbody> <tfoot> <tr> <td colspan="6">{~page_moyo()}</td> </tr> </tfoot> </table> 

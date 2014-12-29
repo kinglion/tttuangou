@@ -1,0 +1,23 @@
+<!--{template @admin/header}-->
+{~ui('loader')->js('@jquery.thickbox')}
+{~ui('loader')->css('@jquery.thickbox')}
+{~ui('loader')->js('#admin/js/sdb.parser')}
+<table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="{$colspan}">
+事件通知接口
+</td> </tr>
+{if $etsCheck}
+<tr> <td colspan="{$colspan}"> <font id="etsChecker">正在检测标签语言包更�?..</font>
+{~ui('loader')->js('#admin/js/ets.lang.updater')}
+</td> </tr>
+{/if}
+<tr> <td width="5%" bgcolor="#F4F8FC"></td> <td width="13%" bgcolor="#F4F8FC">名称</td> <td width="28%" bgcolor="#F4F8FC">说明</td> <!--{$apiTitles}--> <td></td> </tr> <!--{loop $list $flag $cfg}--> <tr id="tr_of_{$flag}"> <td></td> <td>
+{$cfg['name']}
+</td> <td>
+{echo ini('notify.event.'.$flag.'.intro')}
+</td>
+{$cfg['_apis']}
+</tr> <!--{/loop}--> <tr class="footer"> <td colspan="{$colspan}"> <a id="event_test_lnk" href="javascript:event_test();">通知测试</a> </td> </tr> <tr class="tips"> <td colspan="{$colspan}">
+说明�?br/>
+1. 点击 <img class="ol_enable" /> 或�?<img class="ol_disable" /> 可以快速开启或者关�?br/>
+2. 点击 <img class="ol_editor" /> 可以编辑信息模板<br/> </td> </tr> </table> <div id="msgEditor"> <div class="editorSpace"> <div class="left"> <p class="tags">可用标签列表 </p> <div id="msgTags">�?/div> </div> <div class="right"> <textarea id="msgContent"></textarea> </div> <label><input id="al2user" type="checkbox" checked="checked" value="true" /> 通知用户</label> <br/> <label><input id="cc2admin" type="checkbox" checked="" value="true" /> 通知管理�?/label> <input id="formHash" type="hidden" value="{FORMHASH}" /> <input id="msgSubmit" type="button" value="保存" /> </div> </div>
+{template @admin/footer}

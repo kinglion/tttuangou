@@ -1,0 +1,344 @@
+
+2013/08/12-13:13:21 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:13:21 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:13:21 检查交易请求是否合法：正确
+2013/08/12-13:13:21 交易报文
+2013/08/12-13:13:21 完整交易报文：
+2013/08/12-13:13:21 签名后的报文
+2013/08/12-13:13:21 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayVerifyReq</TrxType><Order><OrderNo>ON20130812001</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动IP卡</ProductName><UnitPrice>0.01</UnitPrice><Qty>1</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><SubMerchantID>001</SubMerchantID><SubMerchantName>001</SubMerchantName><MCC>1234</MCC><CardNo>6228300010055736</CardNo><MobileNo>4533</MobileNo><Installment>1</Installment><Period>1</Period><ProjectID>12345678</ProjectID><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>fxNY9sNc4kMaUpGoTVi0d+6BOSEwT4Xq7NhtHegWBdGA9Xbj0x722s37q/YoVVCUM3Iz/rON4rsoAdtPxhmto7eYQ0gy6OsfPN3wNwg2YLcgAof9JV7qCbTRsDjWUvQ31IId2HkwJtwnVF8F8COORffT4J4iMhhrBrwkkKafgyU=</Signature></MSG>
+2013/08/12-13:13:21 报文长度：1226<br>
+2013/08/12-13:13:21 连线网上支付平台
+2013/08/12-13:13:21 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:13:21 成功
+2013/08/12-13:13:21 提交交易报文：
+2013/08/12-13:13:21 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayVerifyReq</TrxType><Order><OrderNo>ON20130812001</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动IP卡</ProductName><UnitPrice>0.01</UnitPrice><Qty>1</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><SubMerchantID>001</SubMerchantID><SubMerchantName>001</SubMerchantName><MCC>1234</MCC><CardNo>6228300010055736</CardNo><MobileNo>4533</MobileNo><Installment>1</Installment><Period>1</Period><ProjectID>12345678</ProjectID><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>fxNY9sNc4kMaUpGoTVi0d+6BOSEwT4Xq7NhtHegWBdGA9Xbj0x722s37q/YoVVCUM3Iz/rON4rsoAdtPxhmto7eYQ0gy6OsfPN3wNwg2YLcgAof9JV7qCbTRsDjWUvQ31IId2HkwJtwnVF8F8COORffT4J4iMhhrBrwkkKafgyU=</Signature></MSG>
+2013/08/12-13:13:22 成功
+2013/08/12-13:13:22 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:11:57 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=nsnrqi55iudcdzbxkus5lifw; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>账单发送成功</ErrorMessage><TrxType>KPayVerifyRes</TrxType><OrderNo>ON20130812001</OrderNo><OrderAmount>0.01</OrderAmount><VerifyDate>2013-8-12</VerifyDate><VerifyTime>13:11:57</VerifyTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>y7MSXx+JEDsxrZ/gY0yjDqQYUZUkYQqTymdOrqNAmVUifTFsx0OEkwTGirv86pIAss46sMhlfY5JEd2bXnd59O3gj/mj1r2Ia9UWw/ZftBmpG7SJiNG3a4y1ZppyS//DOgQTbW5swa4T87+tzWEyUscIQW5o3hDVt9eOOuBFnKw=</Signature></MSG>
+2013/08/12-13:13:22 接收报文：
+2013/08/12-13:13:22 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>账单发送成功</ErrorMessage><TrxType>KPayVerifyRes</TrxType><OrderNo>ON20130812001</OrderNo><OrderAmount>0.01</OrderAmount><VerifyDate>2013-8-12</VerifyDate><VerifyTime>13:11:57</VerifyTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>y7MSXx+JEDsxrZ/gY0yjDqQYUZUkYQqTymdOrqNAmVUifTFsx0OEkwTGirv86pIAss46sMhlfY5JEd2bXnd59O3gj/mj1r2Ia9UWw/ZftBmpG7SJiNG3a4y1ZppyS//DOgQTbW5swa4T87+tzWEyUscIQW5o3hDVt9eOOuBFnKw=</Signature>
+2013/08/12-13:13:22 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:13:22 生成交易响应对象：
+2013/08/12-13:13:22 交易结果：[0000]
+2013/08/12-13:13:22 错误信息：[账单发送成功]
+2013/08/12-13:13:22 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:14:13 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:14:13 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:14:13 检查交易请求是否合法：正确
+2013/08/12-13:14:13 交易报文
+2013/08/12-13:14:13 完整交易报文：
+2013/08/12-13:14:13 签名后的报文
+2013/08/12-13:14:13 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayReq</TrxType><Order><OrderNo>ON20130812001</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order><AccName>肖德敏</AccName><CertificateType>I</CertificateType><CertificateID>411023198601154514</CertificateID><ExpDate>0817</ExpDate><CVV2>123</CVV2><VerifyCode>401127</VerifyCode><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>MHRe/7Trre4pelT/zMdK0QFlIOZHrmMCocDyaMEl+LCyXyjuAR/WQOLDzhulrpTtrfNd5MFRffqFGkXTXdnkdKDhC3kfM7BPrUVjjeRdmko8BvENoWbdoEXcf7BgDrJXlIKmC8Q9gazvHhqC95PP8QCzpP5EmPo3y1QPC+k8xd0=</Signature></MSG>
+2013/08/12-13:14:13 报文长度：1016<br>
+2013/08/12-13:14:13 连线网上支付平台
+2013/08/12-13:14:13 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:14:13 成功
+2013/08/12-13:14:13 提交交易报文：
+2013/08/12-13:14:13 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayReq</TrxType><Order><OrderNo>ON20130812001</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order><AccName>肖德敏</AccName><CertificateType>I</CertificateType><CertificateID>411023198601154514</CertificateID><ExpDate>0817</ExpDate><CVV2>123</CVV2><VerifyCode>401127</VerifyCode><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>MHRe/7Trre4pelT/zMdK0QFlIOZHrmMCocDyaMEl+LCyXyjuAR/WQOLDzhulrpTtrfNd5MFRffqFGkXTXdnkdKDhC3kfM7BPrUVjjeRdmko8BvENoWbdoEXcf7BgDrJXlIKmC8Q9gazvHhqC95PP8QCzpP5EmPo3y1QPC+k8xd0=</Signature></MSG>
+2013/08/12-13:14:14 成功
+2013/08/12-13:14:14 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:12:49 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=3km2ilrrmhudgu55pf13jjfi; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>网上K码支付成功</ErrorMessage><TrxType>KPayRes</TrxType><OrderNo>ON20130812001</OrderNo><OrderAmount>0.01</OrderAmount><HostDate>2013-8-12</HostDate><HostTime>13:12:49</HostTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>3A/KxwGU3rtD1iHuR7s8oeqgUOlLvC0LJqnsheOB7InDS8MXCtgQMmIk/eEfa13G9WAfMOjj/TRfdHun1k5vILuA3o+pNVR2wgKl4azX0x3MfuAunTBskmkGj3a71aV6OKaTxfAGph+2lZORJZwI8C7DVH/dSjujJxXBXVoyus0=</Signature></MSG>
+2013/08/12-13:14:14 接收报文：
+2013/08/12-13:14:14 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>网上K码支付成功</ErrorMessage><TrxType>KPayRes</TrxType><OrderNo>ON20130812001</OrderNo><OrderAmount>0.01</OrderAmount><HostDate>2013-8-12</HostDate><HostTime>13:12:49</HostTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>3A/KxwGU3rtD1iHuR7s8oeqgUOlLvC0LJqnsheOB7InDS8MXCtgQMmIk/eEfa13G9WAfMOjj/TRfdHun1k5vILuA3o+pNVR2wgKl4azX0x3MfuAunTBskmkGj3a71aV6OKaTxfAGph+2lZORJZwI8C7DVH/dSjujJxXBXVoyus0=</Signature>
+2013/08/12-13:14:14 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:14:14 生成交易响应对象：
+2013/08/12-13:14:14 交易结果：[0000]
+2013/08/12-13:14:14 错误信息：[网上K码支付成功]
+2013/08/12-13:14:14 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:14:56 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:14:56 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:14:56 检查交易请求是否合法：正确
+2013/08/12-13:14:56 交易报文
+2013/08/12-13:14:56 完整交易报文：
+2013/08/12-13:14:56 签名后的报文
+2013/08/12-13:14:56 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayVerifyReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动IP卡</ProductName><UnitPrice>0.01</UnitPrice><Qty>1</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><SubMerchantID>001</SubMerchantID><SubMerchantName>001</SubMerchantName><MCC>1234</MCC><CardNo>6228300010055736</CardNo><MobileNo>4533</MobileNo><Installment>1</Installment><Period>1</Period><ProjectID>12345678</ProjectID><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>tzT79UuD6IiOmPUUkv21wafjjIrCvPnJRqN/fe6zfVxb//GdzLLd6bUpQt6l8dhVOM8TTFKquqLVIHKboLjAGSW4qoQfcPCZJmBeFIqxo51UukJ7GOP+u7PC5RRJVTRX/pqBBPh5qGBwjVYLizvcJh2S73d0EzWlKV+MihK69Tk=</Signature></MSG>
+2013/08/12-13:14:56 报文长度：1227<br>
+2013/08/12-13:14:56 连线网上支付平台
+2013/08/12-13:14:56 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:14:56 成功
+2013/08/12-13:14:56 提交交易报文：
+2013/08/12-13:14:56 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayVerifyReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动IP卡</ProductName><UnitPrice>0.01</UnitPrice><Qty>1</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><SubMerchantID>001</SubMerchantID><SubMerchantName>001</SubMerchantName><MCC>1234</MCC><CardNo>6228300010055736</CardNo><MobileNo>4533</MobileNo><Installment>1</Installment><Period>1</Period><ProjectID>12345678</ProjectID><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>tzT79UuD6IiOmPUUkv21wafjjIrCvPnJRqN/fe6zfVxb//GdzLLd6bUpQt6l8dhVOM8TTFKquqLVIHKboLjAGSW4qoQfcPCZJmBeFIqxo51UukJ7GOP+u7PC5RRJVTRX/pqBBPh5qGBwjVYLizvcJh2S73d0EzWlKV+MihK69Tk=</Signature></MSG>
+2013/08/12-13:14:57 成功
+2013/08/12-13:14:57 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:13:32 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=af1gnq4513omn5exm4saahqn; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>账单发送成功</ErrorMessage><TrxType>KPayVerifyRes</TrxType><OrderNo>ON220130812002</OrderNo><OrderAmount>0.01</OrderAmount><VerifyDate>2013-8-12</VerifyDate><VerifyTime>13:13:32</VerifyTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>nmnhxdBy3sVwvawdPGRp8cbDaAH/+8/pIBMnTBRdnnPpii1gHjfKXgHhPggotsQiDT+aFT5weUqNDvsQW9QYQYyg2mJGof/AsrXQpyDTKEdtOrLt8odcRExBYB8B6sMi4cQMgPPMvLTyons/4T5omuCnNlL7iWE0Rjv4s4WYqoY=</Signature></MSG>
+2013/08/12-13:14:57 接收报文：
+2013/08/12-13:14:57 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>账单发送成功</ErrorMessage><TrxType>KPayVerifyRes</TrxType><OrderNo>ON220130812002</OrderNo><OrderAmount>0.01</OrderAmount><VerifyDate>2013-8-12</VerifyDate><VerifyTime>13:13:32</VerifyTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>nmnhxdBy3sVwvawdPGRp8cbDaAH/+8/pIBMnTBRdnnPpii1gHjfKXgHhPggotsQiDT+aFT5weUqNDvsQW9QYQYyg2mJGof/AsrXQpyDTKEdtOrLt8odcRExBYB8B6sMi4cQMgPPMvLTyons/4T5omuCnNlL7iWE0Rjv4s4WYqoY=</Signature>
+2013/08/12-13:14:57 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:14:57 生成交易响应对象：
+2013/08/12-13:14:57 交易结果：[0000]
+2013/08/12-13:14:57 错误信息：[账单发送成功]
+2013/08/12-13:14:57 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:15:07 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:15:08 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:15:08 检查交易请求是否合法：正确
+2013/08/12-13:15:08 交易报文
+2013/08/12-13:15:08 完整交易报文：
+2013/08/12-13:15:08 签名后的报文
+2013/08/12-13:15:08 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ZxZyQ+XpHUgJrCr/xnZ9GrazB7ViD9HGCkA/rrgH0nuBULZSfDJhLxC0sW4lUC0CHJ6TTMi8Qkwx8tw/DX/HDu85t9hic1y+FUP7N5ppWIbcpqdDKSA3T05gupjNJ2o9j2V7Vtn0h54m4AD6iBDw6WEMLEddwe2T9ZdM2jOJc4U=</Signature></MSG>
+2013/08/12-13:15:08 报文长度：738<br>
+2013/08/12-13:15:08 连线网上支付平台
+2013/08/12-13:15:08 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:15:08 成功
+2013/08/12-13:15:08 提交交易报文：
+2013/08/12-13:15:08 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ZxZyQ+XpHUgJrCr/xnZ9GrazB7ViD9HGCkA/rrgH0nuBULZSfDJhLxC0sW4lUC0CHJ6TTMi8Qkwx8tw/DX/HDu85t9hic1y+FUP7N5ppWIbcpqdDKSA3T05gupjNJ2o9j2V7Vtn0h54m4AD6iBDw6WEMLEddwe2T9ZdM2jOJc4U=</Signature></MSG>
+2013/08/12-13:15:08 成功
+2013/08/12-13:15:08 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:13:43 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=2twajirntkr102ymn0s2x13u; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5096</ReturnCode><ErrorMessage>短信发送间隔未超过60秒，请稍后重试！</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>X9xXfkaANIkG+AhVKxi80yJSjzjJBPZgUTcYRlz4jthwgp/pJ5RuDD02oSe8WBsRZPQcmnO2vJj1lVFOudyWfefL0qnaBWrnupbTDy/4wq8Be2kwPzoZc2tOr7iOlN3jfbg9WLKXHVi2bus8HCRtJPQgXGcL2rssa71RzUGXdys=</Signature></MSG>
+2013/08/12-13:15:08 接收报文：
+2013/08/12-13:15:08 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5096</ReturnCode><ErrorMessage>短信发送间隔未超过60秒，请稍后重试！</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>X9xXfkaANIkG+AhVKxi80yJSjzjJBPZgUTcYRlz4jthwgp/pJ5RuDD02oSe8WBsRZPQcmnO2vJj1lVFOudyWfefL0qnaBWrnupbTDy/4wq8Be2kwPzoZc2tOr7iOlN3jfbg9WLKXHVi2bus8HCRtJPQgXGcL2rssa71RzUGXdys=</Signature>
+2013/08/12-13:15:08 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:15:08 生成交易响应对象：
+2013/08/12-13:15:08 交易结果：[AP5096]
+2013/08/12-13:15:08 错误信息：[短信发送间隔未超过60秒，请稍后重试！]
+2013/08/12-13:15:08 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:15:14 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:15:14 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:15:14 检查交易请求是否合法：正确
+2013/08/12-13:15:14 交易报文
+2013/08/12-13:15:14 完整交易报文：
+2013/08/12-13:15:14 签名后的报文
+2013/08/12-13:15:14 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON200306300001</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>qJFjo1bOsMbe3VfQxJ4R7a9H4/qKYh/6GfxnS+N8er/DU0tabD6vqVXzEuH5WdGVeFGdndTO6Ic/rtJPcc2UAzIz30WM7X+7nJuYLlLya0qXJHZimDUDU9GhAdjn/bE3hgmkFM+SaEbkFZJVuXJ6me4B3kZDu2PxOLCe+EAEgOI=</Signature></MSG>
+2013/08/12-13:15:14 报文长度：737<br>
+2013/08/12-13:15:14 连线网上支付平台
+2013/08/12-13:15:14 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:15:14 成功
+2013/08/12-13:15:14 提交交易报文：
+2013/08/12-13:15:14 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON200306300001</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>qJFjo1bOsMbe3VfQxJ4R7a9H4/qKYh/6GfxnS+N8er/DU0tabD6vqVXzEuH5WdGVeFGdndTO6Ic/rtJPcc2UAzIz30WM7X+7nJuYLlLya0qXJHZimDUDU9GhAdjn/bE3hgmkFM+SaEbkFZJVuXJ6me4B3kZDu2PxOLCe+EAEgOI=</Signature></MSG>
+2013/08/12-13:15:14 成功
+2013/08/12-13:15:14 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:13:49 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=ntcpyn45a4fhnvmuqtsdj5mr; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5097</ReturnCode><ErrorMessage>此账单未通过账单发送验证</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>NETx2OuJQtE1HuXE2zBGhxfwAMS50CPhF5uAGsJPIZfsDDAMK1Tc+q/3AkljT6NqZxFqFs/kLGFi8aqDepKKsKfpbS/0xZkSdDrD4uhVLY8zH5nb+1YD/NKLA6BZ4EzSvOewD4qA4HygUhwRt/cOPwzoiKCnin0fLW77piahfeA=</Signature></MSG>
+2013/08/12-13:15:14 接收报文：
+2013/08/12-13:15:14 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5097</ReturnCode><ErrorMessage>此账单未通过账单发送验证</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>NETx2OuJQtE1HuXE2zBGhxfwAMS50CPhF5uAGsJPIZfsDDAMK1Tc+q/3AkljT6NqZxFqFs/kLGFi8aqDepKKsKfpbS/0xZkSdDrD4uhVLY8zH5nb+1YD/NKLA6BZ4EzSvOewD4qA4HygUhwRt/cOPwzoiKCnin0fLW77piahfeA=</Signature>
+2013/08/12-13:15:14 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:15:14 生成交易响应对象：
+2013/08/12-13:15:14 交易结果：[AP5097]
+2013/08/12-13:15:14 错误信息：[此账单未通过账单发送验证]
+2013/08/12-13:15:14 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:15:27 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:15:27 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:15:27 检查交易请求是否合法：正确
+2013/08/12-13:15:27 交易报文
+2013/08/12-13:15:27 完整交易报文：
+2013/08/12-13:15:27 签名后的报文
+2013/08/12-13:15:27 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ZxZyQ+XpHUgJrCr/xnZ9GrazB7ViD9HGCkA/rrgH0nuBULZSfDJhLxC0sW4lUC0CHJ6TTMi8Qkwx8tw/DX/HDu85t9hic1y+FUP7N5ppWIbcpqdDKSA3T05gupjNJ2o9j2V7Vtn0h54m4AD6iBDw6WEMLEddwe2T9ZdM2jOJc4U=</Signature></MSG>
+2013/08/12-13:15:27 报文长度：738<br>
+2013/08/12-13:15:27 连线网上支付平台
+2013/08/12-13:15:27 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:15:27 成功
+2013/08/12-13:15:27 提交交易报文：
+2013/08/12-13:15:27 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ZxZyQ+XpHUgJrCr/xnZ9GrazB7ViD9HGCkA/rrgH0nuBULZSfDJhLxC0sW4lUC0CHJ6TTMi8Qkwx8tw/DX/HDu85t9hic1y+FUP7N5ppWIbcpqdDKSA3T05gupjNJ2o9j2V7Vtn0h54m4AD6iBDw6WEMLEddwe2T9ZdM2jOJc4U=</Signature></MSG>
+2013/08/12-13:15:27 成功
+2013/08/12-13:15:27 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:14:02 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=uflxft5505mflr55kf5lygr0; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5096</ReturnCode><ErrorMessage>短信发送间隔未超过60秒，请稍后重试！</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>X9xXfkaANIkG+AhVKxi80yJSjzjJBPZgUTcYRlz4jthwgp/pJ5RuDD02oSe8WBsRZPQcmnO2vJj1lVFOudyWfefL0qnaBWrnupbTDy/4wq8Be2kwPzoZc2tOr7iOlN3jfbg9WLKXHVi2bus8HCRtJPQgXGcL2rssa71RzUGXdys=</Signature></MSG>
+2013/08/12-13:15:27 接收报文：
+2013/08/12-13:15:27 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5096</ReturnCode><ErrorMessage>短信发送间隔未超过60秒，请稍后重试！</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>X9xXfkaANIkG+AhVKxi80yJSjzjJBPZgUTcYRlz4jthwgp/pJ5RuDD02oSe8WBsRZPQcmnO2vJj1lVFOudyWfefL0qnaBWrnupbTDy/4wq8Be2kwPzoZc2tOr7iOlN3jfbg9WLKXHVi2bus8HCRtJPQgXGcL2rssa71RzUGXdys=</Signature>
+2013/08/12-13:15:27 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:15:27 生成交易响应对象：
+2013/08/12-13:15:27 交易结果：[AP5096]
+2013/08/12-13:15:27 错误信息：[短信发送间隔未超过60秒，请稍后重试！]
+2013/08/12-13:15:27 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:15:33 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:15:33 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:15:33 检查交易请求是否合法：正确
+2013/08/12-13:15:33 交易报文
+2013/08/12-13:15:33 完整交易报文：
+2013/08/12-13:15:33 签名后的报文
+2013/08/12-13:15:33 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>o8FTNZnX1CEixtG0l+9RMcwQD+UDHfb+ZI/0ELx+tK4Oe2iTVna7JJwUhSR8NFmCkIurQpAShsypUjkkEXCsOjktEkfI3Qmtm5ISmP/uVVJM87VO7VovO4UFU47FO5PoXkQhJBoUxQdLnUkofTT44ZZoXAqF5kogQLp/Fsb/W8w=</Signature></MSG>
+2013/08/12-13:15:33 报文长度：737<br>
+2013/08/12-13:15:33 连线网上支付平台
+2013/08/12-13:15:33 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:15:33 成功
+2013/08/12-13:15:33 提交交易报文：
+2013/08/12-13:15:33 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>o8FTNZnX1CEixtG0l+9RMcwQD+UDHfb+ZI/0ELx+tK4Oe2iTVna7JJwUhSR8NFmCkIurQpAShsypUjkkEXCsOjktEkfI3Qmtm5ISmP/uVVJM87VO7VovO4UFU47FO5PoXkQhJBoUxQdLnUkofTT44ZZoXAqF5kogQLp/Fsb/W8w=</Signature></MSG>
+2013/08/12-13:15:33 成功
+2013/08/12-13:15:33 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:14:08 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=gysbx2vx2uer1erykl4dxy45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5113</ReturnCode><ErrorMessage>订单金额与原始金额不一致， 请重新输入</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>gQcUHG36d+1yk73Lnq97cqqDvXtaHo4tSwl9GFtBYH8V1vYOsi62ZLzkxjEQ+Lxm/3qOXuvdIk51PUnb2zm06aAtQCnki/AWtgAjj7umdaGY2PYzruqwayvC0quxjCN514TO3lxQRhuKLsAF4jTMm9uns4IUq9KlRrWTZVOwios=</Signature></MSG>
+2013/08/12-13:15:33 接收报文：
+2013/08/12-13:15:33 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>AP5113</ReturnCode><ErrorMessage>订单金额与原始金额不一致， 请重新输入</ErrorMessage></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>gQcUHG36d+1yk73Lnq97cqqDvXtaHo4tSwl9GFtBYH8V1vYOsi62ZLzkxjEQ+Lxm/3qOXuvdIk51PUnb2zm06aAtQCnki/AWtgAjj7umdaGY2PYzruqwayvC0quxjCN514TO3lxQRhuKLsAF4jTMm9uns4IUq9KlRrWTZVOwios=</Signature>
+2013/08/12-13:15:33 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:15:33 生成交易响应对象：
+2013/08/12-13:15:33 交易结果：[AP5113]
+2013/08/12-13:15:33 错误信息：[订单金额与原始金额不一致， 请重新输入]
+2013/08/12-13:15:33 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:16:04 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:16:04 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:16:04 检查交易请求是否合法：正确
+2013/08/12-13:16:04 交易报文
+2013/08/12-13:16:04 完整交易报文：
+2013/08/12-13:16:04 签名后的报文
+2013/08/12-13:16:04 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ZxZyQ+XpHUgJrCr/xnZ9GrazB7ViD9HGCkA/rrgH0nuBULZSfDJhLxC0sW4lUC0CHJ6TTMi8Qkwx8tw/DX/HDu85t9hic1y+FUP7N5ppWIbcpqdDKSA3T05gupjNJ2o9j2V7Vtn0h54m4AD6iBDw6WEMLEddwe2T9ZdM2jOJc4U=</Signature></MSG>
+2013/08/12-13:16:04 报文长度：738<br>
+2013/08/12-13:16:04 连线网上支付平台
+2013/08/12-13:16:04 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:16:04 成功
+2013/08/12-13:16:04 提交交易报文：
+2013/08/12-13:16:04 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayResendReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ZxZyQ+XpHUgJrCr/xnZ9GrazB7ViD9HGCkA/rrgH0nuBULZSfDJhLxC0sW4lUC0CHJ6TTMi8Qkwx8tw/DX/HDu85t9hic1y+FUP7N5ppWIbcpqdDKSA3T05gupjNJ2o9j2V7Vtn0h54m4AD6iBDw6WEMLEddwe2T9ZdM2jOJc4U=</Signature></MSG>
+2013/08/12-13:16:05 成功
+2013/08/12-13:16:05 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:14:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=s2cfswqomv1shs55mofsrlar; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>KPayResendRes</TrxType><OrderNo>ON220130812002</OrderNo><OrderAmount>0.01</OrderAmount><HostDate>2013-8-12</HostDate><HostTime>13:14:39</HostTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>VMz7soHctoWL5OTlzz29l0aHqWQXwhLeiu51PV+ZKuB6uVPnIj6eon3PxLeaxtkGTV3/2m3jSzEtIAzNEjk2xwg23bof30iJRxa0lz1Gy7cxHdPpJHXKwHHawqkrftNF9W/rN4rqNj5BdHzOyYD3cznhHkkAPmBgsJYFyx+hFEw=</Signature></MSG>
+2013/08/12-13:16:05 接收报文：
+2013/08/12-13:16:05 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>KPayResendRes</TrxType><OrderNo>ON220130812002</OrderNo><OrderAmount>0.01</OrderAmount><HostDate>2013-8-12</HostDate><HostTime>13:14:39</HostTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>VMz7soHctoWL5OTlzz29l0aHqWQXwhLeiu51PV+ZKuB6uVPnIj6eon3PxLeaxtkGTV3/2m3jSzEtIAzNEjk2xwg23bof30iJRxa0lz1Gy7cxHdPpJHXKwHHawqkrftNF9W/rN4rqNj5BdHzOyYD3cznhHkkAPmBgsJYFyx+hFEw=</Signature>
+2013/08/12-13:16:05 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:16:05 生成交易响应对象：
+2013/08/12-13:16:05 交易结果：[0000]
+2013/08/12-13:16:05 错误信息：[交易成功]
+2013/08/12-13:16:05 交易结束==================================================
+                    
+                    
+                    
+                    
+2013/08/12-13:16:38 TrustPay Client PHP 交易开始==========================
+2013/08/12-13:16:38 配置文件中商户数为1请求指定的商户配置编号为 1
+2013/08/12-13:16:38 检查交易请求是否合法：正确
+2013/08/12-13:16:38 交易报文
+2013/08/12-13:16:38 完整交易报文：
+2013/08/12-13:16:38 签名后的报文
+2013/08/12-13:16:38 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order><AccName>肖德敏</AccName><CertificateType>I</CertificateType><CertificateID>411023198601154514</CertificateID><ExpDate>0817</ExpDate><CVV2>123</CVV2><VerifyCode>840841</VerifyCode><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>NSUAjIFKINVUY1TVk37pM7Hprr2f/ZRdiImmoc5nw5dIBPo0+HyhhL1nuD7fm84Qfu+K/1TC0NyTNhCvaJp2la/E+oIjpB05o1PFa1pzU+eoR+bI0HtlFjJQPLevVRMvVbmQQMsezh0md6uu9xLt34LhTWjMm471iEiImZYsijk=</Signature></MSG>
+2013/08/12-13:16:38 报文长度：1017<br>
+2013/08/12-13:16:38 连线网上支付平台
+2013/08/12-13:16:38 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2013/08/12-13:16:38 成功
+2013/08/12-13:16:38 提交交易报文：
+2013/08/12-13:16:38 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxRequest><TrxType>KPayReq</TrxType><Order><OrderNo>ON220130812002</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>0.01</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant</OrderURL><BuyIP>127.0.0.1</BuyIP><OrderItems></OrderItems></Order><AccName>肖德敏</AccName><CertificateType>I</CertificateType><CertificateID>411023198601154514</CertificateID><ExpDate>0817</ExpDate><CVV2>123</CVV2><VerifyCode>840841</VerifyCode><PaymentType>1</PaymentType><PaymentLinkType>1</PaymentLinkType><MerchantRemarks>Hi!</MerchantRemarks></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>NSUAjIFKINVUY1TVk37pM7Hprr2f/ZRdiImmoc5nw5dIBPo0+HyhhL1nuD7fm84Qfu+K/1TC0NyTNhCvaJp2la/E+oIjpB05o1PFa1pzU+eoR+bI0HtlFjJQPLevVRMvVbmQQMsezh0md6uu9xLt34LhTWjMm471iEiImZYsijk=</Signature></MSG>
+2013/08/12-13:16:39 成功
+2013/08/12-13:16:39 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Mon, 12 Aug 2013 05:15:13 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=hb4ynu454gjuql45wivjce3u; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1046801162.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>网上K码支付成功</ErrorMessage><TrxType>KPayRes</TrxType><OrderNo>ON220130812002</OrderNo><OrderAmount>0.01</OrderAmount><HostDate>2013-8-12</HostDate><HostTime>13:15:13</HostTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>xaS85twSnoYn9FiouLRModIGMEcwzAHHiC//Nw0hXH+QCRdjpQmq03teo+G73yMSlQyvd+y6VvfYc1jBjrwIO3zjWzbu7rXMNBwUpDX6xGhg6IJGq5EgibG8DXsetzD7Sku5WOW+iXByjETvQVzdlFa09++efWqCFfIwiU3eLHA=</Signature></MSG>
+2013/08/12-13:16:39 接收报文：
+2013/08/12-13:16:39 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>211000001390A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>网上K码支付成功</ErrorMessage><TrxType>KPayRes</TrxType><OrderNo>ON220130812002</OrderNo><OrderAmount>0.01</OrderAmount><HostDate>2013-8-12</HostDate><HostTime>13:15:13</HostTime></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>xaS85twSnoYn9FiouLRModIGMEcwzAHHiC//Nw0hXH+QCRdjpQmq03teo+G73yMSlQyvd+y6VvfYc1jBjrwIO3zjWzbu7rXMNBwUpDX6xGhg6IJGq5EgibG8DXsetzD7Sku5WOW+iXByjETvQVzdlFa09++efWqCFfIwiU3eLHA=</Signature>
+2013/08/12-13:16:39 验证网上支付平台响应报文的签名：正确
+2013/08/12-13:16:39 生成交易响应对象：
+2013/08/12-13:16:39 交易结果：[0000]
+2013/08/12-13:16:39 错误信息：[网上K码支付成功]
+2013/08/12-13:16:39 交易结束==================================================
+                    
+                    
+                    
+                    

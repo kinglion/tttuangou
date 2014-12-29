@@ -1,0 +1,13 @@
+<div style="float:none; clear:both;"></div>
+<div style="width:980px;  margin:0px auto 15px auto;">
+	{eval $index=0;}
+	{loop $cfg['list'] $id $one}
+		<div style="{if $index % 3 != 0}margin-left:20px;{/if} float:left;">
+			<a href="{$one['link']}" target="{$one['target']}"><img {echo 'src='.ini('settings.site_url').'/'.$one['image']} alt="{$one['text']}"></a>
+		</div>
+		{eval $index++;}
+	{/loop}
+	
+	<div style="float:none; clear:both;"></div>
+</div>
+<div style="float:none; clear:both;"></div>

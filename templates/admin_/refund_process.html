@@ -1,0 +1,64 @@
+<!--{template @admin/header}--> <div class="header"> <b>处理退款申�?/b> </div> <table id="orderTable" cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tbody> <tr> <td class="tr_nav tr_center" colspan="4">
+基本信息
+</td> </tr> <tr> <td class="td_title">商品名称�?/td> <td class="td_content">{$order['product']['flag']}</td> <td class="td_title">商品状态：</td> <td class="td_content">{echo logic('product')->STA_Name($order['product']['status'])}</td> </tr> <tr> <td class="td_title">订单编号�?/td> <td class="td_content">{$order['orderid']}</td> <td class="td_title">下单会员�?/td> <td class="td_content">{echo app('ucard')->load($user['id'])}</td> </tr> <tr> <td class="td_title">订单状态：</td> <td class="td_content">{echo logic('order')->STA_Name($order['status'])}</td> <td class="td_title">下单时间�?/td> <td class="td_content">{echo date('Y-m-d H:i:s', $order['buytime'])}</td> </tr> <tr> <td class="td_title">订单处理进程�?/td> <td class="td_content">{echo logic('order')->PROC_Name($order['process'])}</td> <td class="td_title">支付时间�?/td> <td class="td_content">
+{if $order['pay'] == 1}
+{echo $order['paytime'] > 0 ? date('Y-m-d H:i:s', $order['paytime']) : '已支�?}
+{else}
+未支�?{/if}
+</td> </tr>
+{if $order['attrs']}
+<tr> <td class="tr_nav tr_center" colspan="4">
+属性信�?</td> </tr> <tr> <td class="td_title">已选：</td> <td class="td_content" colspan="3">
+{loop $order['attrs']['dsp'] $dsp}
+{$dsp['name']} - &yen;{$dsp['price']}<br/>
+{/loop}
+</td> </tr>
+{/if}
+{if $order['paytype'] > 0}
+<tr> <td class="tr_nav tr_center" colspan="4">
+支付信息
+</td> </tr> <tr> <td class="td_title">支付方式�?/td> <td class="td_content">{$payment['name']}</td> <td class="td_title">交易号：</td> <td class="td_content">{$paylog[0]['trade_no']}</td> </tr> <tr> <td class="td_title">支付金额�?/td> <td class="td_content">
+{if $order['pay'] == 1}
+{$order['paymoney']}�?{else}
+还未支付
+{/if}
+</td> <td class="td_title">订单金额�?/td> <td class="td_content">{$order['totalprice']}�?/td> </tr> <tr> <td class="td_title">支付时间�?/td> <td class="td_content">
+{if $order['pay'] == 1}
+{echo date('Y-m-d H:i:s', $order['paytime'])}
+{else}
+未支�?{/if}
+</td>
+{if $order['ypaymoney']}
+<td class="td_title">余额支付�?/td> <td class="td_content">$order['ypaymoney']�?/td>
+{else}
+<td class="td_title">*</td> <td class="td_content">*</td>
+{/if}
+</tr>
+{/if}
+{if $order['product']['type'] == 'ticket'}
+<tr> <td class="tr_nav tr_center" colspan="4">
+{TUANGOU_STR}券信�?</td> </tr> <tr> <td class="td_title">{TUANGOU_STR}券编�?/td> <td class="td_content">{TUANGOU_STR}卷密�?/td> <td class="td_title">过期时间</td> <td class="td_content">是否使用</td> </tr>
+{loop $coupons $coupon}
+<tr> <td class="td_title">{$coupon['number']}</td> <td class="td_content">{$coupon['password']}</td> <td class="td_title">{echo date('Y-m-d H:i:s', $order['product']['perioddate'])}</td> <td class="td_content">{if $coupon['status'] == TICK_STA_Unused}未使用{elseif $coupon['status'] == TICK_STA_Invalid}<font color="red">已作�?/font>{else}<font color="green">已使�?/font>{/if}</td> </tr>
+{/loop}
+{elseif $order['product']['type'] == 'stuff'}
+<tr> <td class="tr_nav tr_center" colspan="4">
+配送信�?</td> </tr> <tr> <td class="td_title">配送方式：</td> <td class="td_content">{$express['name']}</td> <td class="td_title">运费�?/td> <td class="td_content">{$order['expressprice']}</td> </tr> <tr> <td class="td_title">收货地址�?/td> <td class="td_content" colspan="2">{$address['region']} {$address['address']}</td> <td class="td_content">邮编：{$address['zip']}</td> </tr> <tr> <td class="td_title">收货人：</td> <td class="td_content">{$address['name']}</td> <td class="td_title">联系电话�?/td> <td class="td_content">{$address['phone']}</td> </tr>
+{/if}
+{if $refund}
+<tr> <td class="tr_nav tr_center" colspan="4">
+审核详情
+</td> </tr> <tr> <td class="td_title">审核状态：</td> <td class="td_content">
+{if $refund['process'] == 1}等待审核
+{elseif $refund['process'] == 2}审核通过
+{else}审核拒绝{/if}
+<!--{if $refund['op_dateline']}-->（{eval echo date('Y-m-d H:i:s',$refund['op_dateline']);}�?!--{/if}--> <!--{if $refund['op_reason']}--><br>备注：{$refund['op_reason']}<!--{/if}--> </td> <td class="td_title">申请金额�?/td> <td class="td_content">{$refund['demand_money']}�?/td> </tr> <tr> <td class="td_title">申请理由�?/td> <td class="td_content">{$refund['demand_reason']}</td> <td class="td_title">实际退款金�?</td> <td class="td_content">{$refund['op_money']}�?/td> </tr>
+{/if}
+{if $refund['process'] == 1}
+<tr> <td class="tr_nav tr_center" colspan="4">
+同意退�?</td> </tr> <form action="admin.php?mod=refund&code=apply" method="post"> <tr> <input type="hidden" name="oid" value="{$order['orderid']}"/> <td class="td_title">退款金额：</td> <td class="td_content"><input type="text" name="money" value="{$refund['demand_money']}"/>
+最大可退款金额：{$order['tpaymoney']}�?!--{if $order['expressprice']}-->(含运费：{$order['expressprice']}�?<!--{/if}--> <!--{if $order['tmsg']}--><br>【备注】订单总金额：{$order['tmsg']['money']}元，�?font color="green">{$order['tmsg']['tnum']}</font>张{TUANGOU_STR}券；已消�?font color="red">{$order['tmsg']['num']}</font>张{TUANGOU_STR}�?!--{/if}--> </td> <td class="td_title" colspan="2" rowspan="2"><input type="submit" value="同意退�? style="float:left"/></td> </tr> <tr><td class="td_title">备注�?/td><td class="td_content"><input type="text" name="reason" style="width:300px"/></td></tr> </form> <tr> <td class="tr_nav tr_center" colspan="4">
+拒绝退�?</td> </tr> <tr> <form action="admin.php?mod=refund&code=refuse" method="post"> <input type="hidden" name="oid" value="{$order['orderid']}"/> <td class="td_title">拒绝理由�?/td> <td class="td_content"><input type="text" name="reason" style="width:300px"/>(必须填写)</td> <td class="td_title" colspan="2"><input type="submit" value="拒绝退�? style="float:left"/></td> </form> </tr>
+{/if}
+</tbody> </table> <a href="javascript:history.go(-1);" class="back1 back2">返回申请列表</a>
+{template @admin/footer}

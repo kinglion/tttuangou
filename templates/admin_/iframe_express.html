@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content="text/html; charset={ini:settings.charset}" /> <title>Moyo</title> <style type="text/css">
+*{margin:0;padding:0}
+body{background:#fff;color:#000;font:14px Tahoma,Helvetica,arial,sans-serif;margin:10px;}
+a{color:#4086c2}
+a:hover{text-decoration:underline}
+img{border:none}
+form{clear:both}
+.address, .extmsg{border-bottom:2px solid #cccccc;padding-bottom:12px;margin-bottom:12px;}
+.express {}
+</style> </head> <body> <div class="address">
+姓名：{$address['name']}<br/>
+地址：{$address['region']}{$address['address']}<br/>
+电话：{$address['phone']}<br/>
+货运：{$express['name']}<br/>
+数量：{$order['productnum']}
+</div> <div class="extmsg">
+附言�?br/> <textarea style="width:96%;height:30px;padding:3px;">{$order['extmsg']}</textarea> </div> <div class="express">
+{if $order['invoice'] == ''}
+<form action="?mod=tttuangou&code=express&op=sign" method="post" onsubmit="return submitconfirm();">
+发货登记�?br/>
+快递单号：<input id="invoice" type="text" name="invoice" style="width:188px;" /> <input type="submit" value="提交" /> <input name="orderid" type="hidden" value="{$oid}" /> </form> <script type="text/javascript">
+function $$(ID)
+{
+return document.getElementById(ID);
+}
+function submitconfirm()
+{
+if ($$('invoice').value == '')
+{
+alert('快递单号不能为空！');
+$$('invoice').focus();
+return false;
+}
+if (confirm('确认提交吗？'))
+{
+return true;
+}
+else
+{
+return false;
+}
+}
+</script>
+{else}
+快递单号：{$order['invoice']}
+{/if}
+<br/><br/>
+订单状态：<font color="#009933">{$order['process']}</font> </div> </body> </html>

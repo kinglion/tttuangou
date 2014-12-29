@@ -1,0 +1,26 @@
+
+2014/06/18-00:04:59 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:04:59 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:04:59 检查交易请求是否合法：正确
+2014/06/18-00:04:59 交易报文
+2014/06/18-00:04:59 完整交易报文：
+2014/06/18-00:04:59 签名后的报文
+2014/06/18-00:04:59 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061736264</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>姹
+2014/06/18-00:12:40 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:12:40 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:12:40 检查交易请求是否合法：正确
+2014/06/18-00:12:40 交易报文
+2014/06/18-00:12:40 完整交易报文：
+2014/06/18-00:12:40 签名后的报文
+2014/06/18-00:12:40 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061736264</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>姹
+2014/06/18-00:29:22 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:29:22 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:29:22 检查交易请求是否合法：
+2014/06/18-00:29:22 1101]    错误信息：[商户提交的交易资料不合法 - 支付结果回传网址不合法！]
+2014/06/18-00:29:22 交易结束==================================================
+                    
+                    
+                    
+                    

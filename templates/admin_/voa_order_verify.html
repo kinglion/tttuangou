@@ -1,0 +1,14 @@
+<!--{template @admin/header}--> <script type="text/javascript" src="./static/js/jquery.js"></script> <form method="post" action="{$action}"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="10">订单校验 &nbsp;&nbsp;&nbsp;&nbsp;<a href="admin.php?mod=order&code=vlist">[返回订单管理]</a></td> </tr> <tr> <td colspan="8">提示：本页面只会显示类型为“{TUANGOU_STR}券”的订单</td> </tr> <tr> <td width="6%">订单�?/td> <td width="9%">用户�?/td> <td>产品�?/td> <td width="16%">付款时间</td> <td width="8%">购买�?/td> <td width="8%">{TUANGOU_STR}�?/td> <td width="8%">状�?/td> <td width="10%">管理</td> </tr> <!--{if empty($finds)}--> <tr><td colspan="8">所有订单状态正常！</td></tr> <!--{/if}--> <!--{if !empty($finds)}--> <!--{loop $finds $i $one}--> <tr onmouseover="this.className='tr_hover'" onmouseout="this.className='tr_normal'"> <td>{$one['orderid']}</td> <td>{$one['username']}</td> <td title="{$one['name']}">{eval echo substr($one['name'],0,50);}...</td> <td>{eval echo my_date_format2($one['paytime']);}</td> <td>{$one['productnum']}</td> <td>{$one['tickCount']}</td> <td>{if $one['tickMov']>0}缺失{$one['tickMov']}{else}多余{eval echo abs($one['tickMov']);}{/if}</td> <td>{if $one['tickMov']>0}<a id="a_{$i}" href="javascript:reCreateTicket({$i}, {$one['tickMov']}, {$one['userid']}, {$one['productid']}, {$one['orderid']});">[ 补单 ]</a>{else}客户手机<br/>{$one['phone']}{/if}</td> </tr> <!--{/loop}--> <!--{/if}--> </table> </form> <script type="text/javascript">
+var ms_url = 'admin.php?mod=voa&code=orderverify&op=create';
+function reCreateTicket(tag_id, mov, uid, pid, oid)
+{
+if (!confirm('您确定要执行此操作吗�?)) return;
+var url = ms_url+'&uid='+uid+'&pid='+pid+'&oid='+oid+'&mov='+mov;
+$('#a_'+tag_id).text('补单�?..');
+$('#a_'+tag_id).attr('href', 'javascript:return;');
+$.get(url, function(data){
+$('#a_'+tag_id).text(data);
+});
+}
+</script>
+{template @admin/footer}

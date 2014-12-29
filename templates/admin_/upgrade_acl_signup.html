@@ -1,0 +1,41 @@
+<!--{template @admin/header}--> <form action="admin.php?mod=upgrade&code=signup&op=request" method="post" onsubmit="submitPre()"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="2">为保证网站安全，请输入您在cenwor.com的用户名和密码，以继续操作！</td> </tr> <tr> <td class="td_title" width="30%">cenwor.com用户名：</td> <td> <input name="account" type="text" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="{~ihelper('cenwor.register')}" target="_blank">点此免费注册</a> </td> </tr> <tr> <td class="td_title">cenwor.com的密码：</td> <td> <input name="password" type="password" /> </td> </tr> <tr> <td class="td_title"></td> <td> <input id="submit_button" type="submit" class="button" name="submit" value="登录" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+<font id="submit_loading" style="display:none;">正在登录中，请稍�?..</font> </td> </tr> <tr class="tips"> <td colspan="2">
+友情提示�?br/>
+1. 志扬互动商业授权用户享有系统升级优先权，请输入在cenwor.com购买授权时的用户名和密码，第一时间修复BUG、享受新功能�?br/>
+2. 在保留志扬互动系统版权的前提下，试用版用户也可免费升级；<font color=red>如私自去版权，官方将停止升级服务，并保留追究责任的权利！</font><br/>
+3. 志扬互动商业授权用户，拥有官方颁发的商业授权证书，更值得用户信赖。现全新推出创业版商业授权，每天仅需1元钱，还送技术服务和短信�?a href="{~ihelper('tg.license.dsp')}" target="_blank">马上点此开�?/a>�?
+</td> </tr> </table> </form> <script type="text/javascript">
+function maskShow()
+{
+$('#submit_button').css('background-color', '#999').css('border', '1px solid #ccc').attr('disabled', 'disabled');
+}
+function loading_efff(ix)
+{
+var string = $('#submit_loading').text();
+if (ix >= string.length) ix = 0;
+if (ix > 0)
+{
+var pre = string.substr(0, ix);
+var suf = string.substr(ix+1);
+}
+else
+{
+var pre = '';
+var suf = string.substr(1);
+}
+var str = string.substr(ix, 1);
+hstr = '<font style="color:#999;margin:3px;">'+str+'</font>';
+$('#submit_loading').html(pre+hstr+suf);
+setTimeout(function(){loading_efff(ix+1)}, 200);
+}
+function submitPre()
+{
+maskShow();
+$('#submit_loading').show();
+loading_efff(0);
+}
+</script>
+{template @admin/footer}

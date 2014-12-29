@@ -1,0 +1,843 @@
+
+2014/06/18-00:18:02 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:18:02 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:18:02 检查交易请求是否合法：正确
+2014/06/18-00:18:02 交易报文
+2014/06/18-00:18:02 完整交易报文：
+2014/06/18-00:18:02 签名后的报文
+2014/06/18-00:18:03 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:18:03 报文长度：1302<br>
+2014/06/18-00:18:03 连线网上支付平台
+2014/06/18-00:18:03 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-00:18:03 成功
+2014/06/18-00:18:03 提交交易报文：
+2014/06/18-00:18:03 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:18:03 成功
+2014/06/18-00:18:03 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 16:17:48 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=kxhlch45qujnftqhlicqtj45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=3965512458.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-00:18:03 接收报文：
+2014/06/18-00:18:03 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-00:18:03 验证网上支付平台响应报文的签名：正确
+2014/06/18-00:18:03 生成交易响应对象：
+2014/06/18-00:18:03 交易结果：[0000]
+2014/06/18-00:18:03 错误信息：[交易成功]
+2014/06/18-00:18:03 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-00:18:18 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:18:18 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:18:18 检查交易请求是否合法：正确
+2014/06/18-00:18:18 交易报文
+2014/06/18-00:18:18 完整交易报文：
+2014/06/18-00:18:18 签名后的报文
+2014/06/18-00:18:18 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:18:18 报文长度：1302<br>
+2014/06/18-00:18:18 连线网上支付平台
+2014/06/18-00:18:18 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-00:18:18 成功
+2014/06/18-00:18:18 提交交易报文：
+2014/06/18-00:18:18 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:18:19 成功
+2014/06/18-00:18:19 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 16:18:03 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=crmm1wvquirtq245y23hps45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=3965512458.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-00:18:19 接收报文：
+2014/06/18-00:18:19 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-00:18:19 验证网上支付平台响应报文的签名：正确
+2014/06/18-00:18:19 生成交易响应对象：
+2014/06/18-00:18:19 交易结果：[0000]
+2014/06/18-00:18:19 错误信息：[交易成功]
+2014/06/18-00:18:19 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-00:48:39 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:48:39 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:48:39 检查交易请求是否合法：正确
+2014/06/18-00:48:39 交易报文
+2014/06/18-00:48:39 完整交易报文：
+2014/06/18-00:48:39 签名后的报文
+2014/06/18-00:48:40 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:48:40 报文长度：1302<br>
+2014/06/18-00:48:40 连线网上支付平台
+2014/06/18-00:48:40 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-00:48:40 成功
+2014/06/18-00:48:40 提交交易报文：
+2014/06/18-00:48:40 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:48:40 成功
+2014/06/18-00:48:40 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 16:48:25 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=ch0ttc45engo34ewfumggwnn; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-00:48:40 接收报文：
+2014/06/18-00:48:40 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-00:48:40 验证网上支付平台响应报文的签名：正确
+2014/06/18-00:48:40 生成交易响应对象：
+2014/06/18-00:48:40 交易结果：[0000]
+2014/06/18-00:48:40 错误信息：[交易成功]
+2014/06/18-00:48:40 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-00:48:49 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:48:49 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:48:49 检查交易请求是否合法：正确
+2014/06/18-00:48:49 交易报文
+2014/06/18-00:48:49 完整交易报文：
+2014/06/18-00:48:49 签名后的报文
+2014/06/18-00:48:49 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:48:49 报文长度：1302<br>
+2014/06/18-00:48:49 连线网上支付平台
+2014/06/18-00:48:49 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-00:48:49 成功
+2014/06/18-00:48:49 提交交易报文：
+2014/06/18-00:48:49 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:48:49 成功
+2014/06/18-00:48:49 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 16:48:34 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=g5lokeenzqlykr3n340q1l45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-00:48:49 接收报文：
+2014/06/18-00:48:49 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-00:48:49 验证网上支付平台响应报文的签名：正确
+2014/06/18-00:48:49 生成交易响应对象：
+2014/06/18-00:48:49 交易结果：[0000]
+2014/06/18-00:48:49 错误信息：[交易成功]
+2014/06/18-00:48:49 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-00:50:37 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:50:37 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:50:37 检查交易请求是否合法：正确
+2014/06/18-00:50:37 交易报文
+2014/06/18-00:50:37 完整交易报文：
+2014/06/18-00:50:37 签名后的报文
+2014/06/18-00:50:37 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:50:37 报文长度：1302<br>
+2014/06/18-00:50:37 连线网上支付平台
+2014/06/18-00:50:37 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-00:50:37 成功
+2014/06/18-00:50:37 提交交易报文：
+2014/06/18-00:50:37 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://127.0.0.1:83/TrustPayClient/demo/MerchantResult.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>pvIcwNqGo0w4MA1vgPLsRQTWAiwNBibHJYjOQS76Of9baOpD1iojWTrV+8tT1A9zmAt8BzlS1ADquXE8FbPRoZmuwZH7DgqqtW8AbJOqYlhu94rmxnlCZYcUBsmIUY9JpZGlkatSj0jlaU8AC+EeiUa0oOlkrTQfK8GUD52L+0I=</Signature></MSG>
+2014/06/18-00:50:37 成功
+2014/06/18-00:50:37 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 16:50:22 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=halatb55wkf5j0unyzjlgf55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-00:50:37 接收报文：
+2014/06/18-00:50:37 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-00:50:37 验证网上支付平台响应报文的签名：正确
+2014/06/18-00:50:37 生成交易响应对象：
+2014/06/18-00:50:37 交易结果：[0000]
+2014/06/18-00:50:37 错误信息：[交易成功]
+2014/06/18-00:50:37 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-00:52:46 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:52:46 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:52:46 检查交易请求是否合法：
+2014/06/18-00:52:46 1101]    错误信息：[商户提交的交易资料不合法 - 支付结果回传网址不合法！]
+2014/06/18-00:52:46 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-00:53:17 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:53:17 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:53:17 检查交易请求是否合法：正确
+2014/06/18-00:53:17 交易报文
+2014/06/18-00:53:17 完整交易报文：
+2014/06/18-00:53:17 签名后的报文
+2014/06/18-00:53:17 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-00:53:17 报文长度：1285<br>
+2014/06/18-00:53:17 连线网上支付平台
+2014/06/18-00:53:17 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-00:53:17 成功
+2014/06/18-00:53:17 提交交易报文：
+2014/06/18-00:53:17 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-00:53:18 成功
+2014/06/18-00:53:18 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 16:53:02 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=umlrko45nc1sdezm4g3o0c45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-00:53:18 接收报文：
+2014/06/18-00:53:18 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-00:53:18 验证网上支付平台响应报文的签名：正确
+2014/06/18-00:53:18 生成交易响应对象：
+2014/06/18-00:53:18 交易结果：[0000]
+2014/06/18-00:53:18 错误信息：[交易成功]
+2014/06/18-00:53:18 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-00:54:54 TrustPay Client PHP 交易开始==========================
+2014/06/18-00:54:54 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-00:54:54 检查交易请求是否合法：正确
+2014/06/18-00:54:54 交易报文
+2014/06/18-00:54:54 完整交易报文：
+2014/06/18-00:54:54 签名后的报文
+2014/06/18-00:54:54 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-00:54:54 报文长度：1285<br>
+2014/06/18-00:54:54 连线网上支付平台
+2014/06/18-00:54:54 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-00:54:54 成功
+2014/06/18-00:54:54 提交交易报文：
+2014/06/18-00:54:54 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-00:54:55 成功
+2014/06/18-00:54:55 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 16:54:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=dtoznf45pgowup45auo3a5qk; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-00:54:55 接收报文：
+2014/06/18-00:54:55 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-00:54:55 验证网上支付平台响应报文的签名：正确
+2014/06/18-00:54:55 生成交易响应对象：
+2014/06/18-00:54:55 交易结果：[0000]
+2014/06/18-00:54:55 错误信息：[交易成功]
+2014/06/18-00:54:55 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-01:23:36 TrustPay Client PHP 交易开始==========================
+2014/06/18-01:23:36 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-01:23:36 检查交易请求是否合法：正确
+2014/06/18-01:23:36 交易报文
+2014/06/18-01:23:36 完整交易报文：
+2014/06/18-01:23:36 签名后的报文
+2014/06/18-01:23:36 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-01:23:36 报文长度：1285<br>
+2014/06/18-01:23:36 连线网上支付平台
+2014/06/18-01:23:36 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-01:23:36 成功
+2014/06/18-01:23:36 提交交易报文：
+2014/06/18-01:23:36 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-01:23:37 成功
+2014/06/18-01:23:37 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 17:23:21 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=u10w53ur2fny3c55lx2guv55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-01:23:37 接收报文：
+2014/06/18-01:23:37 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-01:23:37 验证网上支付平台响应报文的签名：正确
+2014/06/18-01:23:37 生成交易响应对象：
+2014/06/18-01:23:37 交易结果：[0000]
+2014/06/18-01:23:37 错误信息：[交易成功]
+2014/06/18-01:23:37 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-01:24:50 TrustPay Client PHP 交易开始==========================
+2014/06/18-01:24:50 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-01:24:50 检查交易请求是否合法：正确
+2014/06/18-01:24:50 交易报文
+2014/06/18-01:24:50 完整交易报文：
+2014/06/18-01:24:50 签名后的报文
+2014/06/18-01:24:50 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-01:24:50 报文长度：1285<br>
+2014/06/18-01:24:50 连线网上支付平台
+2014/06/18-01:24:50 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-01:24:50 成功
+2014/06/18-01:24:50 提交交易报文：
+2014/06/18-01:24:50 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061802643</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>280</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2003/11/12</OrderDate><OrderTime>23:55:30</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://11.com/TrustPayClient/callback.php</ResultNotifyURL><MerchantRemarks>Hi!</MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>EhrKlBf5FkKfs2jaNselDxKD3RD9xlKHKrd4gE8UxtuG9l6k8YrqziITguWR8k1xnt3RabxZWzdCjXzx1sD7dXw3y1c2UAlD/L4EU75DLWgPHYo+1mJde1m+IJ4PbEYGEM7CJx0GjfSYOsML84FeBoBC6qT38r/5aciSoABjh8E=</Signature></MSG>
+2014/06/18-01:24:50 成功
+2014/06/18-01:24:50 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 17:24:35 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=kwvv0155rf01axfjfzp1uu45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature></MSG>
+2014/06/18-01:24:50 接收报文：
+2014/06/18-01:24:50 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061802643</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030218682671608597</PaymentURL><OrderAmount>280</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>udHOaDcReCW+/GAHtQcCiUww6Qg6j6Vx/hecAKuuJ3GZIPCqZ4NDRtCnjObmWGByqy/6SV4MXCaPHPNb/51ko2oD3+cO9S7d2SXKxLyeCRFZAPtdx/6fqWGUjq91GDxtwH/OkyxUHGew+p2IlvMCC0//LjjoPKO0ZJE6aKVQ6XM=</Signature>
+2014/06/18-01:24:50 验证网上支付平台响应报文的签名：正确
+2014/06/18-01:24:50 生成交易响应对象：
+2014/06/18-01:24:50 交易结果：[0000]
+2014/06/18-01:24:50 错误信息：[交易成功]
+2014/06/18-01:24:50 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-01:26:13 TrustPay Client PHP 交易开始==========================
+2014/06/18-01:26:13 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-01:26:13 检查交易请求是否合法：正确
+2014/06/18-01:26:13 交易报文
+2014/06/18-01:26:13 完整交易报文：
+2014/06/18-01:26:13 签名后的报文
+2014/06/18-01:26:13 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061812329</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>01:26:12</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>rY0hMWVRhyKtiQhPk0HE9hSvYytt6BmwUM0CXYJOQZOJGmS23HhaqA3IADzYNdxdmhBPb6JdGVL8dfl34z/BYyCvcvDfN3kj8NMmp133PhfZjR/oND/q7ktcddHCLvqtwpKzcwWxHd3HHvjMAmXJksFrGlQiaavoUn9yxn905rQ=</Signature></MSG>
+2014/06/18-01:26:13 报文长度：1300<br>
+2014/06/18-01:26:13 连线网上支付平台
+2014/06/18-01:26:13 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-01:26:13 成功
+2014/06/18-01:26:13 提交交易报文：
+2014/06/18-01:26:13 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061812329</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>01:26:12</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>rY0hMWVRhyKtiQhPk0HE9hSvYytt6BmwUM0CXYJOQZOJGmS23HhaqA3IADzYNdxdmhBPb6JdGVL8dfl34z/BYyCvcvDfN3kj8NMmp133PhfZjR/oND/q7ktcddHCLvqtwpKzcwWxHd3HHvjMAmXJksFrGlQiaavoUn9yxn905rQ=</Signature></MSG>
+2014/06/18-01:26:13 成功
+2014/06/18-01:26:13 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 17:25:58 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=vviz41vkougb5r55cuqdvsbv; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061812329</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030259582160664482</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SPJlz8ycgSfmqxH+VE1S//LdZ8JUZ0X2QbtmvrMDmNeSwcQlGhg3CnaCuYzdDE4cZza3b7pFmfT7OiuwKIpGQ6Us/Tn/Bh1j3/vKEyetxvUnIsC9bTv/COSYodVUQGA1E8XH2eP7fc65lFgom/Zcd+08VmiWew1sSQPPesAhrHk=</Signature></MSG>
+2014/06/18-01:26:13 接收报文：
+2014/06/18-01:26:13 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061812329</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030259582160664482</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SPJlz8ycgSfmqxH+VE1S//LdZ8JUZ0X2QbtmvrMDmNeSwcQlGhg3CnaCuYzdDE4cZza3b7pFmfT7OiuwKIpGQ6Us/Tn/Bh1j3/vKEyetxvUnIsC9bTv/COSYodVUQGA1E8XH2eP7fc65lFgom/Zcd+08VmiWew1sSQPPesAhrHk=</Signature>
+2014/06/18-01:26:13 验证网上支付平台响应报文的签名：正确
+2014/06/18-01:26:13 生成交易响应对象：
+2014/06/18-01:26:13 交易结果：[0000]
+2014/06/18-01:26:13 错误信息：[交易成功]
+2014/06/18-01:26:13 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-01:29:26 TrustPay Client PHP 交易开始==========================
+2014/06/18-01:29:26 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-01:29:26 检查交易请求是否合法：正确
+2014/06/18-01:29:26 交易报文
+2014/06/18-01:29:26 完整交易报文：
+2014/06/18-01:29:26 签名后的报文
+2014/06/18-01:29:26 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061812329</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>01:29:25</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ijum3iIWrQoNWTl+jm4EqZLuqlQ4GkEfvi3V+qHjzACumvqGa+fnUAlUZ04Xq7dZQ03TFY9k+x1sUr/N6taoAuf3tjVr88OLll10vKcG3IS/RdowqDdwdK94Mn8ZB/fdtk0w0BdTYr1mWAuFFXCSA26UTE88ZuzhTFx6GlqIU/Y=</Signature></MSG>
+2014/06/18-01:29:26 报文长度：1300<br>
+2014/06/18-01:29:26 连线网上支付平台
+2014/06/18-01:29:26 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-01:29:26 成功
+2014/06/18-01:29:26 提交交易报文：
+2014/06/18-01:29:26 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061812329</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>01:29:25</OrderTime><OrderURL>http://127.0.0.1/Merchant/MerchantQueryOrder.jsp?ON=ON200306300001&QueryType=1</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ijum3iIWrQoNWTl+jm4EqZLuqlQ4GkEfvi3V+qHjzACumvqGa+fnUAlUZ04Xq7dZQ03TFY9k+x1sUr/N6taoAuf3tjVr88OLll10vKcG3IS/RdowqDdwdK94Mn8ZB/fdtk0w0BdTYr1mWAuFFXCSA26UTE88ZuzhTFx6GlqIU/Y=</Signature></MSG>
+2014/06/18-01:29:26 成功
+2014/06/18-01:29:26 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 17:29:11 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=yygyl245zld3ie45ebyvpabz; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061812329</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030259582160664482</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SPJlz8ycgSfmqxH+VE1S//LdZ8JUZ0X2QbtmvrMDmNeSwcQlGhg3CnaCuYzdDE4cZza3b7pFmfT7OiuwKIpGQ6Us/Tn/Bh1j3/vKEyetxvUnIsC9bTv/COSYodVUQGA1E8XH2eP7fc65lFgom/Zcd+08VmiWew1sSQPPesAhrHk=</Signature></MSG>
+2014/06/18-01:29:26 接收报文：
+2014/06/18-01:29:26 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061812329</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030259582160664482</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SPJlz8ycgSfmqxH+VE1S//LdZ8JUZ0X2QbtmvrMDmNeSwcQlGhg3CnaCuYzdDE4cZza3b7pFmfT7OiuwKIpGQ6Us/Tn/Bh1j3/vKEyetxvUnIsC9bTv/COSYodVUQGA1E8XH2eP7fc65lFgom/Zcd+08VmiWew1sSQPPesAhrHk=</Signature>
+2014/06/18-01:29:26 验证网上支付平台响应报文的签名：正确
+2014/06/18-01:29:26 生成交易响应对象：
+2014/06/18-01:29:26 交易结果：[0000]
+2014/06/18-01:29:26 错误信息：[交易成功]
+2014/06/18-01:29:26 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-01:30:52 TrustPay Client PHP 交易开始==========================
+2014/06/18-01:30:52 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-01:30:52 检查交易请求是否合法：正确
+2014/06/18-01:30:52 交易报文
+2014/06/18-01:30:52 完整交易报文：
+2014/06/18-01:30:52 签名后的报文
+2014/06/18-01:30:52 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061812329</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>01:30:51</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>en/CfYORtgoqe6Mk8c4xvzGsUJojIf1hUG0weAXj25N8Ie19pehawWjNhbAKjSwd1zkHa3SgJETYFAhf9ejWrFaNRHs6R38XXc12MBd7YNr5pW4NqMyGrXrf+NHeOgGfhP3K3AHmS5RO/F++Zyl+GcPE+4lAxa1bPjSCKohd3R8=</Signature></MSG>
+2014/06/18-01:30:52 报文长度：1266<br>
+2014/06/18-01:30:52 连线网上支付平台
+2014/06/18-01:30:52 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-01:30:52 成功
+2014/06/18-01:30:52 提交交易报文：
+2014/06/18-01:30:52 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061812329</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>01:30:51</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>en/CfYORtgoqe6Mk8c4xvzGsUJojIf1hUG0weAXj25N8Ie19pehawWjNhbAKjSwd1zkHa3SgJETYFAhf9ejWrFaNRHs6R38XXc12MBd7YNr5pW4NqMyGrXrf+NHeOgGfhP3K3AHmS5RO/F++Zyl+GcPE+4lAxa1bPjSCKohd3R8=</Signature></MSG>
+2014/06/18-01:30:52 成功
+2014/06/18-01:30:52 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Tue, 17 Jun 2014 17:30:37 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=bcqjrfqvivpiziyof3qxxq45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061812329</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030259582160664482</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SPJlz8ycgSfmqxH+VE1S//LdZ8JUZ0X2QbtmvrMDmNeSwcQlGhg3CnaCuYzdDE4cZza3b7pFmfT7OiuwKIpGQ6Us/Tn/Bh1j3/vKEyetxvUnIsC9bTv/COSYodVUQGA1E8XH2eP7fc65lFgom/Zcd+08VmiWew1sSQPPesAhrHk=</Signature></MSG>
+2014/06/18-01:30:52 接收报文：
+2014/06/18-01:30:52 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061812329</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030259582160664482</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SPJlz8ycgSfmqxH+VE1S//LdZ8JUZ0X2QbtmvrMDmNeSwcQlGhg3CnaCuYzdDE4cZza3b7pFmfT7OiuwKIpGQ6Us/Tn/Bh1j3/vKEyetxvUnIsC9bTv/COSYodVUQGA1E8XH2eP7fc65lFgom/Zcd+08VmiWew1sSQPPesAhrHk=</Signature>
+2014/06/18-01:30:52 验证网上支付平台响应报文的签名：正确
+2014/06/18-01:30:52 生成交易响应对象：
+2014/06/18-01:30:52 交易结果：[0000]
+2014/06/18-01:30:52 错误信息：[交易成功]
+2014/06/18-01:30:52 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-09:57:09 TrustPay Client PHP 交易开始==========================
+2014/06/18-09:57:09 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-09:57:09 检查交易请求是否合法：正确
+2014/06/18-09:57:09 交易报文
+2014/06/18-09:57:09 完整交易报文：
+2014/06/18-09:57:09 签名后的报文
+2014/06/18-09:57:11 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>09:57:07</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>RXwiplXswpkl9UVBSjptRNCwVaUTREwqe2AnKvAvfapxkP8JzRQ4VYB79i8Jue35OH6AlSd7k153HbXtRYLPK0RMZxYoLlMOU9bBXZ+bbXIcv6A75ASM5+mXEn3wKeOcFaC72DmcJNYb3wyOpndOCrFkyKximbtesL2wuutfB1w=</Signature></MSG>
+2014/06/18-09:57:11 报文长度：1266<br>
+2014/06/18-09:57:11 连线网上支付平台
+2014/06/18-09:57:11 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-09:57:11 成功
+2014/06/18-09:57:11 提交交易报文：
+2014/06/18-09:57:11 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>09:57:07</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>RXwiplXswpkl9UVBSjptRNCwVaUTREwqe2AnKvAvfapxkP8JzRQ4VYB79i8Jue35OH6AlSd7k153HbXtRYLPK0RMZxYoLlMOU9bBXZ+bbXIcv6A75ASM5+mXEn3wKeOcFaC72DmcJNYb3wyOpndOCrFkyKximbtesL2wuutfB1w=</Signature></MSG>
+2014/06/18-09:57:11 1202]    错误信息：[提交交易时发生网络错误 -]
+2014/06/18-09:57:11 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-09:58:49 TrustPay Client PHP 交易开始==========================
+2014/06/18-09:58:50 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-09:58:50 检查交易请求是否合法：
+2014/06/18-09:58:50 1101]    错误信息：[商户提交的交易资料不合法 - 订单信息不合法！]
+2014/06/18-09:58:50 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-09:58:57 TrustPay Client PHP 交易开始==========================
+2014/06/18-09:58:57 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-09:58:57 检查交易请求是否合法：正确
+2014/06/18-09:58:57 交易报文
+2014/06/18-09:58:57 完整交易报文：
+2014/06/18-09:58:57 签名后的报文
+2014/06/18-09:58:57 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>09:58:55</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>QouwyvuEls1N80KN2TTwhriS6G430X0eT2LfPpjZgoLr7bcI9qqc4IUz3EYvttTDtoYRiMezKNvUcNPXIX6TwtjOmgJGTcV4JpwbbAx8B0Fsez6qKn6MWeHZIYOZO9ovNv5KK4d6qwTlPJCAFxEyVkiFeN9v/OCdKadEFvIpuVs=</Signature></MSG>
+2014/06/18-09:58:57 报文长度：1266<br>
+2014/06/18-09:58:57 连线网上支付平台
+2014/06/18-09:58:57 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-09:58:57 成功
+2014/06/18-09:58:57 提交交易报文：
+2014/06/18-09:58:57 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>09:58:55</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>QouwyvuEls1N80KN2TTwhriS6G430X0eT2LfPpjZgoLr7bcI9qqc4IUz3EYvttTDtoYRiMezKNvUcNPXIX6TwtjOmgJGTcV4JpwbbAx8B0Fsez6qKn6MWeHZIYOZO9ovNv5KK4d6qwTlPJCAFxEyVkiFeN9v/OCdKadEFvIpuVs=</Signature></MSG>
+2014/06/18-09:58:57 成功
+2014/06/18-09:58:57 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 01:58:35 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=soefflu4wo0aml55vob2ca24; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-09:58:57 接收报文：
+2014/06/18-09:58:57 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-09:58:57 验证网上支付平台响应报文的签名：正确
+2014/06/18-09:58:57 生成交易响应对象：
+2014/06/18-09:58:57 交易结果：[0000]
+2014/06/18-09:58:57 错误信息：[交易成功]
+2014/06/18-09:58:57 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-10:21:28 TrustPay Client PHP 交易开始==========================
+2014/06/18-10:21:28 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-10:21:28 检查交易请求是否合法：正确
+2014/06/18-10:21:28 交易报文
+2014/06/18-10:21:28 完整交易报文：
+2014/06/18-10:21:28 签名后的报文
+2014/06/18-10:21:28 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:01:07</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SX+Av2soion27p+ppKo1rjqGfqNqOKGdr0kXADR6Xrcqjcuugyn/dJkxbxCLyqsFOLFmEhO3q4UsD+nTm/384CsBwZ03hMjRnCW2y3GwAyQf3/73j+vDusjUgXiADMDLZdWwFgIQqfgruaxkXhfb5WmmnwbVwEvavnZJqjsbzc4=</Signature></MSG>
+2014/06/18-10:21:28 报文长度：1266<br>
+2014/06/18-10:21:28 连线网上支付平台
+2014/06/18-10:21:28 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-10:21:28 成功
+2014/06/18-10:21:28 提交交易报文：
+2014/06/18-10:21:28 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:01:07</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SX+Av2soion27p+ppKo1rjqGfqNqOKGdr0kXADR6Xrcqjcuugyn/dJkxbxCLyqsFOLFmEhO3q4UsD+nTm/384CsBwZ03hMjRnCW2y3GwAyQf3/73j+vDusjUgXiADMDLZdWwFgIQqfgruaxkXhfb5WmmnwbVwEvavnZJqjsbzc4=</Signature></MSG>
+2014/06/18-10:21:28 1202]    错误信息：[提交交易时发生网络错误 -]
+2014/06/18-10:21:28 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-10:21:33 TrustPay Client PHP 交易开始==========================
+2014/06/18-10:21:33 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-10:21:33 检查交易请求是否合法：正确
+2014/06/18-10:21:33 交易报文
+2014/06/18-10:21:33 完整交易报文：
+2014/06/18-10:21:33 签名后的报文
+2014/06/18-10:21:33 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:21:32</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Tu4oTIOHmfXKwl6Vumbq+1s+qITiWnrktyG5GEA222PYzx6ApdLKzV9LK9nbWst/f99Ps3WH9joZcHCpZdwhotpRAJgRwM1M/1hpcY5kUizilRByP/pWj8x5/QRJSHtCsKHWqBLenqnluua0BCBBIWGNE4vEa7tH54hGQ/rNbPM=</Signature></MSG>
+2014/06/18-10:21:33 报文长度：1266<br>
+2014/06/18-10:21:33 连线网上支付平台
+2014/06/18-10:21:33 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-10:21:33 成功
+2014/06/18-10:21:33 提交交易报文：
+2014/06/18-10:21:33 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:21:32</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Tu4oTIOHmfXKwl6Vumbq+1s+qITiWnrktyG5GEA222PYzx6ApdLKzV9LK9nbWst/f99Ps3WH9joZcHCpZdwhotpRAJgRwM1M/1hpcY5kUizilRByP/pWj8x5/QRJSHtCsKHWqBLenqnluua0BCBBIWGNE4vEa7tH54hGQ/rNbPM=</Signature></MSG>
+2014/06/18-10:21:33 成功
+2014/06/18-10:21:33 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 02:21:11 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=wf4jux45fjrw4jbajeiq24az; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56355.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-10:21:33 接收报文：
+2014/06/18-10:21:33 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-10:21:33 验证网上支付平台响应报文的签名：正确
+2014/06/18-10:21:33 生成交易响应对象：
+2014/06/18-10:21:33 交易结果：[0000]
+2014/06/18-10:21:33 错误信息：[交易成功]
+2014/06/18-10:21:33 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-10:27:45 TrustPay Client PHP 交易开始==========================
+2014/06/18-10:27:45 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-10:27:45 检查交易请求是否合法：正确
+2014/06/18-10:27:45 交易报文
+2014/06/18-10:27:45 完整交易报文：
+2014/06/18-10:27:45 签名后的报文
+2014/06/18-10:27:45 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:27:44</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>XCaY8qCmgXS10EWCGsHyJyAlbqlajfnPVSQWf82SDi06RcxwaWnmU9XGxUhCJVEp+8Ghfc5j7FsJYdiCkfUX/9YgfUbN+Zc/XJeTM6BHOTKCQvN178BiDGCJK2dTPY44V+9vzcwHcGONF9U9f1oY5UwBf7LSkKrnCtVmoUmM/5U=</Signature></MSG>
+2014/06/18-10:27:45 报文长度：1266<br>
+2014/06/18-10:27:45 连线网上支付平台
+2014/06/18-10:27:45 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-10:27:45 成功
+2014/06/18-10:27:45 提交交易报文：
+2014/06/18-10:27:45 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:27:44</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>XCaY8qCmgXS10EWCGsHyJyAlbqlajfnPVSQWf82SDi06RcxwaWnmU9XGxUhCJVEp+8Ghfc5j7FsJYdiCkfUX/9YgfUbN+Zc/XJeTM6BHOTKCQvN178BiDGCJK2dTPY44V+9vzcwHcGONF9U9f1oY5UwBf7LSkKrnCtVmoUmM/5U=</Signature></MSG>
+2014/06/18-10:27:45 成功
+2014/06/18-10:27:45 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 02:27:23 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=lcn0wsuzggulbg45xzdkbput; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=929360650.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-10:27:45 接收报文：
+2014/06/18-10:27:45 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-10:27:45 验证网上支付平台响应报文的签名：正确
+2014/06/18-10:27:45 生成交易响应对象：
+2014/06/18-10:27:45 交易结果：[0000]
+2014/06/18-10:27:45 错误信息：[交易成功]
+2014/06/18-10:27:45 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-10:32:58 TrustPay Client PHP 交易开始==========================
+2014/06/18-10:32:58 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-10:32:58 检查交易请求是否合法：正确
+2014/06/18-10:32:58 交易报文
+2014/06/18-10:32:58 完整交易报文：
+2014/06/18-10:32:58 签名后的报文
+2014/06/18-10:32:58 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:32:56</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>FpTwnt0ilAY2/AmWRpBUQh7iGQL8yo+HZALSpVPzU+ZO2FtJNyz02XC5KQFL+ZiAz1SOQgP1xW6fcDOfkAINBHatnpskFJbyGGfb7iKm2blldCAD0owGiKRACRLDKTw5ZwJ6wrbZtm0AqcWydNakoBxwC0Kq1Vd4M0LTevplg7I=</Signature></MSG>
+2014/06/18-10:32:58 报文长度：1266<br>
+2014/06/18-10:32:58 连线网上支付平台
+2014/06/18-10:32:58 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-10:32:58 成功
+2014/06/18-10:32:58 提交交易报文：
+2014/06/18-10:32:58 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:32:56</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>FpTwnt0ilAY2/AmWRpBUQh7iGQL8yo+HZALSpVPzU+ZO2FtJNyz02XC5KQFL+ZiAz1SOQgP1xW6fcDOfkAINBHatnpskFJbyGGfb7iKm2blldCAD0owGiKRACRLDKTw5ZwJ6wrbZtm0AqcWydNakoBxwC0Kq1Vd4M0LTevplg7I=</Signature></MSG>
+2014/06/18-10:32:58 成功
+2014/06/18-10:32:58 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 02:32:36 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=o2lvaa3a5rk1evubzeavynar; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-10:32:58 接收报文：
+2014/06/18-10:32:58 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-10:32:58 验证网上支付平台响应报文的签名：正确
+2014/06/18-10:32:58 生成交易响应对象：
+2014/06/18-10:32:58 交易结果：[0000]
+2014/06/18-10:32:58 错误信息：[交易成功]
+2014/06/18-10:32:58 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-10:34:38 TrustPay Client PHP 交易开始==========================
+2014/06/18-10:34:38 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-10:34:38 检查交易请求是否合法：正确
+2014/06/18-10:34:38 交易报文
+2014/06/18-10:34:38 完整交易报文：
+2014/06/18-10:34:38 签名后的报文
+2014/06/18-10:34:38 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:34:23</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>i754qS9arvTCA7fvFh8fRteNMeMpV54NyVY33KlXeKiN3G9gmPx/gn0si3n9FmsL5eM61jBDPZ5dqQyYxpkDUoQnRF6E/MMkeMJ7ksKcFmgfOilsUbuRo1wIxl/lm9GiU4hXtiRzEQCmxlGiHaEadmqVmt43KNwCjqLaEKii8GE=</Signature></MSG>
+2014/06/18-10:34:38 报文长度：1266<br>
+2014/06/18-10:34:38 连线网上支付平台
+2014/06/18-10:34:38 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-10:34:38 成功
+2014/06/18-10:34:38 提交交易报文：
+2014/06/18-10:34:38 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:34:23</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>i754qS9arvTCA7fvFh8fRteNMeMpV54NyVY33KlXeKiN3G9gmPx/gn0si3n9FmsL5eM61jBDPZ5dqQyYxpkDUoQnRF6E/MMkeMJ7ksKcFmgfOilsUbuRo1wIxl/lm9GiU4hXtiRzEQCmxlGiHaEadmqVmt43KNwCjqLaEKii8GE=</Signature></MSG>
+2014/06/18-10:34:38 成功
+2014/06/18-10:34:38 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 02:34:16 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=wxplm5eoseu3ixruvtgkokfu; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-10:34:38 接收报文：
+2014/06/18-10:34:38 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-10:34:38 验证网上支付平台响应报文的签名：正确
+2014/06/18-10:34:38 生成交易响应对象：
+2014/06/18-10:34:38 交易结果：[0000]
+2014/06/18-10:34:38 错误信息：[交易成功]
+2014/06/18-10:34:38 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-10:34:53 TrustPay Client PHP 交易开始==========================
+2014/06/18-10:34:53 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-10:34:53 检查交易请求是否合法：正确
+2014/06/18-10:34:53 交易报文
+2014/06/18-10:34:53 完整交易报文：
+2014/06/18-10:34:53 签名后的报文
+2014/06/18-10:34:53 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:34:52</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>X1CzbSr88yZ9GsgYDUlrfC0nUOUosuXUroS8KjeovxJZ3X9ccqtAeh1VLl/HdHXfIcfIiaqmnqNubHUSuIt58hjWutFpLarGbV3g4DCdBmp1/JNP5pLKe87UD+TgWA+tUgnSrp0yBcTrV53EEXoVYHHcM88QwKIkUEMXVJReRMM=</Signature></MSG>
+2014/06/18-10:34:53 报文长度：1266<br>
+2014/06/18-10:34:53 连线网上支付平台
+2014/06/18-10:34:53 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-10:34:53 成功
+2014/06/18-10:34:53 提交交易报文：
+2014/06/18-10:34:53 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:34:52</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>X1CzbSr88yZ9GsgYDUlrfC0nUOUosuXUroS8KjeovxJZ3X9ccqtAeh1VLl/HdHXfIcfIiaqmnqNubHUSuIt58hjWutFpLarGbV3g4DCdBmp1/JNP5pLKe87UD+TgWA+tUgnSrp0yBcTrV53EEXoVYHHcM88QwKIkUEMXVJReRMM=</Signature></MSG>
+2014/06/18-10:34:53 成功
+2014/06/18-10:34:53 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 02:34:31 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=n3ad5h2wlcttjb450egdsb55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-10:34:53 接收报文：
+2014/06/18-10:34:53 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-10:34:53 验证网上支付平台响应报文的签名：正确
+2014/06/18-10:34:53 生成交易响应对象：
+2014/06/18-10:34:53 交易结果：[0000]
+2014/06/18-10:34:53 错误信息：[交易成功]
+2014/06/18-10:34:53 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-11:09:46 TrustPay Client PHP 交易开始==========================
+2014/06/18-11:09:46 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-11:09:46 检查交易请求是否合法：正确
+2014/06/18-11:09:46 交易报文
+2014/06/18-11:09:46 完整交易报文：
+2014/06/18-11:09:46 签名后的报文
+2014/06/18-11:09:46 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:59:44</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ThHIzrJHquIYConXvfUsFfbIPQVgWGbCfUVIfP/e0qYi2yOQflKM558Oq/Is9EQcg5+wtHy+TcwS68LpPzdqrc7aLlna1cqF+cP8UJbS8I6gE3yQ6JKSQkZBjimUGXIk9n2/yTvPfRNzNPwzSawVLp7NSVePGX1aBfjw2vtwMT8=</Signature></MSG>
+2014/06/18-11:09:46 报文长度：1266<br>
+2014/06/18-11:09:46 连线网上支付平台
+2014/06/18-11:09:46 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-11:09:46 成功
+2014/06/18-11:09:46 提交交易报文：
+2014/06/18-11:09:46 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>10:59:44</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>ThHIzrJHquIYConXvfUsFfbIPQVgWGbCfUVIfP/e0qYi2yOQflKM558Oq/Is9EQcg5+wtHy+TcwS68LpPzdqrc7aLlna1cqF+cP8UJbS8I6gE3yQ6JKSQkZBjimUGXIk9n2/yTvPfRNzNPwzSawVLp7NSVePGX1aBfjw2vtwMT8=</Signature></MSG>
+2014/06/18-11:09:46 成功
+2014/06/18-11:09:46 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 03:09:24 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=yfzadvagrewopmbqe0wjbk55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-11:09:46 接收报文：
+2014/06/18-11:09:46 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-11:09:46 验证网上支付平台响应报文的签名：正确
+2014/06/18-11:09:46 生成交易响应对象：
+2014/06/18-11:09:46 交易结果：[0000]
+2014/06/18-11:09:46 错误信息：[交易成功]
+2014/06/18-11:09:46 交易结束==================================================
+                    
+                    
+                    
+                    
+2014/06/18-11:11:06 TrustPay Client PHP 交易开始==========================
+2014/06/18-11:11:06 配置文件中商户数为1请求指定的商户配置编号为 1
+2014/06/18-11:11:06 检查交易请求是否合法：正确
+2014/06/18-11:11:06 交易报文
+2014/06/18-11:11:06 完整交易报文：
+2014/06/18-11:11:06 签名后的报文
+2014/06/18-11:11:06 提交网上支付平台的报文：
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>11:11:05</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>GuEwweluSq6tMgdWYznrnBkrnAeOYzHOR0ulXjC3bRunxjhXVlrT02/rJ2mODPbFnbaGkBsiWncD9Ied+OFoSM/3lOd5UIhULBHui71gyC+9GFoV/R+w+tVcHn47wty13V1U8pjTkimeZAZ2jJ7nlG5U4MSxBpNqGTVUwU+c8gA=</Signature></MSG>
+2014/06/18-11:11:06 报文长度：1266<br>
+2014/06/18-11:11:06 连线网上支付平台
+2014/06/18-11:11:06 网上支付平台URL：[https://www.95599.cn/b2c/trustpay/ReceiveMerchantTrxReqServlet] 
+2014/06/18-11:11:06 成功
+2014/06/18-11:11:06 提交交易报文：
+2014/06/18-11:11:06 <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxRequest><TrxType>PayReq</TrxType><Order><OrderNo>2014061826535</OrderNo><ExpiredDate>30</ExpiredDate><OrderAmount>1500.00</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/06/18</OrderDate><OrderTime>11:11:05</OrderTime><OrderURL>http://tuangou.lncoder.com/index.php?view=10</OrderURL><BuyIP>172.30.7.75</BuyIP><OrderItems><OrderItem><ProductID>IP000001</ProductID><ProductName>中国移动ip卡</ProductName><UnitPrice>100.1</UnitPrice><Qty>1</Qty></OrderItem><OrderItem><ProductID>IP000002</ProductID><ProductName>网通ip卡</ProductName><UnitPrice>90.1</UnitPrice><Qty>2</Qty></OrderItem></OrderItems></Order><ProductType>1</ProductType><PaymentType>1</PaymentType><NotifyType>0</NotifyType><ResultNotifyURL>http://tuangou.lncoder.com/index.php?mod=callback&pid=8</ResultNotifyURL><MerchantRemarks></MerchantRemarks><PaymentLinkType>1</PaymentLinkType></TrxRequest></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>GuEwweluSq6tMgdWYznrnBkrnAeOYzHOR0ulXjC3bRunxjhXVlrT02/rJ2mODPbFnbaGkBsiWncD9Ied+OFoSM/3lOd5UIhULBHui71gyC+9GFoV/R+w+tVcHn47wty13V1U8pjTkimeZAZ2jJ7nlG5U4MSxBpNqGTVUwU+c8gA=</Signature></MSG>
+2014/06/18-11:11:06 成功
+2014/06/18-11:11:06 接受到的响应报文：
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 03:10:44 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=ltz3sp45qcny0uitcq2v5w3r; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature></MSG>
+2014/06/18-11:11:06 接收报文：
+2014/06/18-11:11:06 <Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061826535</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeTestAct.ebf?TOKEN=14030567155784585706</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Jbht0SLfAlriyYRKNMT0rONCLFsgwcEh6LHM5jKf6XZ3x4OjrpirVU9QXiBmgPyQZOvCfjLE+VTkm41wARgMb1AAwHkuhC8HhM8TdNTkZcau8NuM2HB1QQDz//LeEebykXlphsAyrFm5E7K+7yjfRJb/rJuBm3otSaFldYkC1Y=</Signature>
+2014/06/18-11:11:06 验证网上支付平台响应报文的签名：正确
+2014/06/18-11:11:06 生成交易响应对象：
+2014/06/18-11:11:06 交易结果：[0000]
+2014/06/18-11:11:06 错误信息：[交易成功]
+2014/06/18-11:11:06 交易结束==================================================
+                    
+                    
+                    
+                    正确
+                    HTTP/1.1 200 OK
+                    Date: Wed, 18 Jun 2014 10:29:31 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=0psijfnpc2rz3m4503wnnbrf; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><OrderNo>2014061801212</OrderNo><PaymentURL>https://easyabc.95599.cn/b2c/NotCheckStatus/PaymentModeNewAct.ebf?TOKEN=14030873713155132143</PaymentURL><OrderAmount>1500.00</OrderAmount></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>41r9RF2AEpt2GFyvRn5Wn/t71WYqSLKd34gsC/TKNekWbNQOJxWhwq4y0EOUyCdElvaiFL/Q0800FQFtnjvJW+xjK0JTS7Z3OlOUAO7VU3HM5Xu2mIybaT7lwWhdyf6Muhv3XmJ4HaGkDUTjAjka1SWhVRAfH8K7ldCQmlkHhZI=</Signature></MSG>正确正确

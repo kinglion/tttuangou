@@ -1,0 +1,21 @@
+<!--{template @admin/header}--> <script language="JavaScript" type="text/javascript">
+function synchronous(mod,position,o)
+{
+var obj=document.getElementsByTagName('textarea');
+var ad_string=$('ad_'+mod+'_'+position).value;
+for (var i=0;i<obj.length;i++)
+{
+if(obj[i].getAttribute('position')==position)
+{
+obj[i].value=ad_string;
+}
+}
+alert("已成功将"+o.title);
+return false;
+}
+</script> <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableborder"> <tr class="header"> <td><div style="float:left; margin-left:0px; padding-top:8px"> <a href="###" onclick="collapse_change('tip')">技巧提�?/a></div> <div style="float:right; margin-right:4px; padding-bottom:9px"> </div></td> </tr> <tbody id="menu_tip" style="display:"> <tr> <td><ul> <li><B>强烈建议</B>：在搜索引擎未收录网站前，不要添加广告，否则影响收录�?/li> <li>系统在几乎每个页面都内置了常用的广告位，你可以在下面开启或者关闭全部广告，如果将广告位留空则自动隐藏广告位�?/li> <li>广告代码支持html代码（包括JS代码）。比如，要加入图片广告的话，填入的代码一般为&lt;a href="xxx"&gt;&lt;img src="http://xxx.com/xxx.gif"&gt;&lt;/a&gt;</li> <li>可以将某个页面某个位置的广告代码，同步设置到其他页面，只需点“同步到其它页面”即可�?/li> <li>资讯、视频等页面的“框架显示页”广告位，需要在�?A HREF="admin.php?mod=setting&code=modify_filter" target=_blank>内容聚合设置</A>】中开启“显示查看原文链接”才能看到�?/li> </ul></td> </tr> </table> <br /> <form method="post" action="admin.php?mod=income&code=domodify"  enctype="multipart/form-data"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="2">参数设置</td> </tr> <tr> <td class="altbg1" width="40%"><b>是否启用广告:</b><br> <span class="smalltxt">启用后广告才能显�?/span> </td> <td class="altbg2"> {$enable_radio} </td> </tr> </table> <br /> <!--{loop $this->_config $mod $config}--> <br /> <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableborder"> <tr class="header"> <td colspan="2"><a href="index.php?mod={$mod}" style="float:right;margin-top:10px" target="_blank">预览</a> <a href="###" onclick="collapse_change('tip_$mod')"> <img id="menuimg_tip_$mod" src="./templates/default/images/admincp/menu_add.gif" border="0"/>{$config[name]}</a> </td> </tr> <tbody id="menu_tip_{$mod}" style="display:none"> <!--{loop $config['ad_list'] $ad}--> <tr align="center"> <td class="altbg2">$ad[name]<BR>
+(最大宽�?{$ad[width]})<br> <br> <a href="#" onclick="return synchronous('{$mod}','{$ad[value]}',this);" title="将所有[{$ad[name]}]设为与[{$config[name]}{$ad[name]}]相同">同步到其它页�?/a> </td> <td class="altbg1"><textarea name="ad[{$mod}][{$ad[value]}]" rows="5" cols="100" position='{$ad[value]}' id="ad_{$mod}_{$ad[value]}">{$_AD[$mod][$ad[value]]}</textarea> </td> </tr> <!--{/loop}--> </tbody> </table> <!--{/loop}--> <!--{if 0}--> <br /> <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tableborder"> <tr class="header"> <td>更新到站�?/td> <td>&nbsp;</td> </tr> <tr align="center"> <td class="altbg2"  width="300">选择站点<br>
+如果不选择，就为当前站点�?/td> <td class="altbg1"><!--{loop $domain_list $domain}--> <!--{eval $checked=$domain==$current_domain?" checked":""}--> <input type="checkbox" name="domain_list[]" value="{$domain}"$checked=>
+{$domain}&nbsp;
+<!--{/loop}--> </td> </tr> </table> <!--{/if}--> <br> <center> <input class="button" type="submit" name="cronssubmit" value="�?�?> </center> </form>
+{template @admin/footer}

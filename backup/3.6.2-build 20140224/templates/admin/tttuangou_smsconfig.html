@@ -1,0 +1,37 @@
+<!--{template @admin/header}--> <div id="smsPrinter" style="width:330px;height:176px;position:absolute;background:#fff;border:3px solid #123;padding:10px;display:none;"> <div style="background:#000;color:#fff;position:absolute;right:0px;top:0px;cursor:pointer;padding:3px;" onclick="smsPrintClose()">关闭</div> <iframe id="smsPrintConnecter" frameborder="0" style="width:100%;height:100%;"></iframe> </div> <form action="{$action}" method="post" enctype="multipart/form-data"> <table cellspacing="1" cellpadding="4" width="100%" align="center" class="tableborder"> <tr class="header"> <td colspan="2">设置短信平台�?nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( <font id="sms_server_speed">loading...</font> )</td> </tr> <tr> <td width="23%" bgcolor="#F4F8FC"><p><strong>是否开�?</strong> </td> <td width="77%" align="right"> <input type="radio" name="power" value="on" {if $sms['power']=='on'}checked{/if} />�?&nbsp;&nbsp;&nbsp;
+<input type="radio" name="power" value="off" {if $sms['power']=='off' || !isset($sms['power'])}checked{/if} />�?</td> </tr> <tr style="display:none;"> <td width="23%" bgcolor="#F4F8FC"><p><strong>短信平台接口地址:</strong> </td> <td width="77%" align="right"><input size="50" name="server" type="text" id="server" value="{$sms['server']}" /></td> </tr> <tr> <td bgcolor="#F4F8FC"><strong>平台账号:</strong> <td align="right"><label> <input name="account" type="text" id="account" value="{$sms['account']}" /> </label><font style="margin-left:6px;" id="sms_account_status">状态查询中...</font></td> </tr> <tr> <td bgcolor="#F4F8FC"><strong>平台密码:</strong></td> <td align="right"><input name="password" type="password" id="password" value="{$sms['password']}" />�?A HREF="http://cenwor.com/shop/brand.php?id=7" target=_blank><font color=red>1000条短信仅需80元：在线购买</font></A>�?/td> </tr> <tr> <script type="text/javascript">
+function $$(ID)
+{
+return document.getElementById(ID);
+}
+function smsPrint()
+{
+$$('smsPrinter').style.display = 'block';
+$$('smsPrinter').style.left = parseInt((document.body.offsetWidth-160-330)/2)+'px';
+$$('smsPrinter').style.top = parseInt((document.body.offsetHeight-90-176)/2)+'px';
+$$('smsPrintConnecter').src = "?mod=tttuangou&code=smsconfig&op=smsprint&template="+encodeURIComponent($$('sms_template').value);
+//window.open ("?mod=tttuangou&code=smsconfig&op=smsprint&template="+encodeURIComponent($$('sms_template').value), "smsPrint", "height=176, width=330, left="+(screen.width-330)/2+", top="+(screen.height-176)/2+", toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+}
+function smsPrintClose()
+{
+$$('smsPrinter').style.display = 'none';
+$$('smsPrintConnecter').src = '';
+}
+window.onload = function()
+{
+var sc = document.createElement('script');
+sc.setAttribute('src', '?mod=tttuangou&code=smsconfig&op=smsaccount');
+document.body.appendChild(sc);
+}
+</script> <td bgcolor="#F4F8FC"><strong>短信模板:</strong></td> <td align="right"> <div style="float:left;height:220px;"> <textarea id="sms_template" name="template" style="width:300px;height:80px;">{$sms['template']}</textarea> <br/><input type="button" value="发送到手机预览" onclick="smsPrint()" /><br/> <strong>提示�?/strong><br/>
+请保证您的短信平台账户余额充足，<BR>以免发生用户收不到短信提醒的状况�?</div> <div style="padding-left:330px;">
+可用标记变量，系统会自动替换�?br/>
+&#123;user_name&#125; 用户�?br/>
+&#123;product_name&#125; 商品名称<br/>
+&#123;ticket_number&#125; 团购券序�?br/>
+&#123;ticket_password&#125; 团购券密�?br/>
+&#123;perioddate&#125; 团购券过期时�?(显示格式�?990-05-13)<br/>
+&#123;seller_phone&#125; 商家电话<br/>
+&#123;seller_address&#125; 商家地址<br/>
+&#123;site_name&#125; 站点名称<br/> </div> </td> </tr> <tr> <td bgcolor="#F4F8FC" colspan="2"> <center><input type="submit" class="button" name="addsubmit" value=" 保存 " /></center> </td> </tr> </table> </form>
+{template @admin/footer}

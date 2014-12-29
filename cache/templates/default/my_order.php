@@ -1,0 +1,132 @@
+<? include handler('template')->file('header'); ?>
+<div class="site-ms">
+<div class="site-ms__left">
+<? include handler('template')->file('my_menu'); ?>
+<div class="t_area_out" style="border:none;">
+<div class="t_area_in">
+<script type="text/javascript">
+$(document).ready(function(){
+$("#report tr:odd").addClass("odd");
+$("#report tr:not(.odd)").hide();
+$("#report tr:first-child").show();
+$("#report tr.odd .orderdo").click(function(){
+$(this).parent().next("tr").toggle();
+$(this).find(".arrow").toggleClass("up");
+});
+$(".order_info span").removeAttr("style");//清除订单中自定义属性
+});
+//jquery 模拟点击打开新窗口
+$("a[rel=external]").attr('target', '_blank');
+function expressconfirm(url)
+{
+if (confirm('卖家已经发货完毕，请您尽早确认收货！'))
+{
+window.location = url;
+}
+}
+</script>
+<ul class="nleftL">
+<div style="float: right;">
+<li>分类:</li>
+<li class="liL_<?=$_s1?>"><a href="?mod=me&code=order">全部</a></li>
+<li class="liLine">|</li>
+<li class="liL_<?=$_s2?>"><a href="?mod=me&code=order&pay=1">已付款</a></li>
+<li class="liLine">|</li>
+<li class="liL_<?=$_s3?>"><a href="?mod=me&code=order&pay=0">未付款</a></li>
+</div>
+</ul>
+<div class="nleftL">
+<table id="report">
+<tr>
+<th><?=TUANGOU_STR?>项目</th>
+<th>数量</th>
+<th>总价</th>
+<th>订单状态</th>
+<th style="border-right:none;">操作</th>
+</tr>
+<? if(is_array($order_all)) { foreach($order_all as $i => $value) { ?>
+<tr>
+<td width="20%">
+<a href="?view=<?=$value['product']['id']?>" target="_blank">
+<img id="img2" src="<? echo imager($value['product']['imgs']['0'], IMG_Small); ?>" style="width:120px;height:70px;" title="<?=$value['product']['flag']?>" /></a>
+</td>
+<td width="10%"><?=$value['productnum']?></td>
+<td width="15%">&yen; <? echo $value['totalprice']; ?>元
+<? if($value['product']['type']=='stuff') { ?>
+<br/>(含运费:<?=$value['expressprice']?>元)
+<? } ?>
+</td>
+<td width="20%">
+<? if($value['refund_process'] == 1) { ?>
+已申请退款<? } elseif($value['refund_process'] == 2) { ?>退款成功<? } elseif($value['refund_process'] == 3) { ?>申请退款被拒绝<? } elseif($value['status'] != ORD_STA_Normal) { ?><img src="templates/default/images/no2.gif" />
+<? if($value['status'] == ORD_STA_Cancel) { ?>
+已取消<? } elseif($value['status'] == ORD_STA_Overdue) { ?>已过期<? } elseif($value['status'] == ORD_STA_Faild) { ?>失败<? } elseif($value['status'] == ORD_STA_Refund) { ?>已经退款
+<? } ?>
+<? } else { ?>
+<? if($value['product']['type'] == 'prize') { ?>
+<a href="?mod=prize&code=view&pid=<?=$value['productid']?>">查看抽奖号</a><? } elseif($value['process'] == 'WAIT_BUYER_PAY') { ?><a href="?mod=buy&code=pay&id=<?=$value['orderid']?>">等待付款</a><? } elseif($value['process'] == 'WAIT_SELLER_SEND_GOODS') { ?>等待卖家发货<? } elseif($value['process'] == 'WAIT_BUYER_CONFIRM_GOODS') { ?><a href="
+<? echo logic('pay')->ConfirmLinker($value) ?>
+">确认收货</a><? } elseif($value['process'] == 'TRADE_FINISHED') { ?>交易完成<? } elseif($value['process'] == '__CREATE__') { ?><a href="?mod=buy&code=order&id=<?=$value['orderid']?>">确认订单</a><? } elseif($value['process'] == '__PAY_YET__') { ?>已经付款<? } elseif($value['process'] == '_TimeLimit_') { ?>抢购失败
+<? } ?>
+<? } ?>
+<td width="10%" class="orderdo"><a>订单详情</a><div class="arrow" style=""></div>
+<? if($value['refund_process'] == 0 && $value['pay'] == 1 && $value['status'] != ORD_STA_Refund) { ?>
+<br/><a href="index.php?mod=refund&oid=<?=$value['orderid']?>">申请退款</a>
+<? } ?>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<div class="order_info" >
+<? if($value['refund']) { ?>
+<h4>退款详情</h4>
+<p style="border-bottom:1px dotted #999;">
+<b>用户申请</b><br/>
+申请退款金额：<?=$value['refund_demand_money']?> 元<br/>
+申请退款理由：<?=$value['refund_demand_reason']?><br/>
+<b>处理结果</b><br/>
+实际退款金额：<?=$value['refund_op_money']?> 元<br/>
+受理意见说明：<?=$value['refund_op_reason']?>
+</p>
+<? } ?>
+<h4>订单详情</h4>
+<p>
+<b><?=$value['product']['name']?></b>
+<br/><?=$value['product']['intro']?><br/><br/>
+订单编号：<?=$value['orderid']?>
+<span style="padding-left:30px;">下单时间：<? echo date('Y-m-d H:i:s', $value['buytime']);; ?></span>
+<? if($value['paytime']>0) { ?>
+<span style="padding-left:30px;">付款时间：<? echo date('Y-m-d H:i:s', $value['paytime']);; ?></span>
+<? } ?>
+
+<? if($value['expresstime']>0) { ?>
+<br>物流公司：<a href="<?=$value['express']['site']?>" target="_blank"><?=$value['express']['name']?></a>
+<br>运输单号：<?=$value['invoice']?>
+<? } ?>
+<br/><b>购买附言：</b><?=$value['extmsg']?>
+<? if(($value['extmsg_reply'] != '')) { ?>
+<br/><b>卖家回复：</b><?=$value['extmsg_reply']?>
+<? } ?>
+
+<? if($value['attrs']) { ?>
+<br/><b>属性参数：</b><br/>
+<? if(is_array($value['attrs']['dsp'])) { foreach($value['attrs']['dsp'] as $dsp) { ?>
+<?=$dsp['name']?> - &yen; <?=$dsp['price']?>元<br/>
+<? } } ?>
+<? } ?>
+</p>
+</div> 
+</td>
+</tr>
+<? } } ?>
+</table>
+<div class="pagem product_list_pager"><?=page_moyo()?></div>
+</div>
+</div>
+</div>
+</div>
+<div class="site-ms__right">
+<?=ui('widget')->load()?>
+</div>
+</div>
+<? include handler('template')->file('footer'); ?>

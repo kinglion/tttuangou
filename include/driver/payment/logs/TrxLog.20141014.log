@@ -1,0 +1,649 @@
+正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 01:57:25 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=jipeozbk0nh3r155rdn0kzj1; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101458646</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>09:57:17</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014001762</iRspRef><HostTime>095812</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Li6N0GhEszw8dm9pkHlnowroRYbAlAJy0CjTnlCZ+wvX+tbLjnr3tpU1xQtQONFA9lh/FN/YWsYfOf+rdyfIsQobnYpq1FC+8yEmN7zQoXudYEFqzbIgw+C7a7/N7r+RMQSUl33aT3SfVrLakNiw2LzdO7OtoHXsI4wGdMEWycg=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 02:02:54 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=fgncjom03qwfhbz4kabbju45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=962915082.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101409223</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>10:02:45</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014001710</iRspRef><HostTime>100340</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>XXuhcGdHZ/OA7sSM7v3B/os/XUVDJ+sn2h3/1wBqG4ezHD/vLp1aoyApQA6WZhrElPZpgKG+8tNtX4pZm2920uWP0+RwEnHRMFScewg3J4k1mfF4s7Jb/WisjdplgpR0KfUjEwX3AmV28kw41dD4unxDKPzpCNWNUz70MFVvqu4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 02:02:59 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=xr1e4g55crfysp45xzqyqr45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=962915082.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101409223</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>10:02:45</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014001710</iRspRef><HostTime>100340</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>XXuhcGdHZ/OA7sSM7v3B/os/XUVDJ+sn2h3/1wBqG4ezHD/vLp1aoyApQA6WZhrElPZpgKG+8tNtX4pZm2920uWP0+RwEnHRMFScewg3J4k1mfF4s7Jb/WisjdplgpR0KfUjEwX3AmV28kw41dD4unxDKPzpCNWNUz70MFVvqu4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 04:09:51 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=2pf41k45ffcditjbfdtj4f45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101495306</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>12:09:41</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014003363</iRspRef><HostTime>121036</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>cEs/OXvdQm32eoRLKe4tICfinwE4/jqkrBeY+X05PTmFW211osH5SPbuF0KDoyVr4l7remVzWwCctZqA4Yx6wMZEByjX08T3YIR2sKb7h+wCHHjU30buoyDRSaJTSskl1rGoX5b7ExHqa7xQul5JvlLogjk3ANczwNqPEUqNIBI=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 04:10:17 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=rjb4dijscygburmpsfgvak55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101495306</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>12:09:41</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014003363</iRspRef><HostTime>121036</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>cEs/OXvdQm32eoRLKe4tICfinwE4/jqkrBeY+X05PTmFW211osH5SPbuF0KDoyVr4l7remVzWwCctZqA4Yx6wMZEByjX08T3YIR2sKb7h+wCHHjU30buoyDRSaJTSskl1rGoX5b7ExHqa7xQul5JvlLogjk3ANczwNqPEUqNIBI=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 04:13:06 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=pvfalk452hj5odayybrd1zjq; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101437537</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>12:13:03</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014003396</iRspRef><HostTime>121358</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>0fEgZQDuMhUnbOWjzoiJWJpAhQ8d4keDfHECiPcyVVUlVqdeZ0dNoFxoRu675a9DItrMmvj0rJinJimvZhDVVkN0XAwdacz/obZy/XHTBnA2YjyqQuICdVUIt/7o2KwUEvmlxtzNrhvhzGe2LEUA4NTUuQqzTVGiDOO6eIXD0HY=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 04:13:16 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=5lecxo55imicagur0e5mst55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101437537</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>12:13:03</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014003396</iRspRef><HostTime>121358</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>0fEgZQDuMhUnbOWjzoiJWJpAhQ8d4keDfHECiPcyVVUlVqdeZ0dNoFxoRu675a9DItrMmvj0rJinJimvZhDVVkN0XAwdacz/obZy/XHTBnA2YjyqQuICdVUIt/7o2KwUEvmlxtzNrhvhzGe2LEUA4NTUuQqzTVGiDOO6eIXD0HY=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 04:13:28 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=0xyi3znmzkgcjqitqfv3swq3; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101437537</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>12:13:03</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014003396</iRspRef><HostTime>121358</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>0fEgZQDuMhUnbOWjzoiJWJpAhQ8d4keDfHECiPcyVVUlVqdeZ0dNoFxoRu675a9DItrMmvj0rJinJimvZhDVVkN0XAwdacz/obZy/XHTBnA2YjyqQuICdVUIt/7o2KwUEvmlxtzNrhvhzGe2LEUA4NTUuQqzTVGiDOO6eIXD0HY=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 04:13:38 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=v3i5trbycb5sck55gtqsvy55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=912583434.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101437537</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>12:13:03</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014003396</iRspRef><HostTime>121358</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>0fEgZQDuMhUnbOWjzoiJWJpAhQ8d4keDfHECiPcyVVUlVqdeZ0dNoFxoRu675a9DItrMmvj0rJinJimvZhDVVkN0XAwdacz/obZy/XHTBnA2YjyqQuICdVUIt/7o2KwUEvmlxtzNrhvhzGe2LEUA4NTUuQqzTVGiDOO6eIXD0HY=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 07:52:17 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=h5ts53jjmmnvi2m43grjai21; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=962915082.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101496450</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>15:52:11</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014005962</iRspRef><HostTime>155306</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Mrs+2EKJBe0Mx2rEsdpc0CphDmaiDfUE/gzAsLIAGx2cnFukNqtTQpvME3jsfMXdb357Xr8xJsleKHnDHdkDLLO3I7DFsnLInnfVOkZjYQIQRyVlO2ofqDCrARqaxd5vB29l7uwF6yFayXEqhOHTAS6U9XlkdhbaHi1LvH1qqQA=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 07:54:25 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=oy4p2j454atcja45tcmo5r55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=962915082.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101426078</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>15:54:14</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014005997</iRspRef><HostTime>155509</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>suYAKnjX+Pp89JZxbZ/EnC0fnWRKhO3D7LSZhHa284/i74yk+aN2pCXRbKCuAsQ3702anyVUWxDsB2fCi2tkueCq3jjBTkV8v7KU/jbmCCTThqom6988Iy69yaZJCAUBjQ4YY4jPwziUtMmkTVUZSBOWrEih8fDptTuFRSwbCFM=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 08:32:54 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=ytjbrjmhav0p2c45ljtxma45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101467276</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>16:32:49</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014006915</iRspRef><HostTime>163344</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Ys1iO8bU81fIhfSSjP0tJhJR85FkZYiScB7YOvV+UQYkj8aBep/2uKUegF7/Wl6g6GC0wapEr04+pSn3ggT0mjm+QfDlnuTUS2u7ANWQd/wNIIxYSvcIUoO+ygkU8fg57LuZgh/z9siwCSpmC4KxbTo03NYZaoi+vK4fItEnakk=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 08:35:09 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=x5ifjo45jejtun45mk31kg45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101424747</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>16:35:03</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014006598</iRspRef><HostTime>163558</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>u6VVHc/vJxYNorB7rYlNHPkebpNrqd4KIV/aAzK1+q9emFAbmTkcd0RS4+ZCrJqpu7yh9Tf/oBGpNHo1JBLqjvOuVoVFK0sE2BKpCjt6lQqtt0Dg+2iLDR4UXfbkQ3tE15WzLZmn37GaqrjugI169t3vpGqdeLOX5iyz5v9Ub4w=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 08:35:10 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=4nvhzu553vrj2524ftw4j155; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101424747</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>16:35:03</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014006598</iRspRef><HostTime>163558</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>u6VVHc/vJxYNorB7rYlNHPkebpNrqd4KIV/aAzK1+q9emFAbmTkcd0RS4+ZCrJqpu7yh9Tf/oBGpNHo1JBLqjvOuVoVFK0sE2BKpCjt6lQqtt0Dg+2iLDR4UXfbkQ3tE15WzLZmn37GaqrjugI169t3vpGqdeLOX5iyz5v9Ub4w=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 08:38:19 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=sfpg1w45fbowhtvtpra5co55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101414081</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>16:38:14</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014006987</iRspRef><HostTime>163909</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>JbtxFx83CbNsLpRhfz4y9pUu8sBBzn/K7XH2HOqYxQ31NIioO/R86OF5amOncYLG8C83oG43IArqwJuJM8tAWj5CyrNnK8pr2Woq37J5u66uCWptpdM+0j9aTKjQzdaw1GtvoAq404Hx+jrrCHNG4mvi+p3ceDPfU5IP2XDg6ZU=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 08:41:03 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=ya5pfb55so41414532rb2545; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101471652</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>16:40:59</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007045</iRspRef><HostTime>164154</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Ys18TiSgNfmQDao5eCrhK4iRsnR0+eyU8Gxg/uhf5RhG+Xovu5tCdc4GlzwYocELJMf4VIUfHL6nkQRMtbfkkfi2rcPVfmqY/EjXgbhWpxmrbLop2fkij/o4v2CqHudOw6KFWOD6y1WDjTh3mRch4WMhe/4gqzr/52EpbpxLqRs=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 08:43:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=pamqvz45cbldzf55xkk0jz55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101424210</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>16:43:35</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014006699</iRspRef><HostTime>164430</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>+06/tAC+ARSRQV8tGDYgPpSKO/8yYHmb2GsNc7sqwF3ieztVB9bXJ9ZTd9gkGUlpXRHug3DFsEMRYQYFg+m16MVnG7KR7SIRvSCVoZaG8BsBwKo6+/GmJHIMaR96rPf1ikldWln8cCwEvofis64p8U45Bt2UcSWnD3N7F2/4k7U=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 08:43:42 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=u0fodn2gistcrx45bf4yrh45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=946137866.56611.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101424210</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>16:43:35</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014006699</iRspRef><HostTime>164430</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>+06/tAC+ARSRQV8tGDYgPpSKO/8yYHmb2GsNc7sqwF3ieztVB9bXJ9ZTd9gkGUlpXRHug3DFsEMRYQYFg+m16MVnG7KR7SIRvSCVoZaG8BsBwKo6+/GmJHIMaR96rPf1ikldWln8cCwEvofis64p8U45Bt2UcSWnD3N7F2/4k7U=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:18:03 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=bo4blf452hgrsx55sjoiaqzd; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101453287</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:17:54</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007133</iRspRef><HostTime>171850</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>9YZdbzQ5aG7o6PLrDaMH4fycmzaZTsfzJ/yzcER7URNrnOEh3vUXLBGB6xxUiYpOqcAJgMU5YtLm2Hdi5KY1ThCRUbLlMRhkL3anlPDXNC3KxA++++l/iILLo+wfsrz0UA1TgnooAfDnXi9D0FM4+VZvVP9UhCKzH9NbwA3ardg=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:20:31 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=0uzneoexsdtwv22tlg2mfo45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101460507</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:20:24</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007157</iRspRef><HostTime>172119</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>TFAaCdvc6+doGC9B0GSVma9CXHnfkQbistq23ICHLwrXF069OUlRyn6KowMRR1vSbYlnam04khZ53HmJA7cFUBiINRFHZF+Z/RnoIAOu0X5sbjV8jz74XH45ckGgIeceW8zUQnPjDW27eJak+sMOpVNehsII8gm7XUFe8HDYXE0=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:20:32 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=4y4qpov2iygr413tfczlct45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101460507</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:20:24</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007157</iRspRef><HostTime>172119</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>TFAaCdvc6+doGC9B0GSVma9CXHnfkQbistq23ICHLwrXF069OUlRyn6KowMRR1vSbYlnam04khZ53HmJA7cFUBiINRFHZF+Z/RnoIAOu0X5sbjV8jz74XH45ckGgIeceW8zUQnPjDW27eJak+sMOpVNehsII8gm7XUFe8HDYXE0=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:22:15 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=0yidnt554cpthr454yxxiam3; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101441547</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:22:12</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007180</iRspRef><HostTime>172307</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>PhWSo2tA2rkq+ZmR5pHFp1ORrLK49oZiJUbIHigzuiME/5ljvA4hTUNRc5Bo+ln4oGnQJHMTWPMWUEFw83NqocYJ0uRbGEdGlf5WJD3sJo0yjVm6oiI2dBAHByB85Dm95gaGP3ZJFn7iee1JVeUJU54OI3GXZiYSNM1TK1TVmus=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:22:27 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=vdylrt45nw4fy5jyc2jdog45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101441547</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:22:12</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007180</iRspRef><HostTime>172307</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>PhWSo2tA2rkq+ZmR5pHFp1ORrLK49oZiJUbIHigzuiME/5ljvA4hTUNRc5Bo+ln4oGnQJHMTWPMWUEFw83NqocYJ0uRbGEdGlf5WJD3sJo0yjVm6oiI2dBAHByB85Dm95gaGP3ZJFn7iee1JVeUJU54OI3GXZiYSNM1TK1TVmus=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:24:50 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=owsn1b45y4o3iyqdr2f20k45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101474420</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:24:43</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007214</iRspRef><HostTime>172539</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>S9qGKC6XaQTpU+dK4ucA+B9RwBfDSSEAELZPUCRphgk3vTmz7Z5fCZShzRzxyDmmNCQZvXDwdVD2c2fABk5LT14opPARtEWOyNXi0T/nCF/3eckpg70LH3hdNXI5IHGlF4Zfc7L0X/dXp+uqTSeQRiAiFV5AXGb8lYpYUwQmCq4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:24:52 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=5a50nw55n3xnra24lwvmwx55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101474420</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:24:43</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007214</iRspRef><HostTime>172539</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>S9qGKC6XaQTpU+dK4ucA+B9RwBfDSSEAELZPUCRphgk3vTmz7Z5fCZShzRzxyDmmNCQZvXDwdVD2c2fABk5LT14opPARtEWOyNXi0T/nCF/3eckpg70LH3hdNXI5IHGlF4Zfc7L0X/dXp+uqTSeQRiAiFV5AXGb8lYpYUwQmCq4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:24:55 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=wk4h2x55gqzi3c45getfk4rr; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101474420</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:24:43</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007214</iRspRef><HostTime>172539</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>S9qGKC6XaQTpU+dK4ucA+B9RwBfDSSEAELZPUCRphgk3vTmz7Z5fCZShzRzxyDmmNCQZvXDwdVD2c2fABk5LT14opPARtEWOyNXi0T/nCF/3eckpg70LH3hdNXI5IHGlF4Zfc7L0X/dXp+uqTSeQRiAiFV5AXGb8lYpYUwQmCq4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:26:53 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=zm5vn145sodvjrz5b4yznt45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101460239</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:26:49</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007665</iRspRef><HostTime>172744</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>4vFakGcmrxiiRCEE8ZydO0ZYm7+hKxUiV12CHpW88RY72uU2DajB/0bXG6K7NmiEyUzadbxNSMPBVOTaz93uUvSBxboSwCjD7T+VNYjDZT7Fwmr8rGdfXNP2fNy8J1bfELE0C9csBpTP6m05AuSaqVb66OJXvpWtjXwwMEtFFnY=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:26:54 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=i1e4n4qczslpsu55fnufvei2; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101460239</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:26:49</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007665</iRspRef><HostTime>172744</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>4vFakGcmrxiiRCEE8ZydO0ZYm7+hKxUiV12CHpW88RY72uU2DajB/0bXG6K7NmiEyUzadbxNSMPBVOTaz93uUvSBxboSwCjD7T+VNYjDZT7Fwmr8rGdfXNP2fNy8J1bfELE0C9csBpTP6m05AuSaqVb66OJXvpWtjXwwMEtFFnY=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:29:03 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=bm1npe550qkzmjutwqibm234; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101451233</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:28:57</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007260</iRspRef><HostTime>172953</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>a9MOZW5w5VHZuVOCA064qrCDalA3b3Ja6B0z7NKtP2m2/g1ShFgoWI+oiGnduwC2rF/6UpWpH6+RiR7YD725PrOrI3r3cEOk+5qBGLAikGfm6gg/oiiKdyMgPrApn2aZhe/f3nT3jgT4MeXO/08kW8IcgsqgW32Kr5V7xUnNIfw=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:29:05 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=2l0kgd45voswgrvlw4syoknt; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101451233</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:28:57</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007260</iRspRef><HostTime>172953</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>a9MOZW5w5VHZuVOCA064qrCDalA3b3Ja6B0z7NKtP2m2/g1ShFgoWI+oiGnduwC2rF/6UpWpH6+RiR7YD725PrOrI3r3cEOk+5qBGLAikGfm6gg/oiiKdyMgPrApn2aZhe/f3nT3jgT4MeXO/08kW8IcgsqgW32Kr5V7xUnNIfw=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:30:49 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=0ghdus2qu5ylguro5efoscyl; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101400156</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:30:43</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007706</iRspRef><HostTime>173138</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>mb//HPSWfrQniKLdHPh/AmtPkS6DR9LgneKck02u62y2eHqZMoRsCKLfeUL+p5/43+mUFjtvXEHA/pRyabqdXM9iMVnjD+H0+J2IyTEj1NtyO+olvOkexRbixyIVE8D2h5eNRvdnXRELE3nWRobMVyuk1SFr1E2frIL/DMjUfFo=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:32:00 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=y1iiuk55penkli453zk21c3v; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101400156</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:30:43</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007706</iRspRef><HostTime>173138</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>mb//HPSWfrQniKLdHPh/AmtPkS6DR9LgneKck02u62y2eHqZMoRsCKLfeUL+p5/43+mUFjtvXEHA/pRyabqdXM9iMVnjD+H0+J2IyTEj1NtyO+olvOkexRbixyIVE8D2h5eNRvdnXRELE3nWRobMVyuk1SFr1E2frIL/DMjUfFo=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:33:37 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=gztgmp55jtwfhh3g3ea2dh45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101427457</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:33:34</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007745</iRspRef><HostTime>173430</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Ixp78xZdI3lx3lffgXGASlBxh5pGyECrWkS5pfQqcLwCu4yftjjS2pO+SRftHkRxd9ViBMYLu4I7P2Sy7ngoXqueNhXxpZ5Hs3IaEew/UWfdqeQJhvwFMtm2OkJUinoPMWRsO+U8id/Vz0iKu1T6m8rVNFtzjw9zBtKaJQFZuHM=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:33:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=uxke2pnz1nswuf45lyfs2hje; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101427457</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:33:34</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007745</iRspRef><HostTime>173430</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>Ixp78xZdI3lx3lffgXGASlBxh5pGyECrWkS5pfQqcLwCu4yftjjS2pO+SRftHkRxd9ViBMYLu4I7P2Sy7ngoXqueNhXxpZ5Hs3IaEew/UWfdqeQJhvwFMtm2OkJUinoPMWRsO+U8id/Vz0iKu1T6m8rVNFtzjw9zBtKaJQFZuHM=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:41:27 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=2cwvx5bonrl1fj4514ibmbfv; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101419968</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:41:25</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007368</iRspRef><HostTime>174220</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>NagbAvT95ItvQzFsAE53D/P4JEUWFo6MSlO8k+1+gT3YbntR1lAZL5CzrIfxs9WlDBPHzGYMoR7nNnrErpBy9Cdn4H8K10UcNNq6jtWVfRq2olebiAvCzrxSqEMb2ntMQpB5qkkmcx7tUX+w0B7xzNcBQghIofHs+X10x8IaGp4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:41:32 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=hfxfzo55euw13ryv5bpz1h55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101419968</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:41:25</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007368</iRspRef><HostTime>174220</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>NagbAvT95ItvQzFsAE53D/P4JEUWFo6MSlO8k+1+gT3YbntR1lAZL5CzrIfxs9WlDBPHzGYMoR7nNnrErpBy9Cdn4H8K10UcNNq6jtWVfRq2olebiAvCzrxSqEMb2ntMQpB5qkkmcx7tUX+w0B7xzNcBQghIofHs+X10x8IaGp4=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:43:20 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=wiipr3aoyfvc1qimpj3205zi; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101444321</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:43:16</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007863</iRspRef><HostTime>174411</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SKjEkDKOD9SiQ2bWlTy9wBQsnRtG1dx+pzO9D0WpC2HGWEe5xlnyMQVvA+z1sGufsUREPazrp+4yIrVh7TI8hcAz3QQIX5jW5LPTUBT5Sy4fOFKIkplbJhxqtKShqBkoXdJZGDkbDIMj5ob8QWd0e1F/3WN5KUCVW+vB5wU4Y+A=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:43:22 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=vbri3o30rqashn55fzzfgr45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101444321</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:43:16</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007863</iRspRef><HostTime>174411</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SKjEkDKOD9SiQ2bWlTy9wBQsnRtG1dx+pzO9D0WpC2HGWEe5xlnyMQVvA+z1sGufsUREPazrp+4yIrVh7TI8hcAz3QQIX5jW5LPTUBT5Sy4fOFKIkplbJhxqtKShqBkoXdJZGDkbDIMj5ob8QWd0e1F/3WN5KUCVW+vB5wU4Y+A=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:43:40 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=icapuybswck2y345xb3a2j55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101444321</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:43:16</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007863</iRspRef><HostTime>174411</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SKjEkDKOD9SiQ2bWlTy9wBQsnRtG1dx+pzO9D0WpC2HGWEe5xlnyMQVvA+z1sGufsUREPazrp+4yIrVh7TI8hcAz3QQIX5jW5LPTUBT5Sy4fOFKIkplbJhxqtKShqBkoXdJZGDkbDIMj5ob8QWd0e1F/3WN5KUCVW+vB5wU4Y+A=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:43:41 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=za2ydj2ol5fprd45i2cbah45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101444321</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:43:16</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007863</iRspRef><HostTime>174411</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>SKjEkDKOD9SiQ2bWlTy9wBQsnRtG1dx+pzO9D0WpC2HGWEe5xlnyMQVvA+z1sGufsUREPazrp+4yIrVh7TI8hcAz3QQIX5jW5LPTUBT5Sy4fOFKIkplbJhxqtKShqBkoXdJZGDkbDIMj5ob8QWd0e1F/3WN5KUCVW+vB5wU4Y+A=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:45:11 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=hegz3fqt4ah4ax55ipqhaeqd; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101465469</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:45:06</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007411</iRspRef><HostTime>174601</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>STU7/r+E+iPzRxStrVYTGd97LuvZZOSPyNbROS5H41zE12gwVy3CXobcckSnyGMIn7Y+1uo6c6GT5SB+ovuc9XT9fDKgltlmGqi0L4Bi8Co6ykeEVUZfA46L7OE4PW8LJi1j9h7yMU2FighfqgMAsUE8MF8cKOUmKXYdF9gyErg=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:45:13 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=1v0zj2f1ayokmfmjgeuz5555; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101465469</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:45:06</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007411</iRspRef><HostTime>174601</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>STU7/r+E+iPzRxStrVYTGd97LuvZZOSPyNbROS5H41zE12gwVy3CXobcckSnyGMIn7Y+1uo6c6GT5SB+ovuc9XT9fDKgltlmGqi0L4Bi8Co6ykeEVUZfA46L7OE4PW8LJi1j9h7yMU2FighfqgMAsUE8MF8cKOUmKXYdF9gyErg=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:45:20 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=3u0gmsj4hmnmehn42wrqhu45; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101465469</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:45:06</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007411</iRspRef><HostTime>174601</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>STU7/r+E+iPzRxStrVYTGd97LuvZZOSPyNbROS5H41zE12gwVy3CXobcckSnyGMIn7Y+1uo6c6GT5SB+ovuc9XT9fDKgltlmGqi0L4Bi8Co6ykeEVUZfA46L7OE4PW8LJi1j9h7yMU2FighfqgMAsUE8MF8cKOUmKXYdF9gyErg=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:46:55 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=uwvy2k55ok15l545wvd2qv55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101409848</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:46:52</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007906</iRspRef><HostTime>174747</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>uyzrlLaG6VUicUrq6gcb+ZgInsJXJrmB7k3sExyxC02VMrNV35FnrWzcUqOxB5vHfIZTW3jYrr6BCs3xuptIpejVkzVNEh0wD1ELkIM7+FwlFgZc2MbeGDfa+Er3HkWGBAt9DNmquEZjc5VWmBpIsHrVn2ZuQ+Z6DZw4Ek9yP9w=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:46:55 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=ubjdd045stsszi453wh35o55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101409848</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:46:52</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007906</iRspRef><HostTime>174747</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>uyzrlLaG6VUicUrq6gcb+ZgInsJXJrmB7k3sExyxC02VMrNV35FnrWzcUqOxB5vHfIZTW3jYrr6BCs3xuptIpejVkzVNEh0wD1ELkIM7+FwlFgZc2MbeGDfa+Er3HkWGBAt9DNmquEZjc5VWmBpIsHrVn2ZuQ+Z6DZw4Ek9yP9w=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:47:12 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=gpsgpl451e20ed45ihllsyqa; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101409848</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:46:52</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007906</iRspRef><HostTime>174747</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>uyzrlLaG6VUicUrq6gcb+ZgInsJXJrmB7k3sExyxC02VMrNV35FnrWzcUqOxB5vHfIZTW3jYrr6BCs3xuptIpejVkzVNEh0wD1ELkIM7+FwlFgZc2MbeGDfa+Er3HkWGBAt9DNmquEZjc5VWmBpIsHrVn2ZuQ+Z6DZw4Ek9yP9w=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:48:56 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=zdjid445qfehs1550zqkgby3; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101422394</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:48:47</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007461</iRspRef><HostTime>174942</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>IyIWV7xy/7W8N/wirg1WoIlEeFWm1Wtnu5Ai9a/4HfcqPZ103QopPkgPHz0u88TOSjZ/S7coiDkkEzYXgzNSwvVwTLeorj91dgVJG861KTyWjGXzmyKTDgjkP5Smt5301wy2zWGCqRZ9J8GMrG0iicu4+WPBt0QxK+OvQa4M2lw=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:50:38 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=2mkdox55tklsyhfa1gteju55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101401410</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:50:31</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007966</iRspRef><HostTime>175126</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Mv2YZ7BJG+vxDVJM0rcFqW+53IKQ8HqsC7iYGXhDcJlrmv+z7YKZIZjCDmnuID4GxjgpA1FFSLoEsqxO+t24eRG6AEbNCIvxp6NfvBz3H1+fEuesEU8d7NsmyQ7qLlO2MtUCRU7dQr0cMB6L8L7lw09xqX28DdhHCd/FKijyss=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:50:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=esjvn1qljjwavtzqsrpmcii5; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101401410</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:50:31</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014007966</iRspRef><HostTime>175126</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>2Mv2YZ7BJG+vxDVJM0rcFqW+53IKQ8HqsC7iYGXhDcJlrmv+z7YKZIZjCDmnuID4GxjgpA1FFSLoEsqxO+t24eRG6AEbNCIvxp6NfvBz3H1+fEuesEU8d7NsmyQ7qLlO2MtUCRU7dQr0cMB6L8L7lw09xqX28DdhHCd/FKijyss=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:56:44 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=hguwwf45o00j4455exzzwjre; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101484652</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:56:40</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014008020</iRspRef><HostTime>175736</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>eEG5GvZ6ux6DHp6JHqNP3YHJ4oWGsgJhLsK+0G6FB9AEzuPKq8kHYVhOFEUfdCPVnXPxGD6j2Hk04tIOc2y5dCxnaIEotu5ACN8iJdGU+wydVSm1Cb/3IIeVfXJ40HDftLeehGXzWxJ+BAMPZe3ZFxX6Ophhzju9S1BndIkYVTk=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:56:47 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=xjxfej45sw5nnyfnh2nwmjy1; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101484652</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:56:40</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>361014008020</iRspRef><HostTime>175736</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>eEG5GvZ6ux6DHp6JHqNP3YHJ4oWGsgJhLsK+0G6FB9AEzuPKq8kHYVhOFEUfdCPVnXPxGD6j2Hk04tIOc2y5dCxnaIEotu5ACN8iJdGU+wydVSm1Cb/3IIeVfXJ40HDftLeehGXzWxJ+BAMPZe3ZFxX6Ophhzju9S1BndIkYVTk=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:58:35 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=mb1nvc45vnrzbm55wsrzqeio; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101457373</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:58:25</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007574</iRspRef><HostTime>175920</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>PYD25PoSnfiB6Dtdf+A+2x7xay8EzcsWkZOkdsyuTSNUysXRQAs3nwfmJhqT+jluVSd03koi0zD//Wc9TuLOqC+tWzMO6fl3Fo6MX5PnRQTjE21OWCWcS4sZSZAE3zItVyQV/nCWCm0tLynVkRKHhFR+u16cwRc9lWS0WFq7WG8=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 09:58:36 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=4cvf0s55xinbqem52melva55; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101457373</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>17:58:25</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007574</iRspRef><HostTime>175920</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>PYD25PoSnfiB6Dtdf+A+2x7xay8EzcsWkZOkdsyuTSNUysXRQAs3nwfmJhqT+jluVSd03koi0zD//Wc9TuLOqC+tWzMO6fl3Fo6MX5PnRQTjE21OWCWcS4sZSZAE3zItVyQV/nCWCm0tLynVkRKHhFR+u16cwRc9lWS0WFq7WG8=</Signature></MSG>正确正确
+                    HTTP/1.1 200 OK
+                    Date: Tue, 14 Oct 2014 10:01:39 GMT
+                    Server: Microsoft-IIS/6.0
+                    X-Powered-By: ASP.NET
+                    X-AspNet-Version: 2.0.50727
+                    Set-Cookie: ASP.NET_SessionId=plcsj0fmybxnzs55usmxwuet; path=/; HttpOnly
+                    Cache-Control: private
+                    Content-Type: text/html; charset=gb2312
+                    Connection: close
+                    Set-Cookie: BIGipServerpool_ec_b2c=1063578378.56867.0000; path=/
+                    
+                    <MSG><Message><Merchant><ECMerchantType>B2C</ECMerchantType><MerchantID>244011500069A01</MerchantID></Merchant><TrxResponse><ReturnCode>0000</ReturnCode><ErrorMessage>交易成功</ErrorMessage><TrxType>PayReq</TrxType><Order><OrderNo>2014101429248</OrderNo><OrderAmount>78</OrderAmount><OrderDesc>Game Card Order</OrderDesc><OrderDate>2014/10/14</OrderDate><OrderTime>18:01:33</OrderTime><OrderURL>http://www.tl0754.com/index.php?view=94</OrderURL><OrderItems></OrderItems><PayAmount>78</PayAmount><RefundAmount>0</RefundAmount><OrderStatus>03</OrderStatus><iRspRef>371014007614</iRspRef><HostTime>180228</HostTime><HostDate>20141014</HostDate></Order></TrxResponse></Message><Signature-Algorithm>SHA1withRSA</Signature-Algorithm><Signature>WZxnX0n5Ff2ln5XaMiZ5+o5RdgrKDnklxMOgtSFlkHSjVR8UbHP2GF95pTc8OIWcOPv1DadgCAIFGE10eIk0ag1Ucp1gGHiAvDmdnvsZMR0hyiscBhMgibKeDKNRzyURfc2J4jN2y5kaknKVwNZ5KriVDfe8fnMVwj+I0N2iJoM=</Signature></MSG>正确

@@ -1,0 +1,125 @@
+<?php return array (
+  '~common' => 
+  array (
+    'uid' => '用户ID',
+    'userid' => '用户ID',
+    'username' => '用户名',
+    'password' => '密码',
+    'phone' => '手机号',
+    'email' => 'Email地址',
+    'orderid' => '订单编号',
+    'productid' => '产品编号',
+    'productflag' => '产品短标记',
+    'product.id' => '产品编号',
+    'product.sellerid' => '商家ID',
+    'product.city' => '城市ID',
+    'product.name' => '产品名称',
+    'product.flag' => '产品短标记',
+    'product.price' => '原价',
+    'product.nowprice' => '现价',
+    'product.img' => '产品图片',
+    'product.intro' => '产品简介',
+    'product.content' => '产品详情',
+    'product.theysay' => '他们说',
+    'product.wesay' => '我们说',
+    'product.begintime' => '开始时间戳',
+    'product.overtime' => '结束时间戳',
+    'product.type' => '产品类型',
+    'product.perioddate' => '团购券过期时间',
+    'product.weight' => '产品重量',
+    'product.successnum' => '成团人数',
+    'product.virtualnum' => '虚拟人数',
+    'product.maxnum' => '产品总数',
+    'product.oncemax' => '一次最多买',
+    'product.oncemin' => '一次最少买',
+    'product.multibuy' => '是否允许多次购买',
+    'product.allinone' => '是否多券合一',
+    'product.display' => '产品显示模式',
+    'product.addtime' => '添加时间戳',
+    'product.status' => '产品状态',
+    'product.order' => '产片优先级',
+    'product.sellername' => '商家名称',
+    'product.sellerphone' => '商家手机号',
+    'product.selleraddress' => '商家地址',
+    'product.sellerurl' => '商家网址',
+    'product.discount' => '折扣',
+    'product.time_remain' => '团购剩余时间（秒）',
+    'product.succ_total' => '成团人数',
+    'product.succ_real' => '实际购买人数',
+    'product.succ_buyers' => '总购买人数',
+    'product.succ_remain' => '成团还需人数',
+    'product.sells_real' => '实际售出数',
+    'product.sells_count' => '总售出数',
+    'product.surplus' => '产品剩余数',
+    'remark' => '备注信息',
+    'time' => '时间',
+  ),
+  'logic_coupon_Create' => 
+  array (
+    'number' => '团购券编号',
+    'password' => '团购券密码',
+    'mutis' => '包含份数',
+    'status' => '团购券状态',
+  ),
+  'logic_order_MakeSuccessed' => 
+  array (
+    'productnum' => '购买数',
+    'productprice' => '产品价格',
+    'buytime' => '购买时间戳',
+    'paymoney' => '支付金额',
+    'paytime' => '支付时间戳',
+    'expressprice' => '快递价格',
+    'extmsg' => '订单附言',
+  ),
+  'logic_pay_SendGoods' => 
+  array (
+    'trade_no' => '交易号',
+    'name' => '产品短标记',
+    'invoice' => '货运单号',
+  ),
+  'logic_order_Refund' => 
+  array (
+    'refundmoney' => '退款金额',
+  ),
+  'admin_mod_coupon_Alert' => 
+  array (
+    'ticketid' => '团购券ID',
+    'number' => '团购券号码',
+    'password' => '团购券密码',
+    'usetime' => '使用时间戳',
+    'mutis' => '包含份数',
+    'status' => '团购券状态',
+    'name' => '产品名称',
+    'flag' => '产品短标记',
+    'intro' => '产品简介',
+    'perioddate' => '团购券过期时间',
+  ),
+  'logic_account_register_done' => 
+  array (
+    'regip' => '注册IP',
+    'regdate' => '注册时间',
+  ),
+  'logic_coupon_Used' => 
+  array (
+    'number' => '团购券号码',
+    'time' => '使用时间戳',
+  ),
+  'user_pay_confirm' => 
+  array (
+    'sign' => '订单号',
+    'trade_no' => '交易号',
+    'price' => '订单价格',
+    'money' => '支付金额',
+    'status' => '订单状态',
+  ),
+  'list_ask_new' => 
+  array (
+    'content' => '提问内容',
+  ),
+  'list_ask_reply' => 
+  array (
+    'content' => '提问内容',
+    'reply' => '回复内容',
+  ),
+  '__AW_upTime__' => '2014-05-29 01:51:56',
+); ?>
