@@ -8,9 +8,6 @@
  */
  
 
-
-
-
 require 'include/init.php';
 
 TTTGMaster::load(__FILE__);
