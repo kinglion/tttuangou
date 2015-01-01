@@ -4,15 +4,15 @@ include_once 'PublicEncrypte.php';
 include_once 'common.php';
 include_once 'log.class.php';
 
-// 初始化日志
-$log = new PhpLog ( SDK_LOG_FILE_PATH, "PRC", SDK_LOG_LEVEL );
+
 /**
  * 签名
  *
  * @param String $params_str
  */
 function sign(&$params) {
-	global $log;
+	// 初始化日志
+	$log = new PhpLog ( SDK_LOG_FILE_PATH, "PRC", SDK_LOG_LEVEL );
 	$log->LogInfo ( '=====签名报文开始======' );
 	if(isset($params['transTempUrl'])){
 		unset($params['transTempUrl']);
@@ -45,7 +45,8 @@ function sign(&$params) {
  * @param String $signature_str        	
  */
 function verify($params) {
-	global $log;
+	// 初始化日志
+	$log = new PhpLog ( SDK_LOG_FILE_PATH, "PRC", SDK_LOG_LEVEL );
 	// 公钥
 	$public_key = getPulbicKeyByCertId ( $params ['certId'] );	
 	echo $public_key.'<br/>';
@@ -70,7 +71,8 @@ function verify($params) {
  * @return string NULL
  */
 function getPulbicKeyByCertId($certId) {
-	global $log;
+	// 初始化日志
+	$log = new PhpLog ( SDK_LOG_FILE_PATH, "PRC", SDK_LOG_LEVEL );
 	$log->LogInfo ( '报文返回的证书ID>' . $certId );
 	// 证书目录
 	$cert_dir = SDK_VERIFY_CERT_DIR;
@@ -156,7 +158,7 @@ function getPublicKey($cert_path) {
  * @return unknown
  */
 function getPrivateKey($cert_path) {
-	$pkcs12 = file_get_contents ( $cert_path );
+	$pkcs12 = file_get_contents ($cert_path,true);
 	openssl_pkcs12_read ( $pkcs12, $certs, SDK_SIGN_CERT_PWD );
 	return $certs ['pkey'];
 }

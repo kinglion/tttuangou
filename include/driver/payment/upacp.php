@@ -176,12 +176,13 @@ class upacpPaymentDriver extends PaymentDriver
 		// 检查字段是否需要加密
 		// encrypt_params($params);
 		// 签名
-		sign($params);
+		sign($parameter);
+		
 		// 前台请求地址
 		$front_uri = SDK_FRONT_TRANS_URL;
 		$log->LogInfo ( "前台请求地址为>" . $front_uri );
 		// 构造 自动提交的表单
-		$html_form = create_html ( $params, $front_uri );
+		$html_form = create_html ( $parameter, $front_uri );
 
 		$log->LogInfo ( "-------前台交易自动提交表单>--begin----" );
 		$log->LogInfo ( $html_form );

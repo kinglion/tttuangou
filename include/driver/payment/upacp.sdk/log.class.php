@@ -204,7 +204,7 @@
 		{
 			if ($iLine > 0)
 			{
-				$line = iconv('GBK', 'UTF-8', $line);
+				// $line = iconv('GBK', 'UTF-8', $line);
 				if ( $this->priority <= $priority )
 				{
 					$status = $this->getTimeLine( $priority, $sFile, $iLine);

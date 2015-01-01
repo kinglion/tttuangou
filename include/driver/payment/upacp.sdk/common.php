@@ -1,18 +1,18 @@
 <?php
 include_once 'log.class.php';
 include_once 'SDKConfig.php';
-// ³õÊ¼»¯ÈÕÖ¾
+// 初始化日志
 $log = new PhpLog ( SDK_LOG_FILE_PATH, "PRC", SDK_LOG_LEVEL );
 /**
- * Êý×é ÅÅÐòºó×ª»¯Îª×ÖÌå´®
+ * 数组 排序后转化为字体串
  *
  * @param array $params        	
  * @return string
  */
 function coverParamsToString($params) {
 	$sign_str = '';
-	// ÅÅÐò
-	ksort ( $params );
+	// 排序
+	ksort ($params);
 	foreach ( $params as $key => $val ) {
 		if ($key == 'signature') {
 			continue;
@@ -23,7 +23,7 @@ function coverParamsToString($params) {
 	return substr ( $sign_str, 0, strlen ( $sign_str ) - 1 );
 }
 /**
- * ×Ö·û´®×ª»»Îª Êý×é
+ * 字符串转换为 数组
  *
  * @param unknown_type $str        	
  * @return multitype:unknown
@@ -47,13 +47,13 @@ function coverStringToArray($str) {
 	return $result;
 }
 /**
- * ´¦Àí·µ»Ø±¨ÎÄ ½âÂë¿Í»§ÐÅÏ¢ , Èç¹û±àÂëÎªGBK Ôò×ªÎªutf-8
+ * 处理返回报文 解码客户信息 , 如果编码为GBK 则转为utf-8
  *
  * @param unknown_type $params        	
  */
 function deal_params(&$params) {
 	/**
-	 * ½âÂë customerInfo
+	 * 解码 customerInfo
 	 */
 	if (! empty ( $params ['customerInfo'] )) {
 		$params ['customerInfo'] = base64_decode ( $params ['customerInfo'] );
@@ -67,14 +67,14 @@ function deal_params(&$params) {
 }
 
 /**
- * Ñ¹ËõÎÄ¼þ ¶ÔÓ¦java deflate
+ * 压缩文件 对应java deflate
  *
  * @param unknown_type $params        	
  */
 function deflate_file(&$params) {
 	global $log;
 	foreach ( $_FILES as $file ) {
-		$log->LogInfo ( "---------´¦ÀíÎÄ¼þ---------" );
+		$log->LogInfo ( "---------处理文件---------" );
 		if (file_exists ( $file ['tmp_name'] )) {
 			$params ['fileName'] = $file ['name'];
 			
@@ -82,43 +82,43 @@ function deflate_file(&$params) {
 			$file_content_deflate = gzcompress ( $file_content );
 			
 			$params ['fileContent'] = base64_encode ( $file_content_deflate );
-			$log->LogInfo ( "Ñ¹ËõºóÎÄ¼þÄÚÈÝÎª>" . base64_encode ( $file_content_deflate ) );
+			$log->LogInfo ( "压缩后文件内容为>" . base64_encode ( $file_content_deflate ) );
 		} else {
-			$log->LogInfo ( ">>>>ÎÄ¼þÉÏ´«Ê§°Ü<<<<<" );
+			$log->LogInfo ( ">>>>文件上传失败<<<<<" );
 		}
 	}
 }
 
 /**
- * ´¦Àí±¨ÎÄÖÐµÄÎÄ¼þ
+ * 处理报文中的文件
  *
  * @param unknown_type $params        	
  */
 function deal_file($params) {
 	global $log;
 	if (isset ( $params ['fileContent'] )) {
-		$log->LogInfo ( "---------´¦ÀíºóÌ¨±¨ÎÄ·µ»ØµÄÎÄ¼þ---------" );
+		$log->LogInfo ( "---------处理后台报文返回的文件---------" );
 		$fileContent = $params ['fileContent'];
 		
 		if (empty ( $fileContent )) {
-			$log->LogInfo ( 'ÎÄ¼þÄÚÈÝÎª¿Õ' );
+			$log->LogInfo ( '文件内容为空' );
 		} else {
-			// ÎÄ¼þÄÚÈÝ ½âÑ¹Ëõ
+			// 文件内容 解压缩
 			$content = gzuncompress ( base64_decode ( $fileContent ) );
 			$root = SDK_FILE_DOWN_PATH;
 			$filePath = null;
 			if (empty ( $params ['fileName'] )) {
-				$log->LogInfo ( "ÎÄ¼þÃûÎª¿Õ" );
+				$log->LogInfo ( "文件名为空" );
 				$filePath = $root . $params ['merId'] . '_' . $params ['batchNo'] . '_' . $params ['txnTime'] . 'txt';
 			} else {
 				$filePath = $root . $params ['fileName'];
 			}
 			$handle = fopen ( $filePath, "w+" );
 			if (! is_writable ( $filePath )) {
-				$log->LogInfo ( "ÎÄ¼þ:" . $filePath . "²»¿ÉÐ´£¬Çë¼ì²é£¡" );
+				$log->LogInfo ( "文件:" . $filePath . "不可写，请检查！" );
 			} else {
 				file_put_contents ( $filePath, $content );
-				$log->LogInfo ( "ÎÄ¼þÎ»ÖÃ >:" . $filePath );
+				$log->LogInfo ( "文件位置 >:" . $filePath );
 			}
 			fclose ( $handle );
 		}
@@ -126,7 +126,7 @@ function deal_file($params) {
 }
 
 /**
- * ¹¹Ôì×Ô¶¯Ìá½»±íµ¥
+ * 构造自动提交表单
  *
  * @param unknown_type $params        	
  * @param unknown_type $action        	
@@ -140,7 +140,7 @@ function create_html($params, $action) {
     <meta http-equiv="Content-Type" content="text/html; charset={$encodeType}" />
 </head>
 <body  onload="javascript:document.pay_form.submit();">
-    <form id="pay_form" name="pay_form" action="{$action}" method="post">
+    <form id="pay_form" name="pay_form" action="{$action}" target="_blank" method="post">
 	
 eot;
 	foreach ( $params as $key => $value ) {
