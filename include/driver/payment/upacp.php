@@ -29,25 +29,19 @@ class upacpPaymentDriver extends PaymentDriver
 			'certId' => getSignCertId(),				//证书ID
 			'txnType' => '01',								//交易类型	
 			'txnSubType' => '01',							//交易子类
-			'bizType' => '000000',							//业务类型
-			'frontUrl' =>  $parameter['product_url'],  				//前台通知地址
+			'bizType' => '000201',							//业务类型
+			'frontUrl' =>  $parameter['notify_url'],  				//前台通知地址
 			'backUrl' => $parameter['notify_url'],				//后台通知地址	
 			'signMethod' => '01',		//签名方法
 			'channelType' => '07',					//渠道类型
 			'accessType' => '0',							//接入类型
-			'merId' => '103440548990006',					//商户代码
-			'orderId' => date('YmdHis'),					//商户订单号
+			'merId' => '777290058110153',					//商户代码
+			'orderId' => $parameter['sign'],					//商户订单号
 			'txnTime' => date('YmdHis'),				//订单发送时间
-			'txnAmt' => $parameter['price'],								//交易金额
+			'txnAmt' => (int)$parameter['price']."00",								//交易金额
 			'currencyCode' => '156',						//交易币种
 			'defaultPayType' => '0001',						//默认支付方式	
 		);
-		$token = account('ulogin')->token();
-		if ($token)
-		{
-			$post['token'] = $token;
-		}
-		$post['extend_param'] = 'isv^tt11';
 		return $this->__BuildForm($payment, $post);
 	}
 	
@@ -66,25 +60,19 @@ class upacpPaymentDriver extends PaymentDriver
 	
 	public function CallbackVerify($payment)
 	{
-		if ($this->__Is_Nofity())
-		{
-						sleep(rand(1, 9));
-						$trade_status = $this->__Notify_Verify($payment);
-		}
-		else
-		{
-			$trade_status = $this->__Return_Verify($payment);
-		}
+		sleep(rand(1, 9));
+		$trade_status = $this->__Notify_Verify($payment);
 		return $this->__Trade_Status($trade_status);
 	}
 	
 	public function GetTradeData()
 	{
-		$src = ($this->__Is_Nofity()) ? 'POST' : 'GET';
+		$src = 'POST';
 		$trade = array();
-		$trade['sign'] = logic('safe')->Vars($src, 'out_trade_no', 'number');
-		$trade['trade_no'] = logic('safe')->Vars($src, 'trade_no', 'number');
-		$trade['price'] = logic('safe')->Vars($src, 'total_fee', 'float');
+		$trade['sign'] = logic('safe')->Vars($src, 'orderId', 'number');
+		$trade['trade_no'] = logic('safe')->Vars($src, 'traceNo', 'number');
+		$trade['price'] = logic('safe')->Vars($src, 'settleAmt', 'int');
+		$trade['price'] = $trade['price'] / 100;
 		$trade['money'] = $trade['price'];
 		$trade['status'] = $this->__Trade_Status(logic('safe')->Vars($src, 'trade_status', 'txt'));
 		return $trade;
@@ -138,7 +126,7 @@ class upacpPaymentDriver extends PaymentDriver
 	
 	private function __Trade_Status($trade_status)
 	{
-		return ($trade_status == 'TRADE_SUCCESS') ? 'TRADE_FINISHED' : $trade_status;
+		return ($trade_status == 'success') ? 'TRADE_FINISHED' : $trade_status;
 	}
 	
 	private function isDirectPay($payment, $sign)
@@ -157,7 +145,7 @@ class upacpPaymentDriver extends PaymentDriver
 	{
 		if (is_null($this->is_notify))
 		{
-			if (post('trade_status'))
+			if (post('respMsg'))
 			{
 				$this->is_notify = true;
 			}
@@ -177,7 +165,6 @@ class upacpPaymentDriver extends PaymentDriver
 		// encrypt_params($params);
 		// 签名
 		sign($parameter);
-		
 		// 前台请求地址
 		$front_uri = SDK_FRONT_TRANS_URL;
 		$log->LogInfo ( "前台请求地址为>" . $front_uri );
@@ -200,109 +187,14 @@ class upacpPaymentDriver extends PaymentDriver
 		return $url;
 	}
 	
-	private function __Return_Verify($payment)
-	{
-		if($payment['config']['ssl'] == 'true')
-		{
-			$url = $this->Gateway_ssl
-				.'service=notify_verify'
-				.'&partner='.$payment['config']['partner']
-				.'&notify_id='.get('notify_id', 'txt');
-		}
-		else
-		{
-			$url = $this->Gateway_com
-				.'partner='.$payment['config']['partner']
-				.'&notify_id='.get('notify_id', 'txt');
-		}
-
-		$result = $this->__Verify($url);
-
-		$parameter = $this->__para_filter($_GET);
-		$parameter = $this->__arg_sort($parameter);
-		$sign  = $this->__CreateSign($payment, $parameter);
-
-		if (preg_match('/true$/i', $result) && $sign == get('sign', 'txt'))
-		{
-			return get('trade_status', 'txt');
-		}
-		else
-		{
-			return 'VERIFY_FAILED';
-		}
-	}
 	
 	private function __Notify_Verify($payment)
 	{
-		if($payment['config']['ssl'] == 'true')
-		{
-			$url = $this->Gateway_ssl
-				.'service=notify_verify'
-				.'&partner='.$payment['config']['partner']
-				.'&notify_id='.post('notify_id', 'txt');
-		}
-		else
-		{
-			$url = $this->Gateway_com
-				.'partner='.$payment['config']['partner']
-				.'&notify_id='.post('notify_id', 'txt');
-		}
-
-		$result = $this->__Verify($url);
-
 		$parameter = $this->__para_filter($_POST);
 		$parameter = $this->__arg_sort($parameter);
-		$sign = $this->__CreateSign($payment, $parameter);
-
-		if (preg_match('/true$/i', $result) && $sign == post('sign', 'txt'))
-		{
-			return post('trade_status', 'txt');
-		}
-		else
-		{
-			return 'VERIFY_FAILED';
-		}
+		return post('respMsg', 'txt');
 	}
 	
-	private function __Verify($url, $time_out = '60')
-	{
-		$urlArr     = parse_url($url);
-		$errNo      = '';
-		$errStr     = '';
-		$transPorts = '';
-		if($urlArr['scheme'] == 'https')
-		{
-			$transPorts = 'ssl://';
-			$urlArr['port'] = '443';
-		}
-		else
-		{
-			$transPorts = 'tcp://';
-			$urlArr['port'] = '80';
-		}
-		$fp = msockopen($transPorts . $urlArr['host'], $urlArr['port'], $errNo, $errStr, $time_out);
-		if(!$fp)
-		{
-			zlog('error')->found('error.msockopen');
-			die("ERROR: $errNo - $errStr<br />\n");
-		}
-		else
-		{
-			fputs($fp, "POST ".$urlArr["path"]." HTTP/1.1\r\n");
-			fputs($fp, "Host: ".$urlArr["host"]."\r\n");
-			fputs($fp, "Content-type: application/x-www-form-urlencoded\r\n");
-			fputs($fp, "Content-length: ".strlen($urlArr["query"])."\r\n");
-			fputs($fp, "Connection: close\r\n\r\n");
-			fputs($fp, $urlArr["query"] . "\r\n\r\n");
-			while(!feof($fp))
-			{
-				$info[]=@fgets($fp, 1024);
-			}
-			fclose($fp);
-			$info = implode(",",$info);
-			return $info;
-		}
-	}
 	
 	private function __SrvGET($url, $time_out = '60')
 	{
@@ -341,15 +233,6 @@ class upacpPaymentDriver extends PaymentDriver
 		}
 	}
 	
-	private function __CreateSign($payment, $parameter)
-	{
-		$parameter = $this->__para_filter($parameter);
-		$parameter = $this->__arg_sort($parameter);
-		$string = $this->__create_linkstring($parameter);
-		$string .= $payment['config']['key'];
-		$string = md5($string);
-		return $string;
-	}
 	private function __create_linkstring($array)
 	{
 		$arg  = '';

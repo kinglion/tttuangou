@@ -218,7 +218,7 @@ class forder_RechargeLogic
 	{
 		if (is_numeric($trade))
 		{
-						$rcgOrder = logic('recharge')->GetOne($trade);
+			$rcgOrder = logic('recharge')->GetOne($trade);
 			if ((int)$rcgOrder['status'] > 0 && $rcgOrder['paytime'] > 0)
 			{
 				return true;
@@ -231,11 +231,12 @@ class forder_RechargeLogic
 				$money = (float)$money;
 		if ($money <= 0)
 		{
-						return $this->result(true, $money);
+			return $this->result(true, $money);
 		}
 		$userID = $order['userid'];
 		$rcgID = $order['orderid'];
 		$rcgOrder = logic('recharge')->GetOne($rcgID);
+
 		if ((int)$rcgOrder['status'] > 0 && $rcgOrder['paytime'] > 0)
 		{
 			return $this->result(false, $money);

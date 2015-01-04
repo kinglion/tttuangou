@@ -28,7 +28,7 @@ $cache=array (
   array (
     'name' => '订单数',
     'url' => 'admin.php?mod=order',
-    'total' => '350',
+    'total' => '389',
   ),
   'tttuangou_ticket' => 
   array (

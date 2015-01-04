@@ -140,7 +140,7 @@ function create_html($params, $action) {
     <meta http-equiv="Content-Type" content="text/html; charset={$encodeType}" />
 </head>
 <body  onload="javascript:document.pay_form.submit();">
-    <form id="pay_form" name="pay_form" action="{$action}" target="_blank" method="post">
+    <form id="pay_form" name="pay_form" action="{$action}" method="post">
 	
 eot;
 	foreach ( $params as $key => $value ) {

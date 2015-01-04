@@ -232,19 +232,16 @@ class OrderLogic
 	{
 		$id = $trade['sign'];
 		$order = $this->GetOne($id);
-
 		if ($trade['status'] == 'WAIT_SELLER_SEND_GOODS' && $payment['config']['service'] == 'medi') {
 			$trade['price'] = $order['paymoney'];
 			$trade['money']= $trade['price'];
 		}
-
 		if ($order['pay'] == ORD_PAID_No)
 		{
 			$product = logic('product')->BuysCheck($order['productid'], false, $order['productnum'], ORD_PAID_No);
 			$error = false;
 			isset($product['false']) && $error = $product['false'];
-			
-						if ($trade['money'] > 0)
+			if ($trade['money'] > 0)
 			{
 				$rcgPrice = $trade['price'];
 				$rcgDSP = true;
@@ -258,8 +255,9 @@ class OrderLogic
 				}
 			}
 			$order['_tmpd_'] = logic('recharge')->forder()->paid($trade, $order, $rcgPrice, $rcgDSP);
-						if (!$trade['nmpay'])
+			if (!$trade['nmpay'])
 			{
+				
 				$money = round(logic('me')->money()->count($order['userid']), 2);
 				$price = round($order['totalprice'], 2);
 				if ($error)
@@ -268,6 +266,7 @@ class OrderLogic
 				}
 				else
 				{
+					$order['_tmpd_']['paid'] = true;
 					if ($order['_tmpd_']['paid'] === false)
 					{
 						$error = '订单支付失败，也许您之前已经支付过此订单了！';
@@ -278,6 +277,7 @@ class OrderLogic
 					}
 					elseif ($money >= $price)
 					{
+
 						$express = '';
 						if ($order['expressprice'] > 0)
 						{
@@ -287,17 +287,18 @@ class OrderLogic
 							'name' => __('购买商品'),
 							'intro' => sprintf(__('商品名：%s<br/>单价：%.2f<br/>数目：%d<br/>%s'), $order['product']['flag'], $order['productprice'], $order['productnum'], $express)
 						));
-												$order_update = array(
+						$order_update = array(
 							'pay' => ORD_PAID_Yes,
 							'paytime' => time()
 						);
 						$this->Update($id, $order_update);
-												logic('order')->doSuccess($order);
-												if (in_array($order['process'], array('__CREATE__', 'WAIT_BUYER_PAY')))
+						logic('order')->doSuccess($order);
+						if (in_array($order['process'], array('__CREATE__', 'WAIT_BUYER_PAY')))
 						{
 							$this->Processed($order['orderid'], '__PAY_YET__');
 							logic('order')->clog($trade['sign'])->sys('订单支付系统：用户已付款');
 						}
+						
 					}
 					else
 					{

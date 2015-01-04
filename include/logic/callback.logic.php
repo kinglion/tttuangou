@@ -83,7 +83,7 @@ class Order_Parser_CallbackLogic extends CallbackLogic
 	
 	function Parse_WAIT_SELLER_SEND_GOODS($payment = false)
 	{
-				$trade = logic('pay')->TradeData($payment);
+		$trade = logic('pay')->TradeData($payment);
 		$order = logic('order')->_TMP_Payed($trade, $payment);
 		$error = false;
 		isset($order['false']) && $error = $order['false'];
@@ -91,24 +91,24 @@ class Order_Parser_CallbackLogic extends CallbackLogic
 		{
 			if ($order['product']['type'] == 'ticket')
 			{
-								logic('pay')->vSendGoods($order);
+				logic('pay')->vSendGoods($order);
 				if (true == ini('payment.trade.sendgoodsfirst'))
 				{
-										logic('order')->MakeSuccessed($trade['sign']);
+					logic('order')->MakeSuccessed($trade['sign']);
 					logic('order')->Processed($trade['sign'], 'WAIT_BUYER_CONFIRM_GOODS');
 					logic('order')->clog($trade['sign'])->sys(TUANGOU_STR . '券先行发送给用户，等待用户确认收货');
 				}
 				else
 				{
-										notify(logic('pay')->TD2UID($payment), 'user.pay.confirm', $trade);
+					notify(logic('pay')->TD2UID($payment), 'user.pay.confirm', $trade);
 				}
 			}
 			else
 			{
 				$isCOD = $trade['nmpay'];
-								$isCOD && logic('order')->Update($trade['sign'], array('pay' => ORD_PAID_Yes, 'process' => '__PAY_YET__'));
-								logic('order')->MakeSuccessed($trade['sign']);
-								$isCOD && logic('order')->Update($trade['sign'], array('pay' => ORD_PAID_No, 'process' => 'WAIT_SELLER_SEND_GOODS'));
+				$isCOD && logic('order')->Update($trade['sign'], array('pay' => ORD_PAID_Yes, 'process' => '__PAY_YET__'));
+				logic('order')->MakeSuccessed($trade['sign']);
+				$isCOD && logic('order')->Update($trade['sign'], array('pay' => ORD_PAID_No, 'process' => 'WAIT_SELLER_SEND_GOODS'));
 			}
 		}
 		else
@@ -144,7 +144,7 @@ class Order_Parser_CallbackLogic extends CallbackLogic
 	
 	function Parse_TRADE_FINISHED($payment = false)
 	{
-				$trade = logic('pay')->TradeData($payment);
+		$trade = logic('pay')->TradeData($payment);
 		$order = logic('order')->_TMP_Payed($trade);
 		$error = false;
 		isset($order['false']) && $error = $order['false'];
@@ -152,12 +152,13 @@ class Order_Parser_CallbackLogic extends CallbackLogic
 		{
 			if ($order['process'] == 'WAIT_BUYER_CONFIRM_GOODS')
 			{
-												logic('order')->Processed($trade['sign'], '__PAY_YET__');
+				logic('order')->Processed($trade['sign'], '__PAY_YET__');
 				logic('order')->clog($trade['sign'])->sys('系统内部交易处理变更：用户已付款');
 				$order['product']['type'] == 'stuff' && $ups2TRADE_FINISHED = true;
 			}
 			$order = logic('order')->MakeSuccessed($trade['sign']);
-						if ($ups2TRADE_FINISHED)
+
+			if ($ups2TRADE_FINISHED)
 			{
 				logic('order')->Processed($trade['sign'], 'TRADE_FINISHED');
 				logic('order')->clog($trade['sign'])->sys('系统内部交易处理变更：交易已完成');
@@ -171,7 +172,7 @@ class Order_Parser_CallbackLogic extends CallbackLogic
 				logic('order')->clog($trade['sign'])->sys('交易失败（订单已变更为过期）：'.$error);
 			}
 		}
-		if(logic('pay')->Process($payment, 'TRADE_FINISHED')) return;
+		//if(logic('pay')->Process($payment, 'TRADE_FINISHED')) return;
 		$this->master->Messager($error?$error:__('本次交易已经完成！'), '?mod=me&code=order');
 	}
 }

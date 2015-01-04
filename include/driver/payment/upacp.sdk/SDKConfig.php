@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 
 // cvn2加密 1：加密 0:不加密
@@ -10,7 +10,7 @@ const SDK_PAN_ENC = 0;
  
 // ######(以下配置为PM环境：入网测试环境用，生产环境配置见文档说明)#######
 // 签名证书路径
-const SDK_SIGN_CERT_PATH = 'PM_700000000000001_acp.pfx';
+const SDK_SIGN_CERT_PATH = '700000000000001_acp.pfx';
 
 // 签名证书密码
  const SDK_SIGN_CERT_PWD = '000000';

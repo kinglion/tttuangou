@@ -19,6 +19,8 @@ class ModuleObject extends MasterObject
 	}
 	function Main()
 	{
+		var_dump($_POST);
+		exit;
 		$pid = get('pid');
 		$pid || $pid = post('pid');
 		$pid || exit($this->Ends());
@@ -36,7 +38,7 @@ class ModuleObject extends MasterObject
 			{
 				if (MEMBER_ID)
 				{
-										header('Location: '.rewrite('index.php?mod=buy&code=order&op=process&sign='.$trade['sign']));
+					header('Location: '.rewrite('index.php?mod=buy&code=order&op=process&sign='.$trade['sign']));
 					exit;
 				}
 			}
